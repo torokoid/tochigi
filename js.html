@@ -1,0 +1,1860 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://github.githubassets.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-/YEVWs7BzxfKyUd6zVxjEQcXRWsLbcEjv045Rq8DSoipySmQblhVKxlXLva2GtNd5DhwCxHwW1RM0N9I7S2Vew==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-481a47a96965f6706fb41bae0d14b09a.css" />
+  
+    <link crossorigin="anonymous" media="all" integrity="sha512-UuDKgNf/5qyjHC2IFg8kEkn3j2n+D4ShuvNV5eohEqUPfuPzqAxcd98IqomrgGo/g36tB35YvxoA1CbXgE0iFg==" rel="stylesheet" href="https://github.githubassets.com/assets/github-5362384f9e2512870c388a187eaf4868.css" />
+    
+    
+    
+    
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>home/js at master · torokoid/home</title>
+    <meta name="description" content="Contribute to torokoid/home development by creating an account on GitHub.">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    <meta name="twitter:image:src" content="https://avatars2.githubusercontent.com/u/39209977?s=400&amp;v=4" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary" /><meta name="twitter:title" content="torokoid/home" /><meta name="twitter:description" content="Contribute to torokoid/home development by creating an account on GitHub." />
+    <meta property="og:image" content="https://avatars2.githubusercontent.com/u/39209977?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="torokoid/home" /><meta property="og:url" content="https://github.com/torokoid/home" /><meta property="og:description" content="Contribute to torokoid/home development by creating an account on GitHub." />
+
+  <link rel="assets" href="https://github.githubassets.com/">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6NDUwNzAyMjMxOjI2YTliMzZmZGZhYjg1MjYxZDY4ZWQ1NDg3NDgxZjcwY2FiMjhkM2JjZmU1YWMwNWNjMjk2YWFiYTQyNTAzNjg=--229d161829abe00bc54b2158c6174ba5c7f64fd7">
+  <link rel="sudo-modal" href="/sessions/sudo_modal">
+  <meta name="request-id" content="D26F:2057:1147E4:19ED28:5DC6A4DE" data-pjax-transient>
+
+
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+      <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+    <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+
+  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="D26F:2057:1147E4:19ED28:5DC6A4DE" /><meta name="octolytics-dimension-region_edge" content="ap-northeast-1" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-dimension-ga_id" content="" class="js-octo-ga-id" /><meta name="octolytics-dimension-visitor_id" content="8590349045002296683" /><meta name="octolytics-actor-id" content="39209977" /><meta name="octolytics-actor-login" content="torokoid" /><meta name="octolytics-actor-hash" content="747a9608887e7db6472481ebb93796225cf3b256ea29d341e2e4f476cd833652" />
+<meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
+
+
+
+    <meta name="google-analytics" content="UA-3769691-2">
+
+  <meta class="js-ga-set" name="userId" content="cd94b7149ed15bd7244ddf076fbb5847">
+
+<meta class="js-ga-set" name="dimension1" content="Logged In">
+
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="torokoid">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="MjY4YjhiZTU3YmY4ZTRjYzJkMDlkZjFhN2ZhYWE0MGI2YWM3MTNiMDUxMGMwNTE1YzhiMDlhMGIyOGI2OWNjM3x7InJlbW90ZV9hZGRyZXNzIjoiMTA2LjE3NC4xMDEuMTYyIiwicmVxdWVzdF9pZCI6IkQyNkY6MjA1NzoxMTQ3RTQ6MTlFRDI4OjVEQzZBNERFIiwidGltZXN0YW1wIjoxNTczMjk5NDIyLCJob3N0IjoiZ2l0aHViLmNvbSJ9">
+
+    <meta name="enabled-features" content="ACTIONS_V2_ON_MARKETPLACE,MARKETPLACE_FEATURED_BLOG_POSTS,MARKETPLACE_INVOICED_BILLING,MARKETPLACE_SOCIAL_PROOF_CUSTOMERS,MARKETPLACE_TRENDING_SOCIAL_PROOF,MARKETPLACE_RECOMMENDATIONS,MARKETPLACE_PENDING_INSTALLATIONS,NOTIFY_ON_BLOCK,RELATED_ISSUES,GHE_CLOUD_TRIAL">
+
+  <meta name="html-safe-nonce" content="f1a3ff236da34cccb417e97c65aafed5e7e1a438">
+
+  <meta http-equiv="x-pjax-version" content="fa69a6766b45881d74d00fb909806b32">
+  
+
+      <link href="https://github.com/torokoid/home/commits/master.atom" rel="alternate" title="Recent Commits to home:master" type="application/atom+xml">
+
+  <meta name="go-import" content="github.com/torokoid/home git https://github.com/torokoid/home.git">
+
+  <meta name="octolytics-dimension-user_id" content="39209977" /><meta name="octolytics-dimension-user_login" content="torokoid" /><meta name="octolytics-dimension-repository_id" content="184358981" /><meta name="octolytics-dimension-repository_nwo" content="torokoid/home" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="184358981" /><meta name="octolytics-dimension-repository_network_root_nwo" content="torokoid/home" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
+
+
+    <link rel="canonical" href="https://github.com/torokoid/home/blob/master/js" data-pjax-transient>
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://github.githubassets.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+  <link rel="apple-touch-icon" href="https://github.githubassets.com/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://github.githubassets.com/apple-touch-icon-180x180.png">
+  <meta name="apple-mobile-web-app-title" content="GitHub">
+
+
+  <meta name="webauthn-auth-enabled" content="true">
+
+  <meta name="webauthn-registration-enabled" content="true">
+
+  <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
+
+  </head>
+
+  <body class="logged-in env-production page-responsive page-blob">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="p-3 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
+    <span class="Progress progress-pjax-loader position-fixed width-full js-pjax-loader-bar">
+      <span class="progress-pjax-loader-bar top-0 left-0" style="width: 0%;"></span>
+    </span>
+
+    
+    
+    
+
+
+          <header class="Header js-details-container Details flex-wrap flex-lg-nowrap p-responsive" role="banner">
+
+    <div class="Header-item d-none d-lg-flex">
+      <a class="Header-link" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+  <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+
+    </div>
+
+    <div class="Header-item d-lg-none">
+      <button class="Header-link btn-link js-details-target" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 12 16" version="1.1" width="18" aria-hidden="true"><path fill-rule="evenodd" d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"/></svg>
+      </button>
+    </div>
+
+    <div class="Header-item Header-item--full flex-column flex-lg-row width-full flex-order-2 flex-lg-order-none mr-0 mr-lg-3 mt-3 mt-lg-0 Details-content--hidden">
+        <div class="header-search flex-self-stretch flex-lg-self-auto mr-0 mr-lg-3 mb-3 mb-lg-0 scoped-search site-scoped-search js-site-search position-relative js-jump-to"
+  role="combobox"
+  aria-owns="jump-to-results"
+  aria-label="Search or jump to"
+  aria-haspopup="listbox"
+  aria-expanded="false"
+>
+  <div class="position-relative">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" role="search" aria-label="Site" data-scope-type="Repository" data-scope-id="184358981" data-scoped-search-url="/torokoid/home/search" data-unscoped-search-url="/search" action="/torokoid/home/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+      <label class="form-control input-sm header-search-wrapper p-0 header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center js-chromeless-input-container">
+        <input type="text"
+          class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+          data-hotkey="s,/"
+          name="q"
+          value=""
+          placeholder="Search or jump to…"
+          data-unscoped-placeholder="Search or jump to…"
+          data-scoped-placeholder="Search or jump to…"
+          autocapitalize="off"
+          aria-autocomplete="list"
+          aria-controls="jump-to-results"
+          aria-label="Search or jump to…"
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=wmcm3DXWdcFPjrlsnEVw4vLEv/NXqYtsE+EWzFzwZk3oRmDEzvC3PL55oCuoxjukvp4WtA2cjz1LioF+THZRVQ=="
+          spellcheck="false"
+          autocomplete="off"
+          >
+          <input type="hidden" class="js-site-search-type-field" name="type" >
+            <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
+
+            <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
+              
+<ul class="d-none js-jump-to-suggestions-template-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-suggestion" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+</ul>
+
+<ul class="d-none js-jump-to-no-results-template-container">
+  <li class="d-flex flex-justify-center flex-items-center f5 d-none js-jump-to-suggestion p-2">
+    <span class="text-gray">No suggested jump to results</span>
+  </li>
+</ul>
+
+<ul id="jump-to-results" role="listbox" class="p-0 m-0 js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-global-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+
+    <li class="d-flex flex-justify-center flex-items-center p-0 f5 js-jump-to-suggestion">
+      <img src="https://github.githubassets.com/images/spinners/octocat-spinner-128.gif" alt="Octocat Spinner Icon" class="m-2" width="28">
+    </li>
+</ul>
+
+            </div>
+      </label>
+</form>  </div>
+</div>
+
+
+      <nav class="d-flex flex-column flex-lg-row flex-self-stretch flex-lg-self-auto" aria-label="Global">
+    <a class="Header-link d-block d-lg-none py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15" data-ga-click="Header, click, Nav menu - item:dashboard:user" aria-label="Dashboard" href="/dashboard">
+      Dashboard
+</a>
+  <a class="js-selected-navigation-item Header-link  mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15" data-hotkey="g p" data-ga-click="Header, click, Nav menu - item:pulls context:user" aria-label="Pull requests you created" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls" href="/pulls">
+    Pull requests
+</a>
+  <a class="js-selected-navigation-item Header-link  mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15" data-hotkey="g i" data-ga-click="Header, click, Nav menu - item:issues context:user" aria-label="Issues you created" data-selected-links="/issues /issues/assigned /issues/mentioned /issues" href="/issues">
+    Issues
+</a>
+    <div class="mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15">
+      <a class="js-selected-navigation-item Header-link" data-ga-click="Header, click, Nav menu - item:marketplace context:user" data-octo-click="marketplace_click" data-octo-dimensions="location:nav_bar" data-selected-links=" /marketplace" href="/marketplace">
+        Marketplace
+</a>      
+
+    </div>
+
+  <a class="js-selected-navigation-item Header-link  mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore" href="/explore">
+    Explore
+</a>
+
+
+    <a class="Header-link d-block d-lg-none mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15" href="https://github.com/torokoid">
+      <img class="avatar" height="20" width="20" alt="@torokoid" src="https://avatars2.githubusercontent.com/u/39209977?s=60&amp;v=4" />
+      torokoid
+</a>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="+VqMK6fHKCn01NNz/9Kv5C2+w4WChs1jtQxaqf3msrRuSUjtQhu+Gx+e+HPb/080w7WAJuN2cTVNkxqu1lL6gg==" />
+      <button type="submit" class="Header-link mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15 d-lg-none btn-link d-block width-full text-left" data-ga-click="Header, sign out, icon:logout" style="padding-left: 2px;">
+        <svg class="octicon octicon-sign-out v-align-middle" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9V7H8V5h4V3l4 3-4 3zm-2 3H6V3L2 1h8v3h1V1c0-.55-.45-1-1-1H1C.45 0 0 .45 0 1v11.38c0 .39.22.73.55.91L6 16.01V13h4c.55 0 1-.45 1-1V8h-1v4z"/></svg>
+        Sign out
+      </button>
+</form></nav>
+
+    </div>
+
+    <div class="Header-item Header-item--full flex-justify-center d-lg-none position-relative">
+      <div class="css-truncate css-truncate-target width-fit position-absolute left-0 right-0 text-center">
+              <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+    <a class="Header-link" href="/torokoid">torokoid</a>
+    /
+    <a class="Header-link" href="/torokoid/home">home</a>
+
+</div>
+    </div>
+
+
+    <div class="Header-item mr-0 mr-lg-3 flex-order-1 flex-lg-order-none">
+      
+
+    <a aria-label="You have no unread notifications" class="Header-link notification-indicator position-relative tooltipped tooltipped-sw js-socket-channel js-notification-indicator" data-hotkey="g n" data-ga-click="Header, go to notifications, icon:read" data-channel="notification-changed:39209977" href="/notifications">
+        <span class="mail-status "></span>
+        <svg class="octicon octicon-bell" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 12v1H0v-1l.73-.58c.77-.77.81-2.55 1.19-4.42C2.69 3.23 6 2 6 2c0-.55.45-1 1-1s1 .45 1 1c0 0 3.39 1.23 4.16 5 .38 1.88.42 3.66 1.19 4.42l.66.58H14zm-7 4c1.11 0 2-.89 2-2H5c0 1.11.89 2 2 2z"/></svg>
+</a>
+    </div>
+
+
+    <div class="Header-item position-relative d-none d-lg-flex">
+      <details class="details-overlay details-reset">
+  <summary class="Header-link"
+      aria-label="Create new…"
+      data-ga-click="Header, create new, icon:add">
+    <svg class="octicon octicon-plus" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"/></svg> <span class="dropdown-caret"></span>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw">
+    
+<a role="menuitem" class="dropdown-item" href="/new" data-ga-click="Header, create new repository">
+  New repository
+</a>
+
+  <a role="menuitem" class="dropdown-item" href="/new/import" data-ga-click="Header, import a repository">
+    Import repository
+  </a>
+
+<a role="menuitem" class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, create new gist">
+  New gist
+</a>
+
+  <a role="menuitem" class="dropdown-item" href="/organizations/new" data-ga-click="Header, create new organization">
+    New organization
+  </a>
+
+
+  <div role="none" class="dropdown-divider"></div>
+  <div class="dropdown-header">
+    <span title="torokoid/home">This repository</span>
+  </div>
+    <a role="menuitem" class="dropdown-item" href="/torokoid/home/issues/new" data-ga-click="Header, create new issue" data-skip-pjax>
+      New issue
+    </a>
+
+
+  </details-menu>
+</details>
+
+    </div>
+
+    <div class="Header-item position-relative mr-0 d-none d-lg-flex">
+      
+  <details class="details-overlay details-reset js-feature-preview-indicator-container" data-feature-preview-indicator-src="/users/torokoid/feature_preview/indicator_check.json">
+
+  <summary class="Header-link"
+    aria-label="View profile and more"
+    data-ga-click="Header, show menu, icon:avatar">
+    <img alt="@torokoid" class="avatar" src="https://avatars1.githubusercontent.com/u/39209977?s=40&amp;v=4" height="20" width="20">
+      <span class="feature-preview-indicator js-feature-preview-indicator" hidden></span>
+    <span class="dropdown-caret"></span>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw mt-2" style="width: 180px">
+    <div class="header-nav-current-user css-truncate"><a role="menuitem" class="no-underline user-profile-link px-3 pt-2 pb-2 mb-n2 mt-n1 d-block" href="/torokoid" data-ga-click="Header, go to profile, text:Signed in as">Signed in as <strong class="css-truncate-target">torokoid</strong></a></div>
+    <div role="none" class="dropdown-divider"></div>
+
+      <div class="pl-3 pr-3 f6 user-status-container js-user-status-context pb-1" data-url="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1">
+        
+<div class="js-user-status-container
+    user-status-compact rounded-1 px-2 py-1 mt-2
+    border
+  " data-team-hovercards-enabled>
+  <details class="js-user-status-details details-reset details-overlay details-overlay-dark">
+    <summary class="btn-link btn-block link-gray no-underline js-toggle-user-status-edit toggle-user-status-edit "
+      role="menuitem" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:39209977,&quot;target&quot;:&quot;EDIT_USER_STATUS&quot;,&quot;user_id&quot;:39209977,&quot;client_id&quot;:&quot;2000096497.1543134571&quot;,&quot;originating_request_id&quot;:&quot;D26F:2057:1147E4:19ED28:5DC6A4DE&quot;,&quot;originating_url&quot;:&quot;https://github.com/torokoid/home/blob/master/js&quot;,&quot;referrer&quot;:null}}" data-hydro-click-hmac="cc57256511bb0ebe5c27b6b4d83f2344ade34f0ebe3880da9e9065d3bca83716">
+      <div class="d-flex">
+        <div class="f6 lh-condensed user-status-header
+          d-inline-block v-align-middle
+            user-status-emoji-only-header circle
+            pr-2
+"
+            style="max-width: 29px"
+          >
+          <div class="user-status-emoji-container flex-shrink-0 mr-1 mt-1 lh-condensed-ultra v-align-bottom" style="">
+            <svg class="octicon octicon-smiley" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.81 12.81a6.72 6.72 0 01-2.17 1.45c-.83.36-1.72.53-2.64.53-.92 0-1.81-.17-2.64-.53-.81-.34-1.55-.83-2.17-1.45a6.773 6.773 0 01-1.45-2.17A6.59 6.59 0 011.21 8c0-.92.17-1.81.53-2.64.34-.81.83-1.55 1.45-2.17.62-.62 1.36-1.11 2.17-1.45A6.59 6.59 0 018 1.21c.92 0 1.81.17 2.64.53.81.34 1.55.83 2.17 1.45.62.62 1.11 1.36 1.45 2.17.36.83.53 1.72.53 2.64 0 .92-.17 1.81-.53 2.64-.34.81-.83 1.55-1.45 2.17zM4 6.8v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2H5.2C4.53 8 4 7.47 4 6.8zm5 0v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2h-.59C9.53 8 9 7.47 9 6.8zm4 3.2c-.72 1.88-2.91 3-5 3s-4.28-1.13-5-3c-.14-.39.23-1 .66-1h8.59c.41 0 .89.61.75 1z"/></svg>
+          </div>
+        </div>
+        <div class="
+          d-inline-block v-align-middle
+          
+          
+           css-truncate css-truncate-target 
+           user-status-message-wrapper f6"
+           style="line-height: 20px;" >
+          <div class="d-inline-block text-gray-dark v-align-text-top text-left">
+              <span class="text-gray ml-2">Set status</span>
+          </div>
+        </div>
+      </div>
+    </summary>
+    <details-dialog class="details-dialog rounded-1 anim-fade-in fast Box Box--overlay" role="dialog" tabindex="-1">
+      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="position-relative flex-auto js-user-status-form" action="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="JANGPxJDPLy3Icg7gNEpEHYtPyOAa9R3yD4mMG987RXD8X1L/wsM351qAd7VFax++zx8ew/AAeQM0S26oRP50Q==" />
+        <div class="Box-header bg-gray border-bottom p-3">
+          <button class="Box-btn-octicon js-toggle-user-status-edit btn-octicon float-right" type="reset" aria-label="Close dialog" data-close-dialog>
+            <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+          </button>
+          <h3 class="Box-title f5 text-bold text-gray-dark">Edit status</h3>
+        </div>
+        <input type="hidden" name="emoji" class="js-user-status-emoji-field" value="">
+        <input type="hidden" name="organization_id" class="js-user-status-org-id-field" value="">
+        <div class="px-3 py-2 text-gray-dark">
+          <div class="js-characters-remaining-container position-relative mt-2">
+            <div class="input-group d-table form-group my-0 js-user-status-form-group">
+              <span class="input-group-button d-table-cell v-align-middle" style="width: 1%">
+                <button type="button" aria-label="Choose an emoji" class="btn-outline btn js-toggle-user-status-emoji-picker btn-open-emoji-picker p-0">
+                  <span class="js-user-status-original-emoji" hidden></span>
+                  <span class="js-user-status-custom-emoji"></span>
+                  <span class="js-user-status-no-emoji-icon" >
+                    <svg class="octicon octicon-smiley" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.81 12.81a6.72 6.72 0 01-2.17 1.45c-.83.36-1.72.53-2.64.53-.92 0-1.81-.17-2.64-.53-.81-.34-1.55-.83-2.17-1.45a6.773 6.773 0 01-1.45-2.17A6.59 6.59 0 011.21 8c0-.92.17-1.81.53-2.64.34-.81.83-1.55 1.45-2.17.62-.62 1.36-1.11 2.17-1.45A6.59 6.59 0 018 1.21c.92 0 1.81.17 2.64.53.81.34 1.55.83 2.17 1.45.62.62 1.11 1.36 1.45 2.17.36.83.53 1.72.53 2.64 0 .92-.17 1.81-.53 2.64-.34.81-.83 1.55-1.45 2.17zM4 6.8v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2H5.2C4.53 8 4 7.47 4 6.8zm5 0v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2h-.59C9.53 8 9 7.47 9 6.8zm4 3.2c-.72 1.88-2.91 3-5 3s-4.28-1.13-5-3c-.14-.39.23-1 .66-1h8.59c.41 0 .89.61.75 1z"/></svg>
+                  </span>
+                </button>
+              </span>
+              <text-expander keys=": @" data-mention-url="/autocomplete/user-suggestions" data-emoji-url="/autocomplete/emoji">
+                <input
+                  type="text"
+                  autocomplete="off"
+                  data-no-org-url="/autocomplete/user-suggestions"
+                  data-org-url="/suggestions?mention_suggester=1"
+                  data-maxlength="80"
+                  class="d-table-cell width-full form-control js-user-status-message-field js-characters-remaining-field"
+                  placeholder="What's happening?"
+                  name="message"
+                  value=""
+                  aria-label="What is your current status?">
+              </text-expander>
+              <div class="error">Could not update your status, please try again.</div>
+            </div>
+            <div style="margin-left: 53px" class="my-1 text-small label-characters-remaining js-characters-remaining" data-suffix="remaining" hidden>
+              80 remaining
+            </div>
+          </div>
+          <include-fragment class="js-user-status-emoji-picker" data-url="/users/status/emoji"></include-fragment>
+          <div class="overflow-auto ml-n3 mr-n3 px-3 border-bottom" style="max-height: 33vh">
+            <div class="user-status-suggestions js-user-status-suggestions collapsed overflow-hidden">
+              <h4 class="f6 text-normal my-3">Suggestions:</h4>
+              <div class="mx-3 mt-2 clearfix">
+                  <div class="float-left col-6">
+                      <button type="button" value=":palm_tree:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
+                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
+                          <g-emoji alias="palm_tree" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f334.png">🌴</g-emoji>
+                        </div>
+                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
+                          On vacation
+                        </div>
+                      </button>
+                      <button type="button" value=":face_with_thermometer:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
+                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
+                          <g-emoji alias="face_with_thermometer" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f912.png">🤒</g-emoji>
+                        </div>
+                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
+                          Out sick
+                        </div>
+                      </button>
+                  </div>
+                  <div class="float-left col-6">
+                      <button type="button" value=":house:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
+                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
+                          <g-emoji alias="house" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3e0.png">🏠</g-emoji>
+                        </div>
+                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
+                          Working from home
+                        </div>
+                      </button>
+                      <button type="button" value=":dart:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
+                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
+                          <g-emoji alias="dart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3af.png">🎯</g-emoji>
+                        </div>
+                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
+                          Focusing
+                        </div>
+                      </button>
+                  </div>
+              </div>
+            </div>
+            <div class="user-status-limited-availability-container">
+              <div class="form-checkbox my-0">
+                <input type="checkbox" name="limited_availability" value="1" class="js-user-status-limited-availability-checkbox" data-default-message="I may be slow to respond." aria-describedby="limited-availability-help-text-truncate-true-compact-true" id="limited-availability-truncate-true-compact-true">
+                <label class="d-block f5 text-gray-dark mb-1" for="limited-availability-truncate-true-compact-true">
+                  Busy
+                </label>
+                <p class="note" id="limited-availability-help-text-truncate-true-compact-true">
+                  When others mention you, assign you, or request your review,
+                  GitHub will let them know that you have limited availability.
+                </p>
+              </div>
+            </div>
+          </div>
+            
+
+<div class="d-inline-block f5 mr-2 pt-3 pb-2" >
+  <div class="d-inline-block mr-1">
+    Clear status
+  </div>
+
+  <details class="js-user-status-expire-drop-down f6 dropdown details-reset details-overlay d-inline-block mr-2">
+    <summary class="f5 btn-link link-gray-dark border px-2 py-1 rounded-1" aria-haspopup="true">
+      <div class="js-user-status-expiration-interval-selected d-inline-block v-align-baseline">
+        Never
+      </div>
+      <div class="dropdown-caret"></div>
+    </summary>
+
+    <ul class="dropdown-menu dropdown-menu-se pl-0 overflow-auto" style="width: 220px; max-height: 15.5em">
+      <li>
+        <button type="button" class="btn-link dropdown-item js-user-status-expire-button ws-normal" title="Never">
+          <span class="d-inline-block text-bold mb-1">Never</span>
+          <div class="f6 lh-condensed">Keep this status until you clear your status or edit your status.</div>
+        </button>
+      </li>
+      <li class="dropdown-divider" role="none"></li>
+        <li>
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 30 minutes" value="2019-11-09T21:07:02+09:00">
+            in 30 minutes
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 1 hour" value="2019-11-09T21:37:02+09:00">
+            in 1 hour
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 4 hours" value="2019-11-10T00:37:02+09:00">
+            in 4 hours
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="today" value="2019-11-09T23:59:59+09:00">
+            today
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="this week" value="2019-11-10T23:59:59+09:00">
+            this week
+          </button>
+        </li>
+    </ul>
+  </details>
+  <input class="js-user-status-expiration-date-input" type="hidden" name="expires_at" value="">
+</div>
+
+          <include-fragment class="js-user-status-org-picker" data-url="/users/status/organizations"></include-fragment>
+        </div>
+        <div class="d-flex flex-items-center flex-justify-between p-3 border-top">
+          <button type="submit" disabled class="width-full btn btn-primary mr-2 js-user-status-submit">
+            Set status
+          </button>
+          <button type="button" disabled class="width-full js-clear-user-status-button btn ml-2 ">
+            Clear status
+          </button>
+        </div>
+</form>    </details-dialog>
+  </details>
+</div>
+
+      </div>
+      <div role="none" class="dropdown-divider"></div>
+
+
+    <a role="menuitem" class="dropdown-item" href="/torokoid" data-ga-click="Header, go to profile, text:your profile">Your profile</a>
+
+    <a role="menuitem" class="dropdown-item" href="/torokoid?tab=repositories" data-ga-click="Header, go to repositories, text:your repositories">Your repositories</a>
+
+    <a role="menuitem" class="dropdown-item" href="/torokoid?tab=projects" data-ga-click="Header, go to projects, text:your projects">Your projects</a>
+
+    <a role="menuitem" class="dropdown-item" href="/torokoid?tab=stars" data-ga-click="Header, go to starred repos, text:your stars">Your stars</a>
+      <a role="menuitem" class="dropdown-item" href="https://gist.github.com/mine" data-ga-click="Header, your gists, text:your gists">Your gists</a>
+
+
+
+
+
+    <div role="none" class="dropdown-divider"></div>
+      
+<div id="feature-enrollment-toggle" class="hide-sm hide-md feature-preview-details position-relative">
+  <button
+    type="button"
+    class="dropdown-item btn-link"
+    role="menuitem"
+    data-feature-preview-trigger-url="/users/torokoid/feature_previews"
+    data-feature-preview-close-details="{&quot;event_type&quot;:&quot;feature_preview.clicks.close_modal&quot;,&quot;payload&quot;:{&quot;client_id&quot;:&quot;2000096497.1543134571&quot;,&quot;originating_request_id&quot;:&quot;D26F:2057:1147E4:19ED28:5DC6A4DE&quot;,&quot;originating_url&quot;:&quot;https://github.com/torokoid/home/blob/master/js&quot;,&quot;referrer&quot;:null,&quot;user_id&quot;:39209977}}"
+    data-feature-preview-close-hmac="a6137078e282587fd53b4773a89c1fb24d311bcb0b7e943c58b89aeda7be5142"
+    data-hydro-click="{&quot;event_type&quot;:&quot;feature_preview.clicks.open_modal&quot;,&quot;payload&quot;:{&quot;link_location&quot;:&quot;user_dropdown&quot;,&quot;client_id&quot;:&quot;2000096497.1543134571&quot;,&quot;originating_request_id&quot;:&quot;D26F:2057:1147E4:19ED28:5DC6A4DE&quot;,&quot;originating_url&quot;:&quot;https://github.com/torokoid/home/blob/master/js&quot;,&quot;referrer&quot;:null,&quot;user_id&quot;:39209977}}"
+    data-hydro-click-hmac="bbe8e644430403553774be55763c46034b79e75ffb8a562ca39a1bdd52ee37c7"
+  >
+    Feature preview
+  </button>
+    <span class="feature-preview-indicator js-feature-preview-indicator" hidden></span>
+</div>
+
+    <a role="menuitem" class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">Help</a>
+    <a role="menuitem" class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">Settings</a>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="5A8E4Gtdn5618T9PPOr5Kfp6X+cKE2IKxW2wBWx6cc1zHMAmjoEJrF67FE8Yxxn5FHEcRGvj3lw98vACR845+w==" />
+      
+      <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" role="menuitem">
+        Sign out
+      </button>
+</form>  </details-menu>
+</details>
+
+    </div>
+
+  </header>
+
+      
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+
+    <div id="js-flash-container">
+
+</div>
+
+
+
+  <div class="application-main " data-commit-hovercards-enabled>
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <main  >
+      
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav pt-0 pt-lg-4 ">
+    <div class="repohead-details-container clearfix container-lg p-responsive d-none d-lg-block">
+
+      <ul class="pagehead-actions">
+
+
+
+
+  <li>
+    
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="clearfix js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="tU/+cZSHdmGLfyd85HW/rYfc8sN5R0t+U2FJVw55HmmRpov44/Vjv43InWBgDt/ycozThs2qnqwZDNwX+lqpTg==" />      <input type="hidden" name="repository_id" value="184358981">
+
+      <details class="details-reset details-overlay select-menu float-left">
+        <summary class="select-menu-button float-left btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;repository_id&quot;:184358981,&quot;client_id&quot;:&quot;2000096497.1543134571&quot;,&quot;originating_request_id&quot;:&quot;D26F:2057:1147E4:19ED28:5DC6A4DE&quot;,&quot;originating_url&quot;:&quot;https://github.com/torokoid/home/blob/master/js&quot;,&quot;referrer&quot;:null,&quot;user_id&quot;:39209977}}" data-hydro-click-hmac="18aeab98e733bfc08b666028e7c8ead327d6e083361ca26197272e6044a17cf0" data-ga-click="Repository, click Watch settings, action:blob#show">          <span data-menu-button>
+              <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+              Watch
+          </span>
+</summary>        <details-menu
+          class="select-menu-modal position-absolute mt-5"
+          style="z-index: 99;">
+          <div class="select-menu-header">
+            <span class="select-menu-title">Notifications</span>
+          </div>
+          <div class="select-menu-list">
+            <button type="submit" name="do" value="included" class="select-menu-item width-full" aria-checked="true" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Not watching</span>
+                <span class="description">Be notified only when participating or @mentioned.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents>
+                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                  Watch
+                </span>
+              </div>
+            </button>
+
+            <button type="submit" name="do" value="release_only" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Releases only</span>
+                <span class="description">Be notified of new releases, and when participating or @mentioned.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents>
+                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                  Unwatch releases
+                </span>
+              </div>
+            </button>
+
+            <button type="submit" name="do" value="subscribed" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Watching</span>
+                <span class="description">Be notified of all conversations.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents>
+                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                  Unwatch
+                </span>
+              </div>
+            </button>
+
+            <button type="submit" name="do" value="ignore" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Ignoring</span>
+                <span class="description">Never be notified.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents>
+                  <svg class="octicon octicon-mute v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 2.81v10.38c0 .67-.81 1-1.28.53L3 10H1c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h2l3.72-3.72C7.19 1.81 8 2.14 8 2.81zm7.53 3.22l-1.06-1.06-1.97 1.97-1.97-1.97-1.06 1.06L11.44 8 9.47 9.97l1.06 1.06 1.97-1.97 1.97 1.97 1.06-1.06L13.56 8l1.97-1.97z"/></svg>
+                  Stop ignoring
+                </span>
+              </div>
+            </button>
+          </div>
+        </details-menu>
+      </details>
+        <a class="social-count js-social-count"
+          href="/torokoid/home/watchers"
+          aria-label="0 users are watching this repository">
+          0
+        </a>
+</form>
+  </li>
+
+  <li>
+      <div class="js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/torokoid/home/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="M8LTngjfbIs2E/P0gaBvJ4j8ZSii3YJHbZx3X9JNJw2fE+/HR8VeFRml7oh0oxUWxxFZGUtDCM0TkBQlfyT8DQ==" />
+      <input type="hidden" name="context" value="repository"></input>
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar torokoid/home" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:184358981,&quot;client_id&quot;:&quot;2000096497.1543134571&quot;,&quot;originating_request_id&quot;:&quot;D26F:2057:1147E4:19ED28:5DC6A4DE&quot;,&quot;originating_url&quot;:&quot;https://github.com/torokoid/home/blob/master/js&quot;,&quot;referrer&quot;:null,&quot;user_id&quot;:39209977}}" data-hydro-click-hmac="3896abfc827c3c3255f1c14491f2aa95e401e56acd09309f2a7f265b0add563f" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+        Unstar
+</button>        <a class="social-count js-social-count" href="/torokoid/home/stargazers"
+           aria-label="0 users starred this repository">
+           0
+        </a>
+</form>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/torokoid/home/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="LqPGWskSKOkusVlaMmh32Cs7TmDoDJ6nYVY0+VbK1ylnOMMiTpLjn+d5szSEkK5hyH1SSxOSW4VA7XZwmdUViQ==" />
+      <input type="hidden" name="context" value="repository"></input>
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Star torokoid/home" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:184358981,&quot;client_id&quot;:&quot;2000096497.1543134571&quot;,&quot;originating_request_id&quot;:&quot;D26F:2057:1147E4:19ED28:5DC6A4DE&quot;,&quot;originating_url&quot;:&quot;https://github.com/torokoid/home/blob/master/js&quot;,&quot;referrer&quot;:null,&quot;user_id&quot;:39209977}}" data-hydro-click-hmac="b542264cd5f36760b9ea9df30eee0da33861ba985a45fe8c09192b390c4c87ae" data-ga-click="Repository, click star button, action:blob#show; text:Star">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+        Star
+</button>        <a class="social-count js-social-count" href="/torokoid/home/stargazers"
+           aria-label="0 users starred this repository">
+          0
+        </a>
+</form>  </div>
+
+  </li>
+
+  <li>
+        <span class="btn btn-sm btn-with-count disabled tooltipped tooltipped-sw" aria-label="Cannot fork because you own this repository and are not a member of any organizations.">
+          <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          Fork
+</span>
+    <a href="/torokoid/home/network/members" class="social-count"
+       aria-label="0 users forked this repository">
+      0
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+    <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a class="url fn" rel="author" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=39209977" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/torokoid">torokoid</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a data-pjax="#js-repo-pjax-container" href="/torokoid/home">home</a></strong>
+  
+
+</h1>
+
+    </div>
+    
+<nav class="hx_reponav reponav js-repo-nav js-sidenav-container-pjax container-lg p-responsive d-none d-lg-block"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+    aria-label="Repository"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a class="js-selected-navigation-item selected reponav-item" itemprop="url" data-hotkey="g c" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /torokoid/home" href="/torokoid/home">
+      <svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a itemprop="url" data-hotkey="g i" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /torokoid/home/issues" href="/torokoid/home/issues">
+        <svg class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">0</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a data-hotkey="g p" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /torokoid/home/pulls" href="/torokoid/home/pulls">
+      <svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">0</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+
+    <a data-hotkey="g b" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /torokoid/home/projects" href="/torokoid/home/projects">
+      <svg class="octicon octicon-project" viewBox="0 0 15 16" version="1.1" width="15" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      Projects
+      <span class="Counter" >0</span>
+</a>
+
+    <a class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /torokoid/home/wiki" href="/torokoid/home/wiki">
+      <svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
+      Wiki
+</a>
+    <a data-skip-pjax="true" class="js-selected-navigation-item reponav-item" data-selected-links="security alerts policy code_scanning /torokoid/home/network/alerts" href="/torokoid/home/network/alerts">
+      <svg class="octicon octicon-shield" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 2l7-2 7 2v6.02C14 12.69 8.69 16 7 16c-1.69 0-7-3.31-7-7.98V2zm1 .75L7 1l6 1.75v5.268C13 12.104 8.449 15 7 15c-1.449 0-6-2.896-6-6.982V2.75zm1 .75L7 2v12c-1.207 0-5-2.482-5-5.985V3.5z"/></svg>
+      Security
+</a>
+    <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse people /torokoid/home/pulse" href="/torokoid/home/pulse">
+      <svg class="octicon octicon-graph" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+      Insights
+</a>
+    <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_settings repo_branch_settings hooks integration_installations repo_keys_settings issue_template_editor secrets_settings key_links_settings /torokoid/home/settings" href="/torokoid/home/settings">
+      <svg class="octicon octicon-gear" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 8.77v-1.6l-1.94-.64-.45-1.09.88-1.84-1.13-1.13-1.81.91-1.09-.45-.69-1.92h-1.6l-.63 1.94-1.11.45-1.84-.88-1.13 1.13.91 1.81-.45 1.09L0 7.23v1.59l1.94.64.45 1.09-.88 1.84 1.13 1.13 1.81-.91 1.09.45.69 1.92h1.59l.63-1.94 1.11-.45 1.84.88 1.13-1.13-.92-1.81.47-1.09L14 8.75v.02zM7 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/></svg>
+      Settings
+</a>
+</nav>
+
+  <div class="reponav-wrapper reponav-small d-lg-none">
+  <nav class="reponav js-reponav text-center no-wrap"
+       itemscope
+       itemtype="http://schema.org/BreadcrumbList">
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a class="js-selected-navigation-item selected reponav-item" itemprop="url" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /torokoid/home" href="/torokoid/home">
+        <span itemprop="name">Code</span>
+        <meta itemprop="position" content="1">
+</a>    </span>
+
+      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /torokoid/home/issues" href="/torokoid/home/issues">
+          <span itemprop="name">Issues</span>
+          <span class="Counter">0</span>
+          <meta itemprop="position" content="2">
+</a>      </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /torokoid/home/pulls" href="/torokoid/home/pulls">
+        <span itemprop="name">Pull requests</span>
+        <span class="Counter">0</span>
+        <meta itemprop="position" content="3">
+</a>    </span>
+
+      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /torokoid/home/projects" href="/torokoid/home/projects">
+          <span itemprop="name">Projects</span>
+          <span class="Counter">0</span>
+          <meta itemprop="position" content="4">
+</a>      </span>
+
+      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_wiki /torokoid/home/wiki" href="/torokoid/home/wiki">
+          <span itemprop="name">Wiki</span>
+          <meta itemprop="position" content="5">
+</a>      </span>
+
+      <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="security alerts policy code_scanning /torokoid/home/network/alerts" href="/torokoid/home/network/alerts">
+        <span itemprop="name">Security</span>
+        <meta itemprop="position" content="6">
+</a>
+      <a class="js-selected-navigation-item reponav-item" data-selected-links="pulse /torokoid/home/pulse" href="/torokoid/home/pulse">
+        Pulse
+</a>
+      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="community /torokoid/home/community" href="/torokoid/home/community">
+          Community
+</a>      </span>
+
+  </nav>
+</div>
+
+
+  </div>
+<div class="container-lg clearfix new-discussion-timeline experiment-repo-nav  p-responsive">
+  <div class="repository-content ">
+
+    
+    
+
+
+  
+
+
+    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/torokoid/home/blob/c994d2df9761192e9b65d08f810944e83be6ce2a/js">Permalink</a>
+
+    <!-- blob contrib key: blob_contributors:v21:1017b3c2aca7660dbf9484351432cbf2 -->
+      
+
+    <div class="d-flex flex-items-start flex-shrink-0 pb-3 flex-column flex-md-row">
+      <span class="d-flex flex-justify-between width-full width-md-auto">
+        
+<details class="details-reset details-overlay select-menu branch-select-menu  hx_rsm" id="branch-select-menu">
+  <summary class="btn btn-sm select-menu-button css-truncate"
+           data-hotkey="w"
+           title="Switch branches or tags">
+    <i>Branch:</i>
+    <span class="css-truncate-target" data-menu-button>master</span>
+  </summary>
+
+  <details-menu class="select-menu-modal hx_rsm-modal position-absolute" style="z-index: 99;" src="/torokoid/home/ref-list/master/js?source_action=show&amp;source_controller=blob" preload>
+    <include-fragment class="select-menu-loading-overlay anim-pulse">
+      <svg height="32" class="octicon octicon-octoface" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M14.7 5.34c.13-.32.55-1.59-.13-3.31 0 0-1.05-.33-3.44 1.3-1-.28-2.07-.32-3.13-.32s-2.13.04-3.13.32c-2.39-1.64-3.44-1.3-3.44-1.3-.68 1.72-.26 2.99-.13 3.31C.49 6.21 0 7.33 0 8.69 0 13.84 3.33 15 7.98 15S16 13.84 16 8.69c0-1.36-.49-2.48-1.3-3.35zM8 14.02c-3.3 0-5.98-.15-5.98-3.35 0-.76.38-1.48 1.02-2.07 1.07-.98 2.9-.46 4.96-.46 2.07 0 3.88-.52 4.96.46.65.59 1.02 1.3 1.02 2.07 0 3.19-2.68 3.35-5.98 3.35zM5.49 9.01c-.66 0-1.2.8-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.54-1.78-1.2-1.78zm5.02 0c-.66 0-1.2.79-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.53-1.78-1.2-1.78z"/></svg>
+    </include-fragment>
+  </details-menu>
+</details>
+
+        <div class="BtnGroup flex-shrink-0 d-md-none">
+          <a href="/torokoid/home/find/master"
+                class="js-pjax-capture-input btn btn-sm BtnGroup-item"
+                data-pjax
+                data-hotkey="t">
+            Find file
+          </a>
+          <clipboard-copy value="js" class="btn btn-sm BtnGroup-item">
+            Copy path
+          </clipboard-copy>
+        </div>
+      </span>
+      <h2 id="blob-path" class="breadcrumb flex-auto min-width-0 text-normal flex-md-self-center ml-md-2 mr-md-3 my-2 my-md-0">
+        <span class="js-repo-root text-bold"><span class="js-path-segment"><a data-pjax="true" href="/torokoid/home"><span>home</span></a></span></span><span class="separator">/</span><strong class="final-path">js</strong>
+      </h2>
+
+      <div class="BtnGroup flex-shrink-0 d-none d-md-inline-block">
+        <a href="/torokoid/home/find/master"
+              class="js-pjax-capture-input btn btn-sm BtnGroup-item"
+              data-pjax
+              data-hotkey="t">
+          Find file
+        </a>
+        <clipboard-copy value="js" class="btn btn-sm BtnGroup-item">
+          Copy path
+        </clipboard-copy>
+      </div>
+    </div>
+
+
+
+    <include-fragment src="/torokoid/home/contributors/master/js" class="Box Box--condensed commit-loader">
+      <div class="Box-body bg-blue-light f6">
+        Fetching contributors&hellip;
+      </div>
+
+      <div class="Box-body d-flex flex-items-center" >
+          <img alt="" class="loader-loading mr-2" src="https://github.githubassets.com/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" height="16" />
+        <span class="text-red h6 loader-error">Cannot retrieve contributors at this time</span>
+      </div>
+</include-fragment>
+
+
+
+
+    <div class="Box mt-3 position-relative">
+      
+<div class="Box-header py-2 d-flex flex-column flex-shrink-0 flex-md-row flex-md-items-center">
+  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
+
+      168 lines (147 sloc)
+      <span class="file-info-divider"></span>
+    62.7 KB
+  </div>
+
+  <div class="d-flex py-1 py-md-0 flex-auto flex-order-1 flex-md-order-2 flex-sm-grow-0 flex-justify-between">
+
+    <div class="BtnGroup">
+      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/torokoid/home/raw/master/js">Raw</a>
+        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/torokoid/home/blame/master/js">Blame</a>
+      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/torokoid/home/commits/master/js">History</a>
+    </div>
+
+
+    <div>
+            <a class="btn-octicon tooltipped tooltipped-nw"
+               href="x-github-client://openRepo/https://github.com/torokoid/home?branch=master&amp;filepath=js"
+               aria-label="Open this file in GitHub Desktop"
+               data-ga-click="Repository, open with desktop, type:mac">
+                <svg class="octicon octicon-device-desktop" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
+            </a>
+
+            <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/torokoid/home/edit/master/js" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="LXGtMDlzUrsMLxqyeYTWrGwWnHMJg1xzPi2vrTeu6lEg9Pq4F9UHdUxYg7gHxU/gBoljHooUGBMzWPsWn2UIYQ==" />
+              <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
+                aria-label="Edit this file" data-hotkey="e" data-disable-with>
+                <svg class="octicon octicon-pencil" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 011.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
+              </button>
+</form>
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/torokoid/home/delete/master/js" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="G6sg63hDdyV1MdgUS6/kOZLrCTRADNL5By3je0GO+Rwjz9epkeAvMxza2yQW6MIlfWpxYdVMrAxsz0ED0l9CqQ==" />
+            <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
+              aria-label="Delete this file" data-disable-with>
+              <svg class="octicon octicon-trashcan" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
+            </button>
+</form>    </div>
+  </div>
+</div>
+
+
+
+
+      
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-text ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="LC1" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="LC2" class="blob-code blob-code-inner js-file-line">// Copyright 2012 Google Inc. All rights reserved.</td>
+      </tr>
+      <tr>
+        <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="LC3" class="blob-code blob-code-inner js-file-line">(function(){</td>
+      </tr>
+      <tr>
+        <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="LC4" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="LC5" class="blob-code blob-code-inner js-file-line">var data = {</td>
+      </tr>
+      <tr>
+        <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="LC6" class="blob-code blob-code-inner js-file-line">&quot;resource&quot;: {</td>
+      </tr>
+      <tr>
+        <td id="L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="LC7" class="blob-code blob-code-inner js-file-line">  &quot;version&quot;:&quot;1&quot;,</td>
+      </tr>
+      <tr>
+        <td id="L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="LC8" class="blob-code blob-code-inner js-file-line">  &quot;macros&quot;:[],</td>
+      </tr>
+      <tr>
+        <td id="L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="LC9" class="blob-code blob-code-inner js-file-line">  &quot;tags&quot;:[],</td>
+      </tr>
+      <tr>
+        <td id="L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="LC10" class="blob-code blob-code-inner js-file-line">  &quot;predicates&quot;:[],</td>
+      </tr>
+      <tr>
+        <td id="L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="LC11" class="blob-code blob-code-inner js-file-line">  &quot;rules&quot;:[]</td>
+      </tr>
+      <tr>
+        <td id="L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="LC12" class="blob-code blob-code-inner js-file-line">},</td>
+      </tr>
+      <tr>
+        <td id="L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="LC13" class="blob-code blob-code-inner js-file-line">&quot;runtime&quot;:[</td>
+      </tr>
+      <tr>
+        <td id="L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="LC14" class="blob-code blob-code-inner js-file-line">[],[]</td>
+      </tr>
+      <tr>
+        <td id="L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="LC15" class="blob-code blob-code-inner js-file-line">]</td>
+      </tr>
+      <tr>
+        <td id="L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="LC16" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="LC17" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="LC18" class="blob-code blob-code-inner js-file-line">};</td>
+      </tr>
+      <tr>
+        <td id="L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="LC19" class="blob-code blob-code-inner js-file-line">var aa,ca=this,da=/^[\w+/_-]+[=]{0,2}$/,ea=null;var fa=function(){},ha=function(a){return&quot;function&quot;==typeof a},ia=function(a){return&quot;string&quot;==typeof a},ja=function(a){return&quot;number&quot;==typeof a&amp;&amp;!isNaN(a)},ka=function(a){return&quot;[object Array]&quot;==Object.prototype.toString.call(Object(a))},la=function(a,b){if(Array.prototype.indexOf){var c=a.indexOf(b);return&quot;number&quot;==typeof c?c:-1}for(var d=0;d&lt;a.length;d++)if(a[d]===b)return d;return-1},ma=function(a,b){if(a&amp;&amp;ka(a))for(var c=0;c&lt;a.length;c++)if(a[c]&amp;&amp;b(a[c]))return a[c]},oa=function(a,b){if(!ja(a)||</td>
+      </tr>
+      <tr>
+        <td id="L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="LC20" class="blob-code blob-code-inner js-file-line">!ja(b)||a&gt;b)a=0,b=2147483647;return Math.floor(Math.random()*(b-a+1)+a)},pa=function(a,b){for(var c in a)Object.prototype.hasOwnProperty.call(a,c)&amp;&amp;b(c,a[c])},qa=function(a){return Math.round(Number(a))||0},ra=function(a){return&quot;false&quot;==String(a).toLowerCase()?!1:!!a},sa=function(a){var b=[];if(ka(a))for(var c=0;c&lt;a.length;c++)b.push(String(a[c]));return b},ta=function(a){return a?a.replace(/^\s+|\s+$/g,&quot;&quot;):&quot;&quot;},ua=function(){return(new Date).getTime()},va=function(){this.prefix=&quot;gtm.&quot;;this.values=</td>
+      </tr>
+      <tr>
+        <td id="L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="LC21" class="blob-code blob-code-inner js-file-line">{}};va.prototype.set=function(a,b){this.values[this.prefix+a]=b};va.prototype.get=function(a){return this.values[this.prefix+a]};va.prototype.contains=function(a){return void 0!==this.get(a)};</td>
+      </tr>
+      <tr>
+        <td id="L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="LC22" class="blob-code blob-code-inner js-file-line">var wa=function(a,b,c){return a&amp;&amp;a.hasOwnProperty(b)?a[b]:c},xa=function(a){var b=!1;return function(){if(!b)try{a()}catch(c){}b=!0}},ya=function(a,b){for(var c in b)b.hasOwnProperty(c)&amp;&amp;(a[c]=b[c])},za=function(a){for(var b in a)if(a.hasOwnProperty(b))return!0;return!1},Aa=function(a,b){for(var c=[],d=0;d&lt;a.length;d++)c.push(a[d]),c.push.apply(c,b[a[d]]||[]);return c};/*</td>
+      </tr>
+      <tr>
+        <td id="L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="LC23" class="blob-code blob-code-inner js-file-line"> jQuery v1.9.1 (c) 2005, 2012 jQuery Foundation, Inc. jquery.org/license. */</td>
+      </tr>
+      <tr>
+        <td id="L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="LC24" class="blob-code blob-code-inner js-file-line">var Ba=/\[object (Boolean|Number|String|Function|Array|Date|RegExp)\]/,Ca=function(a){if(null==a)return String(a);var b=Ba.exec(Object.prototype.toString.call(Object(a)));return b?b[1].toLowerCase():&quot;object&quot;},Da=function(a,b){return Object.prototype.hasOwnProperty.call(Object(a),b)},Ea=function(a){if(!a||&quot;object&quot;!=Ca(a)||a.nodeType||a==a.window)return!1;try{if(a.constructor&amp;&amp;!Da(a,&quot;constructor&quot;)&amp;&amp;!Da(a.constructor.prototype,&quot;isPrototypeOf&quot;))return!1}catch(c){return!1}for(var b in a);return void 0===</td>
+      </tr>
+      <tr>
+        <td id="L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="LC25" class="blob-code blob-code-inner js-file-line">b||Da(a,b)},Fa=function(a,b){var c=b||(&quot;array&quot;==Ca(a)?[]:{}),d;for(d in a)if(Da(a,d)){var e=a[d];&quot;array&quot;==Ca(e)?(&quot;array&quot;!=Ca(c[d])&amp;&amp;(c[d]=[]),c[d]=Fa(e,c[d])):Ea(e)?(Ea(c[d])||(c[d]={}),c[d]=Fa(e,c[d])):c[d]=e}return c};var f=window,u=document,Ga=navigator,Ha=u.currentScript&amp;&amp;u.currentScript.src,Ia=function(a,b){var c=f[a];f[a]=void 0===c?b:c;return f[a]},Ja=function(a,b){b&amp;&amp;(a.addEventListener?a.onload=b:a.onreadystatechange=function(){a.readyState in{loaded:1,complete:1}&amp;&amp;(a.onreadystatechange=null,b())})},Ka=function(a,b,c){var d=u.createElement(&quot;script&quot;);d.type=&quot;text/javascript&quot;;d.async=!0;d.src=a;Ja(d,b);c&amp;&amp;(d.onerror=c);var e;if(null===ea)b:{var g=ca.document,h=g.querySelector&amp;&amp;g.querySelector(&quot;script[nonce]&quot;);</td>
+      </tr>
+      <tr>
+        <td id="L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="LC26" class="blob-code blob-code-inner js-file-line">if(h){var k=h.nonce||h.getAttribute(&quot;nonce&quot;);if(k&amp;&amp;da.test(k)){ea=k;break b}}ea=&quot;&quot;}e=ea;e&amp;&amp;d.setAttribute(&quot;nonce&quot;,e);var l=u.getElementsByTagName(&quot;script&quot;)[0]||u.body||u.head;l.parentNode.insertBefore(d,l);return d},La=function(){if(Ha){var a=Ha.toLowerCase();if(0===a.indexOf(&quot;https://&quot;))return 2;if(0===a.indexOf(&quot;http://&quot;))return 3}return 1},Ma=function(a,b){var c=u.createElement(&quot;iframe&quot;);c.height=&quot;0&quot;;c.width=&quot;0&quot;;c.style.display=&quot;none&quot;;c.style.visibility=&quot;hidden&quot;;var d=u.body&amp;&amp;u.body.lastChild||</td>
+      </tr>
+      <tr>
+        <td id="L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="LC27" class="blob-code blob-code-inner js-file-line">u.body||u.head;d.parentNode.insertBefore(c,d);Ja(c,b);void 0!==a&amp;&amp;(c.src=a);return c},Na=function(a,b,c){var d=new Image(1,1);d.onload=function(){d.onload=null;b&amp;&amp;b()};d.onerror=function(){d.onerror=null;c&amp;&amp;c()};d.src=a;return d},Oa=function(a,b,c,d){a.addEventListener?a.addEventListener(b,c,!!d):a.attachEvent&amp;&amp;a.attachEvent(&quot;on&quot;+b,c)},Pa=function(a,b,c){a.removeEventListener?a.removeEventListener(b,c,!1):a.detachEvent&amp;&amp;a.detachEvent(&quot;on&quot;+b,c)},z=function(a){f.setTimeout(a,0)},Ra=function(a){var b=</td>
+      </tr>
+      <tr>
+        <td id="L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td id="LC28" class="blob-code blob-code-inner js-file-line">u.getElementById(a);if(b&amp;&amp;Qa(b,&quot;id&quot;)!=a)for(var c=1;c&lt;document.all[a].length;c++)if(Qa(document.all[a][c],&quot;id&quot;)==a)return document.all[a][c];return b},Qa=function(a,b){return a&amp;&amp;b&amp;&amp;a.attributes&amp;&amp;a.attributes[b]?a.attributes[b].value:null},Sa=function(a){var b=a.innerText||a.textContent||&quot;&quot;;b&amp;&amp;&quot; &quot;!=b&amp;&amp;(b=b.replace(/^[\s\xa0]+|[\s\xa0]+$/g,&quot;&quot;));b&amp;&amp;(b=b.replace(/(\xa0+|\s{2,}|\n|\r\t)/g,&quot; &quot;));return b},Ta=function(a){var b=u.createElement(&quot;div&quot;);b.innerHTML=&quot;A&lt;div&gt;&quot;+a+&quot;&lt;/div&gt;&quot;;b=b.lastChild;for(var c=</td>
+      </tr>
+      <tr>
+        <td id="L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td id="LC29" class="blob-code blob-code-inner js-file-line">[];b.firstChild;)c.push(b.removeChild(b.firstChild));return c},Ua=function(a,b,c){c=c||100;for(var d={},e=0;e&lt;b.length;e++)d[b[e]]=!0;for(var g=a,h=0;g&amp;&amp;h&lt;=c;h++){if(d[String(g.tagName).toLowerCase()])return g;g=g.parentElement}return null};var Va=/^(?:(?:https?|mailto|ftp):|[^:/?#]*(?:[/?#]|$))/i;var Xa=/:[0-9]+$/,Ya=function(a,b,c){for(var d=a.split(&quot;&amp;&quot;),e=0;e&lt;d.length;e++){var g=d[e].split(&quot;=&quot;);if(decodeURIComponent(g[0]).replace(/\+/g,&quot; &quot;)===b){var h=g.slice(1).join(&quot;=&quot;);return c?h:decodeURIComponent(h).replace(/\+/g,&quot; &quot;)}}},ab=function(a,b,c,d,e){b&amp;&amp;(b=String(b).toLowerCase());if(&quot;protocol&quot;===b||&quot;port&quot;===b)a.protocol=Za(a.protocol)||Za(f.location.protocol);&quot;port&quot;===b?a.port=String(Number(a.hostname?a.port:f.location.port)||(&quot;http&quot;==a.protocol?80:&quot;https&quot;==a.protocol?443:&quot;&quot;)):&quot;host&quot;===b&amp;&amp;</td>
+      </tr>
+      <tr>
+        <td id="L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td id="LC30" class="blob-code blob-code-inner js-file-line">(a.hostname=(a.hostname||f.location.hostname).replace(Xa,&quot;&quot;).toLowerCase());var g=b,h,k=Za(a.protocol);g&amp;&amp;(g=String(g).toLowerCase());switch(g){case &quot;url_no_fragment&quot;:h=$a(a);break;case &quot;protocol&quot;:h=k;break;case &quot;host&quot;:h=a.hostname.replace(Xa,&quot;&quot;).toLowerCase();if(c){var l=/^www\d*\./.exec(h);l&amp;&amp;l[0]&amp;&amp;(h=h.substr(l[0].length))}break;case &quot;port&quot;:h=String(Number(a.port)||(&quot;http&quot;==k?80:&quot;https&quot;==k?443:&quot;&quot;));break;case &quot;path&quot;:h=&quot;/&quot;==a.pathname.substr(0,1)?a.pathname:&quot;/&quot;+a.pathname;var m=h.split(&quot;/&quot;);0&lt;=</td>
+      </tr>
+      <tr>
+        <td id="L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td id="LC31" class="blob-code blob-code-inner js-file-line">la(d||[],m[m.length-1])&amp;&amp;(m[m.length-1]=&quot;&quot;);h=m.join(&quot;/&quot;);break;case &quot;query&quot;:h=a.search.replace(&quot;?&quot;,&quot;&quot;);e&amp;&amp;(h=Ya(h,e,void 0));break;case &quot;extension&quot;:var n=a.pathname.split(&quot;.&quot;);h=1&lt;n.length?n[n.length-1]:&quot;&quot;;h=h.split(&quot;/&quot;)[0];break;case &quot;fragment&quot;:h=a.hash.replace(&quot;#&quot;,&quot;&quot;);break;default:h=a&amp;&amp;a.href}return h},Za=function(a){return a?a.replace(&quot;:&quot;,&quot;&quot;).toLowerCase():&quot;&quot;},$a=function(a){var b=&quot;&quot;;if(a&amp;&amp;a.href){var c=a.href.indexOf(&quot;#&quot;);b=0&gt;c?a.href:a.href.substr(0,c)}return b},bb=function(a){var b=u.createElement(&quot;a&quot;);</td>
+      </tr>
+      <tr>
+        <td id="L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td id="LC32" class="blob-code blob-code-inner js-file-line">a&amp;&amp;(b.href=a);var c=b.pathname;&quot;/&quot;!==c[0]&amp;&amp;(c=&quot;/&quot;+c);var d=b.hostname.replace(Xa,&quot;&quot;);return{href:b.href,protocol:b.protocol,host:b.host,hostname:d,pathname:c,search:b.search,hash:b.hash,port:b.port}};var cb=function(a,b,c){for(var d=[],e=String(b||document.cookie).split(&quot;;&quot;),g=0;g&lt;e.length;g++){var h=e[g].split(&quot;=&quot;),k=h[0].replace(/^\s*|\s*$/g,&quot;&quot;);if(k&amp;&amp;k==a){var l=h.slice(1).join(&quot;=&quot;).replace(/^\s*|\s*$/g,&quot;&quot;);l&amp;&amp;c&amp;&amp;(l=decodeURIComponent(l));d.push(l)}}return d},fb=function(a,b,c,d){var e=db(a,d);if(1===e.length)return e[0].id;if(0!==e.length){e=eb(e,function(g){return g.yb},b);if(1===e.length)return e[0].id;e=eb(e,function(g){return g.Sa},c);return e[0]?e[0].id:void 0}};</td>
+      </tr>
+      <tr>
+        <td id="L33" class="blob-num js-line-number" data-line-number="33"></td>
+        <td id="LC33" class="blob-code blob-code-inner js-file-line">function hb(a,b,c){var d=document.cookie;document.cookie=a;var e=document.cookie;return d!=e||void 0!=c&amp;&amp;0&lt;=cb(b,e).indexOf(c)}</td>
+      </tr>
+      <tr>
+        <td id="L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td id="LC34" class="blob-code blob-code-inner js-file-line">var kb=function(a,b,c,d,e,g){d=d||&quot;auto&quot;;var h={path:c||&quot;/&quot;};e&amp;&amp;(h.expires=e);&quot;none&quot;!==d&amp;&amp;(h.domain=d);var k;a:{var l=b,m;if(void 0==l)m=a+&quot;=deleted; expires=&quot;+(new Date(0)).toUTCString();else{g&amp;&amp;(l=encodeURIComponent(l));var n=l;n&amp;&amp;1200&lt;n.length&amp;&amp;(n=n.substring(0,1200));l=n;m=a+&quot;=&quot;+l}var p=void 0,t=void 0,q;for(q in h)if(h.hasOwnProperty(q)){var r=h[q];if(null!=r)switch(q){case &quot;secure&quot;:r&amp;&amp;(m+=&quot;; secure&quot;);break;case &quot;domain&quot;:p=r;break;default:&quot;path&quot;==q&amp;&amp;(t=r),&quot;expires&quot;==q&amp;&amp;r instanceof Date&amp;&amp;(r=</td>
+      </tr>
+      <tr>
+        <td id="L35" class="blob-num js-line-number" data-line-number="35"></td>
+        <td id="LC35" class="blob-code blob-code-inner js-file-line">r.toUTCString()),m+=&quot;; &quot;+q+&quot;=&quot;+r}}if(&quot;auto&quot;===p){for(var v=ib(),x=0;x&lt;v.length;++x){var y=&quot;none&quot;!=v[x]?v[x]:void 0;if(!jb(y,t)&amp;&amp;hb(m+(y?&quot;; domain=&quot;+y:&quot;&quot;),a,l)){k=!0;break a}}k=!1}else p&amp;&amp;&quot;none&quot;!=p&amp;&amp;(m+=&quot;; domain=&quot;+p),k=!jb(p,t)&amp;&amp;hb(m,a,l)}return k};function eb(a,b,c){for(var d=[],e=[],g,h=0;h&lt;a.length;h++){var k=a[h],l=b(k);l===c?d.push(k):void 0===g||l&lt;g?(e=[k],g=l):l===g&amp;&amp;e.push(k)}return 0&lt;d.length?d:e}</td>
+      </tr>
+      <tr>
+        <td id="L36" class="blob-num js-line-number" data-line-number="36"></td>
+        <td id="LC36" class="blob-code blob-code-inner js-file-line">function db(a,b){for(var c=[],d=cb(a),e=0;e&lt;d.length;e++){var g=d[e].split(&quot;.&quot;),h=g.shift();if(!b||-1!==b.indexOf(h)){var k=g.shift();k&amp;&amp;(k=k.split(&quot;-&quot;),c.push({id:g.join(&quot;.&quot;),yb:1*k[0]||1,Sa:1*k[1]||1}))}}return c}</td>
+      </tr>
+      <tr>
+        <td id="L37" class="blob-num js-line-number" data-line-number="37"></td>
+        <td id="LC37" class="blob-code blob-code-inner js-file-line">var lb=/^(www\.)?google(\.com?)?(\.[a-z]{2})?$/,mb=/(^|\.)doubleclick\.net$/i,jb=function(a,b){return mb.test(document.location.hostname)||&quot;/&quot;===b&amp;&amp;lb.test(a)},ib=function(){var a=[],b=document.location.hostname.split(&quot;.&quot;);if(4===b.length){var c=b[b.length-1];if(parseInt(c,10).toString()===c)return[&quot;none&quot;]}for(var d=b.length-2;0&lt;=d;d--)a.push(b.slice(d).join(&quot;.&quot;));a.push(&quot;none&quot;);return a};var Kb=[],Lb=[],Mb=[],Nb=[],Ob=[],Pb={},Qb,Rb,Sb,Tb=function(a,b){var c={};c[&quot;function&quot;]=&quot;__&quot;+a;for(var d in b)b.hasOwnProperty(d)&amp;&amp;(c[&quot;vtp_&quot;+d]=b[d]);return c},Ub=function(a){var b=a[&quot;function&quot;];if(!b)throw Error(&quot;Error: No function name given for function call.&quot;);var c=!!Pb[b],d={},e;for(e in a)a.hasOwnProperty(e)&amp;&amp;0===e.indexOf(&quot;vtp_&quot;)&amp;&amp;(d[c?e:e.substr(4)]=a[e]);return c?Pb[b](d):(void 0)(b,d)},Wb=function(a,b,c,d){c=c||[];d=d||fa;var e={},g;for(g in a)a.hasOwnProperty(g)&amp;&amp;(e[g]=Vb(a[g],b,c,d));</td>
+      </tr>
+      <tr>
+        <td id="L38" class="blob-num js-line-number" data-line-number="38"></td>
+        <td id="LC38" class="blob-code blob-code-inner js-file-line">return e},Xb=function(a){var b=a[&quot;function&quot;];if(!b)throw&quot;Error: No function name given for function call.&quot;;var c=Pb[b];return c?c.priorityOverride||0:0},Vb=function(a,b,c,d){if(ka(a)){var e;switch(a[0]){case &quot;function_id&quot;:return a[1];case &quot;list&quot;:e=[];for(var g=1;g&lt;a.length;g++)e.push(Vb(a[g],b,c,d));return e;case &quot;macro&quot;:var h=a[1];if(c[h])return;var k=Kb[h];if(!k||b(k))return;c[h]=!0;try{var l=Wb(k,b,c,d);e=Ub(l);Sb&amp;&amp;(e=Sb.ff(e,l))}catch(y){d(y,h),e=!1}c[h]=!1;return e;case &quot;map&quot;:e={};for(var m=</td>
+      </tr>
+      <tr>
+        <td id="L39" class="blob-num js-line-number" data-line-number="39"></td>
+        <td id="LC39" class="blob-code blob-code-inner js-file-line">1;m&lt;a.length;m+=2)e[Vb(a[m],b,c,d)]=Vb(a[m+1],b,c,d);return e;case &quot;template&quot;:e=[];for(var n=!1,p=1;p&lt;a.length;p++){var t=Vb(a[p],b,c,d);Rb&amp;&amp;(n=n||t===Rb.ob);e.push(t)}return Rb&amp;&amp;n?Rb.kf(e):e.join(&quot;&quot;);case &quot;escape&quot;:e=Vb(a[1],b,c,d);if(Rb&amp;&amp;ka(a[1])&amp;&amp;&quot;macro&quot;===a[1][0]&amp;&amp;Rb.Nf(a))return Rb.Xf(e);e=String(e);for(var q=2;q&lt;a.length;q++)nb[a[q]]&amp;&amp;(e=nb[a[q]](e));return e;case &quot;tag&quot;:var r=a[1];if(!Nb[r])throw Error(&quot;Unable to resolve tag reference &quot;+r+&quot;.&quot;);return e={wd:a[2],index:r};case &quot;zb&quot;:var v={arg0:a[2],</td>
+      </tr>
+      <tr>
+        <td id="L40" class="blob-num js-line-number" data-line-number="40"></td>
+        <td id="LC40" class="blob-code blob-code-inner js-file-line">arg1:a[3],ignore_case:a[5]};v[&quot;function&quot;]=a[1];var x=Yb(v,b,c,d);a[4]&amp;&amp;(x=!x);return x;default:throw Error(&quot;Attempting to expand unknown Value type: &quot;+a[0]+&quot;.&quot;);}}return a},Yb=function(a,b,c,d){try{return Qb(Wb(a,b,c,d))}catch(e){JSON.stringify(a)}return null};var Zb=function(){var a=function(b){return{toString:function(){return b}}};return{Uc:a(&quot;convert_case_to&quot;),Vc:a(&quot;convert_false_to&quot;),Wc:a(&quot;convert_null_to&quot;),Xc:a(&quot;convert_true_to&quot;),Yc:a(&quot;convert_undefined_to&quot;),ra:a(&quot;function&quot;),ye:a(&quot;instance_name&quot;),ze:a(&quot;live_only&quot;),Ae:a(&quot;malware_disabled&quot;),Bg:a(&quot;original_vendor_template_id&quot;),Be:a(&quot;once_per_event&quot;),md:a(&quot;once_per_load&quot;),nd:a(&quot;setup_tags&quot;),Ce:a(&quot;tag_id&quot;),od:a(&quot;teardown_tags&quot;)}}();var $b=null,cc=function(a,b){function c(t){for(var q=0;q&lt;t.length;q++)e[t[q]]=!0}var d=[],e=[];$b=ac(a,b||function(){});for(var g=0;g&lt;Lb.length;g++){var h=Lb[g],k=bc(h);if(k){for(var l=h.add||[],m=0;m&lt;l.length;m++)d[l[m]]=!0;c(h.block||[])}else null===k&amp;&amp;c(h.block||[])}for(var n=[],p=0;p&lt;Nb.length;p++)d[p]&amp;&amp;!e[p]&amp;&amp;(n[p]=!0);return n},bc=function(a){for(var b=a[&quot;if&quot;]||[],c=0;c&lt;b.length;c++){var d=$b(b[c]);if(!d)return null===d?null:!1}for(var e=a.unless||[],g=0;g&lt;e.length;g++){var h=$b(e[g]);if(null===</td>
+      </tr>
+      <tr>
+        <td id="L41" class="blob-num js-line-number" data-line-number="41"></td>
+        <td id="LC41" class="blob-code blob-code-inner js-file-line">h)return null;if(h)return!1}return!0},ac=function(a,b){var c=[];return function(d){void 0===c[d]&amp;&amp;(c[d]=Yb(Mb[d],a,void 0,b));return c[d]}};/*</td>
+      </tr>
+      <tr>
+        <td id="L42" class="blob-num js-line-number" data-line-number="42"></td>
+        <td id="LC42" class="blob-code blob-code-inner js-file-line"> Copyright (c) 2014 Derek Brans, MIT license https://github.com/krux/postscribe/blob/master/LICENSE. Portions derived from simplehtmlparser, which is licensed under the Apache License, Version 2.0 */</td>
+      </tr>
+      <tr>
+        <td id="L43" class="blob-num js-line-number" data-line-number="43"></td>
+        <td id="LC43" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L44" class="blob-num js-line-number" data-line-number="44"></td>
+        <td id="LC44" class="blob-code blob-code-inner js-file-line">var rc={},sc=null,tc=Math.random();rc.m=&quot;UA-10603270-10&quot;;rc.sb=&quot;430&quot;;var uc=&quot;www.googletagmanager.com/gtm.js&quot;;uc=&quot;www.googletagmanager.com/gtag/js&quot;;var vc=uc,wc=null,xc=null,yc=null,zc=&quot;//www.googletagmanager.com/a?id=&quot;+rc.m+&quot;&amp;cv=1&quot;,Ac={},Bc={},Cc=function(){var a=sc.sequence||0;sc.sequence=a+1;return a};var E=function(a,b,c,d){return(2===Dc()||d||&quot;http:&quot;!=f.location.protocol?a:b)+c},Dc=function(){var a=La(),b;if(1===a)a:{var c=vc;c=c.toLowerCase();for(var d=&quot;https://&quot;+c,e=&quot;http://&quot;+c,g=1,h=u.getElementsByTagName(&quot;script&quot;),k=0;k&lt;h.length&amp;&amp;100&gt;k;k++){var l=h[k].src;if(l){l=l.toLowerCase();if(0===l.indexOf(e)){b=3;break a}1===g&amp;&amp;0===l.indexOf(d)&amp;&amp;(g=2)}}b=g}else b=a;return b};var Ec=!1;</td>
+      </tr>
+      <tr>
+        <td id="L45" class="blob-num js-line-number" data-line-number="45"></td>
+        <td id="LC45" class="blob-code blob-code-inner js-file-line">var Fc=function(a,b,c,d){if(c){d=d||{};var e=f._googWcmImpl||function(){e.q=e.q||[];e.q.push(arguments)};f._googWcmImpl=e;void 0===f._googWcmAk&amp;&amp;(f._googWcmAk=a);Ec?d.za&amp;&amp;z(d.za):(Ka(E(&quot;https://&quot;,&quot;http://&quot;,&quot;www.gstatic.com/wcm/loader.js&quot;),d.za,d.Ld),Ec=!0);var g={ak:a,cl:b};void 0===d.Yd&amp;&amp;(g.autoreplace=c);e(2,d.Yd,g,c,0,new Date,d.wg)}};var Ic={},Jc=function(a){Ic.GTM=Ic.GTM||[];Ic.GTM[a]=!0};</td>
+      </tr>
+      <tr>
+        <td id="L46" class="blob-num js-line-number" data-line-number="46"></td>
+        <td id="LC46" class="blob-code blob-code-inner js-file-line">var Kc=function(){return&quot;&amp;tc=&quot;+Nb.filter(function(a){return a}).length},Tc=function(){Lc&amp;&amp;(f.clearTimeout(Lc),Lc=void 0);void 0===Mc||Nc[Mc]&amp;&amp;!Oc||(Pc[Mc]||Qc.Pf()||0&gt;=Rc--?(Jc(1),Pc[Mc]=!0):(Qc.fg(),Na(Sc()),Nc[Mc]=!0,Oc=&quot;&quot;))},Sc=function(){var a=Mc;if(void 0===a)return&quot;&quot;;for(var b,c=[],d=Ic.GTM||[],e=0;e&lt;d.length;e++)d[e]&amp;&amp;(c[Math.floor(e/6)]^=1&lt;&lt;e%6);for(var g=0;g&lt;c.length;g++)c[g]=&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_&quot;.charAt(c[g]||0);b=c.join(&quot;&quot;);return[Uc,Nc[a]?&quot;&quot;:</td>
+      </tr>
+      <tr>
+        <td id="L47" class="blob-num js-line-number" data-line-number="47"></td>
+        <td id="LC47" class="blob-code blob-code-inner js-file-line">&quot;&amp;es=1&quot;,Vc[a],b?&quot;&amp;u=&quot;+b:&quot;&quot;,Kc(),Oc,&quot;&amp;z=0&quot;].join(&quot;&quot;)},Wc=function(){return[zc,&quot;&amp;v=3&amp;t=t&quot;,&quot;&amp;pid=&quot;+oa(),&quot;&amp;rv=&quot;+rc.sb].join(&quot;&quot;)},Xc=&quot;0.005000&quot;&gt;Math.random(),Uc=Wc(),Yc=function(){Uc=Wc()},Nc={},Oc=&quot;&quot;,Mc=void 0,Vc={},Pc={},Lc=void 0,Qc=function(a,b){var c=0,d=0;return{Pf:function(){if(c&lt;a)return!1;ua()-d&gt;=b&amp;&amp;(c=0);return c&gt;=a},fg:function(){ua()-d&gt;=b&amp;&amp;(c=0);c++;d=ua()}}}(2,1E3),Rc=1E3,Zc=function(a,b){if(Xc&amp;&amp;!Pc[a]&amp;&amp;Mc!==a){Tc();Mc=a;Oc=&quot;&quot;;var c;c=0===b.indexOf(&quot;gtm.&quot;)?encodeURIComponent(b):</td>
+      </tr>
+      <tr>
+        <td id="L48" class="blob-num js-line-number" data-line-number="48"></td>
+        <td id="LC48" class="blob-code blob-code-inner js-file-line">&quot;*&quot;;Vc[a]=&quot;&amp;e=&quot;+c+&quot;&amp;eid=&quot;+a;Lc||(Lc=f.setTimeout(Tc,500))}},$c=function(a,b,c){if(Xc&amp;&amp;!Pc[a]&amp;&amp;b){a!==Mc&amp;&amp;(Tc(),Mc=a);var d=c+String(b[Zb.ra]||&quot;&quot;).replace(/_/g,&quot;&quot;);Oc=Oc?Oc+&quot;.&quot;+d:&quot;&amp;tr=&quot;+d;Lc||(Lc=f.setTimeout(Tc,500));2022&lt;=Sc().length&amp;&amp;Tc()}};var ad=new va,bd={},cd={},gd={name:&quot;dataLayer&quot;,set:function(a,b){Fa(dd(a,b),bd);ed()},get:function(a){return fd(a,2)},reset:function(){ad=new va;bd={};ed()}},fd=function(a,b){if(2!=b){var c=ad.get(a);if(Xc){var d=hd(a);c!==d&amp;&amp;Jc(5)}return c}return hd(a)},hd=function(a,b,c){var d=a.split(&quot;.&quot;),e=!1,g=void 0;var h=function(k,l){for(var m=0;void 0!==k&amp;&amp;m&lt;d.length;m++){if(null===k)return!1;k=k[d[m]]}return void 0!==k||1&lt;m?k:l.length?h(id(l.pop()),l):jd(d)};e=!0;g=h(bd.eventModel,</td>
+      </tr>
+      <tr>
+        <td id="L49" class="blob-num js-line-number" data-line-number="49"></td>
+        <td id="LC49" class="blob-code blob-code-inner js-file-line">[b,c]);return e?g:jd(d)},jd=function(a){for(var b=bd,c=0;c&lt;a.length;c++){if(null===b)return!1;if(void 0===b)break;b=b[a[c]]}return b};var kd=function(a,b){return hd(a,b,void 0)},id=function(a){if(a){var b=jd([&quot;gtag&quot;,&quot;targets&quot;,a]);return Ea(b)?b:void 0}},ld=function(a,b){function c(g){g&amp;&amp;pa(g,function(h){d[h]=null})}var d={};c(bd);delete d.eventModel;c(id(a));c(id(b));c(bd.eventModel);var e=[];pa(d,function(g){e.push(g)});return e};</td>
+      </tr>
+      <tr>
+        <td id="L50" class="blob-num js-line-number" data-line-number="50"></td>
+        <td id="LC50" class="blob-code blob-code-inner js-file-line">var md=function(a,b){cd.hasOwnProperty(a)||(ad.set(a,b),Fa(dd(a,b),bd),ed())},dd=function(a,b){for(var c={},d=c,e=a.split(&quot;.&quot;),g=0;g&lt;e.length-1;g++)d=d[e[g]]={};d[e[e.length-1]]=b;return c},ed=function(a){pa(cd,function(b,c){ad.set(b,c);Fa(dd(b,void 0),bd);Fa(dd(b,c),bd);a&amp;&amp;delete cd[b]})};var nd=new RegExp(/^(.*\.)?(google|youtube|blogger|withgoogle)(\.com?)?(\.[a-z]{2})?\.?$/),od={cl:[&quot;ecl&quot;],customPixels:[&quot;nonGooglePixels&quot;],ecl:[&quot;cl&quot;],ehl:[&quot;hl&quot;],hl:[&quot;ehl&quot;],html:[&quot;customScripts&quot;,&quot;customPixels&quot;,&quot;nonGooglePixels&quot;,&quot;nonGoogleScripts&quot;,&quot;nonGoogleIframes&quot;],customScripts:[&quot;html&quot;,&quot;customPixels&quot;,&quot;nonGooglePixels&quot;,&quot;nonGoogleScripts&quot;,&quot;nonGoogleIframes&quot;],nonGooglePixels:[],nonGoogleScripts:[&quot;nonGooglePixels&quot;],nonGoogleIframes:[&quot;nonGooglePixels&quot;]},pd={cl:[&quot;ecl&quot;],customPixels:[&quot;customScripts&quot;,&quot;html&quot;],</td>
+      </tr>
+      <tr>
+        <td id="L51" class="blob-num js-line-number" data-line-number="51"></td>
+        <td id="LC51" class="blob-code blob-code-inner js-file-line">ecl:[&quot;cl&quot;],ehl:[&quot;hl&quot;],hl:[&quot;ehl&quot;],html:[&quot;customScripts&quot;],customScripts:[&quot;html&quot;],nonGooglePixels:[&quot;customPixels&quot;,&quot;customScripts&quot;,&quot;html&quot;,&quot;nonGoogleScripts&quot;,&quot;nonGoogleIframes&quot;],nonGoogleScripts:[&quot;customScripts&quot;,&quot;html&quot;],nonGoogleIframes:[&quot;customScripts&quot;,&quot;html&quot;,&quot;nonGoogleScripts&quot;]};</td>
+      </tr>
+      <tr>
+        <td id="L52" class="blob-num js-line-number" data-line-number="52"></td>
+        <td id="LC52" class="blob-code blob-code-inner js-file-line">var rd=function(a){var b=fd(&quot;gtm.whitelist&quot;);b&amp;&amp;Jc(9);b=&quot;google gtagfl lcl zone oid op&quot;.split(&quot; &quot;);var c=b&amp;&amp;Aa(sa(b),od),d=fd(&quot;gtm.blacklist&quot;);d||(d=fd(&quot;tagTypeBlacklist&quot;))&amp;&amp;Jc(3);d?Jc(8):d=[];</td>
+      </tr>
+      <tr>
+        <td id="L53" class="blob-num js-line-number" data-line-number="53"></td>
+        <td id="LC53" class="blob-code blob-code-inner js-file-line">qd()&amp;&amp;(d=sa(d),d.push(&quot;nonGooglePixels&quot;,&quot;nonGoogleScripts&quot;));0&lt;=la(sa(d),&quot;google&quot;)&amp;&amp;Jc(2);var e=d&amp;&amp;Aa(sa(d),pd),g={};return function(h){var k=h&amp;&amp;h[Zb.ra];if(!k||&quot;string&quot;!=typeof k)return!0;k=k.replace(/^_*/,&quot;&quot;);if(void 0!==g[k])return g[k];var l=Bc[k]||[],m=a(k);if(b){var n;if(n=m)a:{if(0&gt;la(c,k))if(l&amp;&amp;0&lt;l.length)for(var p=0;p&lt;l.length;p++){if(0&gt;la(c,l[p])){Jc(11);</td>
+      </tr>
+      <tr>
+        <td id="L54" class="blob-num js-line-number" data-line-number="54"></td>
+        <td id="LC54" class="blob-code blob-code-inner js-file-line">n=!1;break a}}else{n=!1;break a}n=!0}m=n}var t=!1;if(d){var q=0&lt;=la(e,k);if(q)t=q;else{var r;b:{for(var v=l||[],x=new va,y=0;y&lt;e.length;y++)x.set(e[y],!0);for(var w=0;w&lt;v.length;w++)if(x.get(v[w])){r=!0;break b}r=!1}var B=r;B&amp;&amp;Jc(10);t=B}}return g[k]=!m||t}},qd=function(){return nd.test(f.location&amp;&amp;f.location.hostname)};var sd={ff:function(a,b){b[Zb.Uc]&amp;&amp;&quot;string&quot;===typeof a&amp;&amp;(a=1==b[Zb.Uc]?a.toLowerCase():a.toUpperCase());b.hasOwnProperty(Zb.Wc)&amp;&amp;null===a&amp;&amp;(a=b[Zb.Wc]);b.hasOwnProperty(Zb.Yc)&amp;&amp;void 0===a&amp;&amp;(a=b[Zb.Yc]);b.hasOwnProperty(Zb.Xc)&amp;&amp;!0===a&amp;&amp;(a=b[Zb.Xc]);b.hasOwnProperty(Zb.Vc)&amp;&amp;!1===a&amp;&amp;(a=b[Zb.Vc]);return a}};var td={active:!0,isWhitelisted:function(){return!0}},ud=function(a){var b=sc.zones;!b&amp;&amp;a&amp;&amp;(b=sc.zones=a());return b};var vd=!1,wd=0,xd=[];function yd(a){if(!vd){var b=u.createEventObject,c=&quot;complete&quot;==u.readyState,d=&quot;interactive&quot;==u.readyState;if(!a||&quot;readystatechange&quot;!=a.type||c||!b&amp;&amp;d){vd=!0;for(var e=0;e&lt;xd.length;e++)z(xd[e])}xd.push=function(){for(var g=0;g&lt;arguments.length;g++)z(arguments[g]);return 0}}}function zd(){if(!vd&amp;&amp;140&gt;wd){wd++;try{u.documentElement.doScroll(&quot;left&quot;),yd()}catch(a){f.setTimeout(zd,50)}}}var Ad=function(a){vd?a():xd.push(a)};var Bd=function(){function a(d){return!ja(d)||0&gt;d?0:d}if(!sc._li&amp;&amp;f.performance&amp;&amp;f.performance.timing){var b=f.performance.timing.navigationStart,c=ja(gd.get(&quot;gtm.start&quot;))?gd.get(&quot;gtm.start&quot;):0;sc._li={cst:a(c-b),cbt:a(xc-b)}}};var Fd=!1,Gd=function(){return f.GoogleAnalyticsObject&amp;&amp;f[f.GoogleAnalyticsObject]},Hd=!1;</td>
+      </tr>
+      <tr>
+        <td id="L55" class="blob-num js-line-number" data-line-number="55"></td>
+        <td id="LC55" class="blob-code blob-code-inner js-file-line">var Id=function(a){f.GoogleAnalyticsObject||(f.GoogleAnalyticsObject=a||&quot;ga&quot;);var b=f.GoogleAnalyticsObject;if(f[b])f.hasOwnProperty(b)||Jc(12);else{var c=function(){c.q=c.q||[];c.q.push(arguments)};c.l=Number(new Date);f[b]=c}Bd();return f[b]},Jd=function(a,b,c,d){b=String(b).replace(/\s+/g,&quot;&quot;).split(&quot;,&quot;);var e=Gd();e(a+&quot;require&quot;,&quot;linker&quot;);e(a+&quot;linker:autoLink&quot;,b,c,d)};</td>
+      </tr>
+      <tr>
+        <td id="L56" class="blob-num js-line-number" data-line-number="56"></td>
+        <td id="LC56" class="blob-code blob-code-inner js-file-line">var Ld=function(){},Kd=function(){return f.GoogleAnalyticsObject||&quot;ga&quot;},Md=!1;</td>
+      </tr>
+      <tr>
+        <td id="L57" class="blob-num js-line-number" data-line-number="57"></td>
+        <td id="LC57" class="blob-code blob-code-inner js-file-line">var Nd=function(a,b,c){if(b){c=c||{};var d=f._gaPhoneImpl||function(){d.q=d.q||[];d.q.push(arguments)};f._gaPhoneImpl=d;void 0===f.ga_wpid&amp;&amp;(f.ga_wpid=a);Md?c.za&amp;&amp;z(c.za):(Ka(E(&quot;https://&quot;,&quot;http://&quot;,&quot;www.gstatic.com/gaphone/loader.js&quot;),c.za,c.Ld),Md=!0);var e={};void 0!==c.zd?e.receiver=c.zd:e.replace=b;e.ga_wpid=a;e.destination=b;d(2,new Date,e)}};var Td=function(a){};function Sd(a,b){a.containerId=rc.m;var c={type:&quot;GENERIC&quot;,value:a};b.length&amp;&amp;(c.trace=b);return c};function Ud(a,b,c,d,e){var g=Nb[a],h=Vd(a,b,c,d,e);if(!h)return null;var k=Vb(g[Zb.nd],d.fa,[],fa);if(k&amp;&amp;k.length){var l=k[0];h=Ud(l.index,b,{I:h,O:1===l.wd?c.terminate:h,terminate:c.terminate},d,e)}return h}</td>
+      </tr>
+      <tr>
+        <td id="L58" class="blob-num js-line-number" data-line-number="58"></td>
+        <td id="LC58" class="blob-code blob-code-inner js-file-line">function Vd(a,b,c,d,e){function g(){if(h[Zb.Ae])l();else{var y=Wb(h,d.fa,[],function(B){Jc(6);Td(B)}),w=!1;y.vtp_gtmOnSuccess=function(){if(!w){w=!0;$c(d.id,Nb[a],&quot;5&quot;);k()}};y.vtp_gtmOnFailure=function(){if(!w){w=!0;$c(d.id,Nb[a],&quot;6&quot;);l()}};y.vtp_gtmTagId=h.tag_id;$c(d.id,h,&quot;1&quot;);try{Ub(y)}catch(B){Td(B);$c(d.id,h,&quot;7&quot;);w||(w=!0,l())}}}var h=Nb[a],k=c.I,l=c.O,m=c.terminate;if(d.fa(h))return null;var n=Vb(h[Zb.od],d.fa,[],fa);if(n&amp;&amp;n.length){var p=n[0],t=Ud(p.index,b,{I:k,O:l,terminate:m},d,e);if(!t)return null;</td>
+      </tr>
+      <tr>
+        <td id="L59" class="blob-num js-line-number" data-line-number="59"></td>
+        <td id="LC59" class="blob-code blob-code-inner js-file-line">k=t;l=2===p.wd?m:t}if(h[Zb.md]||h[Zb.Be]){var q=h[Zb.md]?Ob:b,r=k,v=l;if(!q[a]){g=xa(g);var x=Wd(a,q,g);k=x.I;l=x.O}return function(){q[a](r,v)}}return g}function Wd(a,b,c){var d=[],e=[];b[a]=Xd(d,e,c);return{I:function(){b[a]=Yd;for(var g=0;g&lt;d.length;g++)d[g]()},O:function(){b[a]=Zd;for(var g=0;g&lt;e.length;g++)e[g]()}}}function Xd(a,b,c){return function(d,e){a.push(d);b.push(e);c()}}function Yd(a){a()}function Zd(a,b){b()};function $d(a){var b=0,c=0,d=!1;return{add:function(){c++;return xa(function(){b++;d&amp;&amp;b&gt;=c&amp;&amp;a()})},Qe:function(){d=!0;b&gt;=c&amp;&amp;a()}}}var ce=function(a){for(var b=$d(a.callback),c=[],d=[],e=0;e&lt;Nb.length;e++)if(a.Ua[e]){var g=Nb[e];var h=b.add();try{var k=Ud(e,c,{I:h,O:h,terminate:h},a,e);k?d.push({Wd:e,b:Xb(g),uf:k}):(ae(e,a),h())}catch(m){h()}}b.Qe();d.sort(be);for(var l=0;l&lt;d.length;l++)d[l].uf();return 0&lt;d.length};</td>
+      </tr>
+      <tr>
+        <td id="L60" class="blob-num js-line-number" data-line-number="60"></td>
+        <td id="LC60" class="blob-code blob-code-inner js-file-line">function be(a,b){var c,d=b.b,e=a.b;c=d&gt;e?1:d&lt;e?-1:0;var g;if(0!==c)g=c;else{var h=a.Wd,k=b.Wd;g=h&gt;k?1:h&lt;k?-1:0}return g}function ae(a,b){if(!Xc)return;var c=function(d){var e=b.fa(Nb[d])?&quot;3&quot;:&quot;4&quot;,g=Vb(Nb[d][Zb.nd],b.fa,[],fa);g&amp;&amp;g.length&amp;&amp;c(g[0].index);$c(b.id,Nb[d],e);var h=Vb(Nb[d][Zb.od],b.fa,[],fa);h&amp;&amp;h.length&amp;&amp;c(h[0].index)};c(a);}</td>
+      </tr>
+      <tr>
+        <td id="L61" class="blob-num js-line-number" data-line-number="61"></td>
+        <td id="LC61" class="blob-code blob-code-inner js-file-line">var de=!1,ee=function(a,b,c,d){if(&quot;gtm.js&quot;==b){if(de)return!1;de=!0}Zc(a,b);var e=rd(c),g={id:a,name:b,callback:d||fa,fa:e,Ua:[]};g.Ua=cc(e,function(n){Td(n)});var h=ce(g);&quot;gtm.js&quot;!==b&amp;&amp;&quot;gtm.sync&quot;!==b||Ld();if(!h)return h;for(var k={__cl:!0,__ecl:!0,__ehl:!0,__evl:!0,__fsl:!0,__hl:!0,__jel:!0,__lcl:!0,__sdl:!0,__tl:!0,__ytl:!0},l=0;l&lt;</td>
+      </tr>
+      <tr>
+        <td id="L62" class="blob-num js-line-number" data-line-number="62"></td>
+        <td id="LC62" class="blob-code blob-code-inner js-file-line">g.Ua.length;l++)if(g.Ua[l]){var m=Nb[l];if(m&amp;&amp;!k[m[Zb.ra]])return!0}return!1};var fe=function(a,b){var c=Tb(a,b);Nb.push(c);return Nb.length-1};var F={Ob:&quot;event_callback&quot;,Qb:&quot;event_timeout&quot;};</td>
+      </tr>
+      <tr>
+        <td id="L63" class="blob-num js-line-number" data-line-number="63"></td>
+        <td id="LC63" class="blob-code blob-code-inner js-file-line">F.aa=&quot;gtag.config&quot;,F.Lb=&quot;page_view&quot;,F.Zd=&quot;user_engagement&quot;,F.R=&quot;allow_ad_personalization_signals&quot;,F.$d=&quot;allow_custom_scripts&quot;,F.ae=&quot;allow_display_features&quot;,F.be=&quot;allow_enhanced_conversions&quot;,F.ab=&quot;client_id&quot;,F.N=&quot;cookie_domain&quot;,F.T=&quot;cookie_expires&quot;,F.cb=&quot;cookie_name&quot;,F.na=&quot;cookie_path&quot;,F.de=&quot;cookie_update&quot;,F.oa=&quot;currency&quot;,F.eb=&quot;custom_params&quot;,F.fe=&quot;custom_map&quot;,F.Sb=&quot;groups&quot;,F.Ha=&quot;language&quot;,F.ee=&quot;country&quot;,F.Ag=&quot;non_interaction&quot;,F.jb=&quot;page_location&quot;,F.kb=&quot;page_referrer&quot;,F.hd=&quot;page_title&quot;,F.Ja=&quot;send_page_view&quot;,</td>
+      </tr>
+      <tr>
+        <td id="L64" class="blob-num js-line-number" data-line-number="64"></td>
+        <td id="LC64" class="blob-code blob-code-inner js-file-line">F.qa=&quot;send_to&quot;,F.lb=&quot;session_duration&quot;,F.Xb=&quot;session_engaged&quot;,F.mb=&quot;session_id&quot;,F.Yb=&quot;session_number&quot;,F.we=&quot;tracking_id&quot;,F.nb=&quot;user_properties&quot;,F.Ia=&quot;linker&quot;,F.gb=&quot;accept_incoming&quot;,F.H=&quot;domains&quot;,F.ib=&quot;url_position&quot;,F.hb=&quot;decorate_forms&quot;,F.Wb=&quot;phone_conversion_number&quot;,F.Ub=&quot;phone_conversion_callback&quot;,F.Vb=&quot;phone_conversion_css_class&quot;,F.jd=&quot;phone_conversion_options&quot;,F.Zc=&quot;aw_remarketing&quot;,F.$c=&quot;aw_remarketing_only&quot;,F.ca=&quot;value&quot;,F.ue=&quot;quantity&quot;,F.je=&quot;affiliation&quot;,F.oe=&quot;tax&quot;,F.ne=&quot;shipping&quot;,F.Nb=&quot;list_name&quot;,</td>
+      </tr>
+      <tr>
+        <td id="L65" class="blob-num js-line-number" data-line-number="65"></td>
+        <td id="LC65" class="blob-code blob-code-inner js-file-line">F.gd=&quot;checkout_step&quot;,F.fd=&quot;checkout_option&quot;,F.ke=&quot;coupon&quot;,F.me=&quot;promotions&quot;,F.Ka=&quot;transaction_id&quot;,F.ba=&quot;user_id&quot;,F.Ga=&quot;conversion_linker&quot;,F.Fa=&quot;conversion_cookie_prefix&quot;,F.F=&quot;cookie_prefix&quot;,F.S=&quot;items&quot;,F.Mb=&quot;aw_merchant_id&quot;,F.bd=&quot;aw_feed_country&quot;,F.cd=&quot;aw_feed_language&quot;,F.ad=&quot;discount&quot;,F.ed=&quot;disable_merchant_reported_purchases&quot;,F.Tb=&quot;new_customer&quot;,F.dd=&quot;customer_lifetime_value&quot;,F.ie=&quot;dc_natural_search&quot;,F.he=&quot;dc_custom_params&quot;,F.xe=&quot;trip_type&quot;,F.te=&quot;passengers&quot;,F.qe=&quot;method&quot;,F.ve=&quot;search_term&quot;,F.ce=</td>
+      </tr>
+      <tr>
+        <td id="L66" class="blob-num js-line-number" data-line-number="66"></td>
+        <td id="LC66" class="blob-code blob-code-inner js-file-line">&quot;content_type&quot;,F.se=&quot;optimize_id&quot;,F.pe=&quot;experiments&quot;,F.fb=&quot;google_signals&quot;,F.Rb=&quot;google_tld&quot;,F.Pb=&quot;event_settings&quot;,F.kd=[F.R,F.N,F.T,F.cb,F.na,F.F,F.eb,F.Ob,F.Pb,F.Qb,F.fb,F.Rb,F.Sb,F.qa,F.Ja,F.lb,F.ba,F.nb],F.Tc=[F.qa,F.Zc,F.$c,F.eb,F.Ja,F.Ha,F.ca,F.oa,F.Ka,F.ba,F.Ga,F.Fa,F.F,F.jb,F.kb,F.Wb,F.Ub,F.Vb,F.jd,F.S,F.Mb,F.bd,F.cd,F.ad,F.ed,F.Tb,F.dd,F.R];var ge={};var he=/[A-Z]+/,ie=/\s/,je=function(a){if(ia(a)&amp;&amp;(a=ta(a),!ie.test(a))){var b=a.indexOf(&quot;-&quot;);if(!(0&gt;b)){var c=a.substring(0,b);if(he.test(c)){for(var d=a.substring(b+1).split(&quot;/&quot;),e=0;e&lt;d.length;e++)if(!d[e])return;return{id:a,prefix:c,containerId:c+&quot;-&quot;+d[0],da:d}}}}},le=function(a){for(var b={},c=0;c&lt;a.length;++c){var d=je(a[c]);d&amp;&amp;(b[d.id]=d)}ke(b);var e=[];pa(b,function(g,h){e.push(h)});return e};</td>
+      </tr>
+      <tr>
+        <td id="L67" class="blob-num js-line-number" data-line-number="67"></td>
+        <td id="LC67" class="blob-code blob-code-inner js-file-line">function ke(a){var b=[],c;for(c in a)if(a.hasOwnProperty(c)){var d=a[c];&quot;AW&quot;===d.prefix&amp;&amp;d.da[1]&amp;&amp;b.push(d.containerId)}for(var e=0;e&lt;b.length;++e)delete a[b[e]]};var me=null,ne={},oe={},qe,re=function(a,b){var c={event:a};b&amp;&amp;(c.eventModel=Fa(b),b[F.Ob]&amp;&amp;(c.eventCallback=b[F.Ob]),b[F.Qb]&amp;&amp;(c.eventTimeout=b[F.Qb]));return c};</td>
+      </tr>
+      <tr>
+        <td id="L68" class="blob-num js-line-number" data-line-number="68"></td>
+        <td id="LC68" class="blob-code blob-code-inner js-file-line">var se=function(){me=me||!sc.gtagRegistered;sc.gtagRegistered=!0;return me},te=function(a){if(void 0===oe[a.id]){var b;switch(a.prefix){case &quot;UA&quot;:b=fe(&quot;gtagua&quot;,{trackingId:a.id});break;case &quot;AW&quot;:b=fe(&quot;gtagaw&quot;,{conversionId:a});break;case &quot;DC&quot;:b=fe(&quot;gtagfl&quot;,{targetId:a.id});break;case &quot;GF&quot;:b=fe(&quot;gtaggf&quot;,{conversionId:a});break;case &quot;G&quot;:b=fe(&quot;get&quot;,{trackingId:a.id,isAutoTag:!0});break;case &quot;HA&quot;:b=fe(&quot;gtagha&quot;,{conversionId:a});break;default:return}if(!qe){var c=Tb(&quot;v&quot;,{name:&quot;send_to&quot;,dataLayerVersion:2});</td>
+      </tr>
+      <tr>
+        <td id="L69" class="blob-num js-line-number" data-line-number="69"></td>
+        <td id="LC69" class="blob-code blob-code-inner js-file-line">Kb.push(c);qe=[&quot;macro&quot;,Kb.length-1]}var d={arg0:qe,arg1:a.id,ignore_case:!1};d[Zb.ra]=&quot;_lc&quot;;Mb.push(d);var e={&quot;if&quot;:[Mb.length-1],add:[b]};e[&quot;if&quot;]&amp;&amp;(e.add||e.block)&amp;&amp;Lb.push(e);oe[a.id]=b}},ue=function(a){pa(ne,function(b,c){var d=la(c,a);0&lt;=d&amp;&amp;c.splice(d,1)})},ve=xa(function(){});</td>
+      </tr>
+      <tr>
+        <td id="L70" class="blob-num js-line-number" data-line-number="70"></td>
+        <td id="LC70" class="blob-code blob-code-inner js-file-line">var we={config:function(a){var b=a[2]||{};if(2&gt;a.length||!ia(a[1])||!Ea(b))return;var c=je(a[1]);if(!c)return;se()?te(c):ve();ue(c.id);var d=c.id,e=b[F.Sb]||&quot;default&quot;;e=e.toString().split(&quot;,&quot;);for(var g=0;g&lt;e.length;g++)ne[e[g]]=ne[e[g]]||[],ne[e[g]].push(d);delete b[F.Sb];md(&quot;gtag.targets.&quot;+c.id,void 0);md(&quot;gtag.targets.&quot;+c.id,Fa(b));var h={};h[F.qa]=c.id;return re(F.aa,h);},event:function(a){var b=a[1];if(ia(b)&amp;&amp;!(3&lt;a.length)){var c;if(2&lt;</td>
+      </tr>
+      <tr>
+        <td id="L71" class="blob-num js-line-number" data-line-number="71"></td>
+        <td id="LC71" class="blob-code blob-code-inner js-file-line">a.length){if(!Ea(a[2]))return;c=a[2]}var d=re(b,c);var e;var g=c,h=fd(&quot;gtag.fields.send_to&quot;,2);ia(h)||(h=F.qa);var k=g&amp;&amp;g[h];void 0===k&amp;&amp;(k=fd(h,2),void 0===k&amp;&amp;(k=&quot;default&quot;));if(ia(k)||ka(k)){for(var l=k.toString().replace(/\s+/g,&quot;&quot;).split(&quot;,&quot;),m=[],n=0;n&lt;l.length;n++)0&lt;=l[n].indexOf(&quot;-&quot;)?m.push(l[n]):m=m.concat(ne[l[n]]||[]);e=le(m)}else e=void 0;var p=e;if(!p)return;var t=se();t||ve();for(var q=[],r=0;t&amp;&amp;r&lt;p.length;r++){var v=p[r];q.push(v.id);te(v)}d.eventModel=d.eventModel||</td>
+      </tr>
+      <tr>
+        <td id="L72" class="blob-num js-line-number" data-line-number="72"></td>
+        <td id="LC72" class="blob-code blob-code-inner js-file-line">{};0&lt;p.length?d.eventModel[F.qa]=q.join():delete d.eventModel[F.qa];return d}},js:function(a){if(2==a.length&amp;&amp;a[1].getTime)return{event:&quot;gtm.js&quot;,&quot;gtm.start&quot;:a[1].getTime()}},policy:function(a){if(3===a.length){var b=a[1],c=a[2];ge[b]||(ge[b]=[]);ge[b].push(c)}},set:function(a){var b;2==a.length&amp;&amp;Ea(a[1])?b=Fa(a[1]):3==a.length&amp;&amp;ia(a[1])&amp;&amp;(b={},b[a[1]]=a[2]);if(b)return b.eventModel=Fa(b),b.event=&quot;gtag.set&quot;,b._clear=!0,b}},xe={policy:!0};var ye=function(){return!1};var Ee=function(a){if(De(a))return a;this.ug=a};Ee.prototype.Af=function(){return this.ug};var De=function(a){return!a||&quot;object&quot;!==Ca(a)||Ea(a)?!1:&quot;getUntrustedUpdateValue&quot;in a};Ee.prototype.getUntrustedUpdateValue=Ee.prototype.Af;var Fe=!1,Ge=[];function He(){if(!Fe){Fe=!0;for(var a=0;a&lt;Ge.length;a++)z(Ge[a])}}var Ie=function(a){Fe?z(a):Ge.push(a)};var Je=[],Ke=!1;function Le(a){var b=a.eventCallback,c=xa(function(){ha(b)&amp;&amp;z(function(){b(rc.m)})}),d=a.eventTimeout;d&amp;&amp;f.setTimeout(c,Number(d));return c}</td>
+      </tr>
+      <tr>
+        <td id="L73" class="blob-num js-line-number" data-line-number="73"></td>
+        <td id="LC73" class="blob-code blob-code-inner js-file-line">var Me=function(a){return f[&quot;dataLayer&quot;].push(a)},Oe=function(a){var b=a._clear;pa(a,function(g,h){&quot;_clear&quot;!==g&amp;&amp;(b&amp;&amp;md(g,void 0),md(g,h))});var c=a.event;if(!c)return!1;var d=a[&quot;gtm.uniqueEventId&quot;];d||(d=Cc(),a[&quot;gtm.uniqueEventId&quot;]=d,md(&quot;gtm.uniqueEventId&quot;,d));yc=c;var e=Ne(a);yc=null;if(!wc){wc=a[&quot;gtm.start&quot;];}return e};</td>
+      </tr>
+      <tr>
+        <td id="L74" class="blob-num js-line-number" data-line-number="74"></td>
+        <td id="LC74" class="blob-code blob-code-inner js-file-line">function Ne(a){var b=a.event,c=a[&quot;gtm.uniqueEventId&quot;],d,e=sc.zones;d=e?e.checkState(rc.m,c):td;if(!d.active)return!1;var g=Le(a);return ee(c,b,d.isWhitelisted,g)?!0:!1}</td>
+      </tr>
+      <tr>
+        <td id="L75" class="blob-num js-line-number" data-line-number="75"></td>
+        <td id="LC75" class="blob-code blob-code-inner js-file-line">var Pe=function(){for(var a=!1;!Ke&amp;&amp;0&lt;Je.length;){Ke=!0;delete bd.eventModel;ed();var b=Je.shift();if(null!=b){var c=De(b);if(c){var d=b;b=De(d)?d.getUntrustedUpdateValue():void 0;for(var e=[&quot;gtm.whitelist&quot;,&quot;gtm.blacklist&quot;,&quot;tagTypeBlacklist&quot;],g=0;g&lt;e.length;g++){var h=e[g],k=fd(h,1);if(ka(k)||Ea(k))k=Fa(k);cd[h]=k}}try{if(ha(b))try{b.call(gd)}catch(v){}else if(ka(b)){var l=b;if(ia(l[0])){var m=</td>
+      </tr>
+      <tr>
+        <td id="L76" class="blob-num js-line-number" data-line-number="76"></td>
+        <td id="LC76" class="blob-code blob-code-inner js-file-line">l[0].split(&quot;.&quot;),n=m.pop(),p=l.slice(1),t=fd(m.join(&quot;.&quot;),2);if(void 0!==t&amp;&amp;null!==t)try{t[n].apply(t,p)}catch(v){}}}else{var q=b;if(q&amp;&amp;(&quot;[object Arguments]&quot;==Object.prototype.toString.call(q)||Object.prototype.hasOwnProperty.call(q,&quot;callee&quot;))){a:{if(b.length&amp;&amp;ia(b[0])){var r=we[b[0]];if(r&amp;&amp;(!c||!xe[b[0]])){b=r(b);break a}}b=void 0}if(!b){Ke=!1;continue}}a=Oe(b)||a}}finally{c&amp;&amp;ed(!0)}}Ke=!1}</td>
+      </tr>
+      <tr>
+        <td id="L77" class="blob-num js-line-number" data-line-number="77"></td>
+        <td id="LC77" class="blob-code blob-code-inner js-file-line">return!a},Qe=function(){var a=Pe();try{var b=rc.m,c=f[&quot;dataLayer&quot;].hide;if(c&amp;&amp;void 0!==c[b]&amp;&amp;c.end){c[b]=!1;var d=!0,e;for(e in c)if(c.hasOwnProperty(e)&amp;&amp;!0===c[e]){d=!1;break}d&amp;&amp;(c.end(),c.end=null)}}catch(g){}return a},Re=function(){var a=Ia(&quot;dataLayer&quot;,[]),b=Ia(&quot;google_tag_manager&quot;,{});b=b[&quot;dataLayer&quot;]=b[&quot;dataLayer&quot;]||{};Ad(function(){b.gtmDom||(b.gtmDom=!0,a.push({event:&quot;gtm.dom&quot;}))});Ie(function(){b.gtmLoad||(b.gtmLoad=!0,a.push({event:&quot;gtm.load&quot;}))});var c=a.push;a.push=function(){var d;</td>
+      </tr>
+      <tr>
+        <td id="L78" class="blob-num js-line-number" data-line-number="78"></td>
+        <td id="LC78" class="blob-code blob-code-inner js-file-line">if(0&lt;sc.SANDBOXED_JS_SEMAPHORE){d=[];for(var e=0;e&lt;arguments.length;e++)d[e]=new Ee(arguments[e])}else d=[].slice.call(arguments,0);var g=c.apply(a,d);Je.push.apply(Je,d);if(300&lt;this.length)for(Jc(4);300&lt;this.length;)this.shift();var h=&quot;boolean&quot;!==typeof g||g;return Pe()&amp;&amp;h};Je.push.apply(Je,a.slice(0));z(Qe)};var Te=function(a){return Se?u.querySelectorAll(a):null},Ue=function(a,b){if(!Se)return null;if(Element.prototype.closest)try{return a.closest(b)}catch(e){return null}var c=Element.prototype.matches||Element.prototype.webkitMatchesSelector||Element.prototype.mozMatchesSelector||Element.prototype.msMatchesSelector||Element.prototype.oMatchesSelector,d=a;if(!u.documentElement.contains(d))return null;do{try{if(c.call(d,b))return d}catch(e){break}d=d.parentElement||d.parentNode}while(null!==d&amp;&amp;1===d.nodeType);</td>
+      </tr>
+      <tr>
+        <td id="L79" class="blob-num js-line-number" data-line-number="79"></td>
+        <td id="LC79" class="blob-code blob-code-inner js-file-line">return null},Ve=!1;if(u.querySelectorAll)try{var We=u.querySelectorAll(&quot;:root&quot;);We&amp;&amp;1==We.length&amp;&amp;We[0]==u.documentElement&amp;&amp;(Ve=!0)}catch(a){}var Se=Ve;var Xe;var tf={};tf.ob=new String(&quot;undefined&quot;);</td>
+      </tr>
+      <tr>
+        <td id="L80" class="blob-num js-line-number" data-line-number="80"></td>
+        <td id="LC80" class="blob-code blob-code-inner js-file-line">var uf=function(a){this.resolve=function(b){for(var c=[],d=0;d&lt;a.length;d++)c.push(a[d]===tf.ob?b:a[d]);return c.join(&quot;&quot;)}};uf.prototype.toString=function(){return this.resolve(&quot;undefined&quot;)};uf.prototype.valueOf=uf.prototype.toString;tf.De=uf;tf.$b={};tf.kf=function(a){return new uf(a)};var vf={};tf.gg=function(a,b){var c=Cc();vf[c]=[a,b];return c};tf.td=function(a){var b=a?0:1;return function(c){var d=vf[c];if(d&amp;&amp;&quot;function&quot;===typeof d[b])d[b]();vf[c]=void 0}};tf.Nf=function(a){for(var b=!1,c=!1,</td>
+      </tr>
+      <tr>
+        <td id="L81" class="blob-num js-line-number" data-line-number="81"></td>
+        <td id="LC81" class="blob-code blob-code-inner js-file-line">d=2;d&lt;a.length;d++)b=b||8===a[d],c=c||16===a[d];return b&amp;&amp;c};tf.Xf=function(a){if(a===tf.ob)return a;var b=Cc();tf.$b[b]=a;return&#39;google_tag_manager[&quot;&#39;+rc.m+&#39;&quot;].macro(&#39;+b+&quot;)&quot;};tf.Rf=function(a,b,c){a instanceof tf.De&amp;&amp;(a=a.resolve(tf.gg(b,c)),b=fa);return{nc:a,I:b}};var wf=function(a,b,c){var d={event:b,&quot;gtm.element&quot;:a,&quot;gtm.elementClasses&quot;:a.className,&quot;gtm.elementId&quot;:a[&quot;for&quot;]||Qa(a,&quot;id&quot;)||&quot;&quot;,&quot;gtm.elementTarget&quot;:a.formTarget||a.target||&quot;&quot;};c&amp;&amp;(d[&quot;gtm.triggers&quot;]=c.join(&quot;,&quot;));d[&quot;gtm.elementUrl&quot;]=(a.attributes&amp;&amp;a.attributes.formaction?a.formAction:&quot;&quot;)||a.action||a.href||a.src||a.code||a.codebase||&quot;&quot;;return d},xf=function(a){sc.hasOwnProperty(&quot;autoEventsSettings&quot;)||(sc.autoEventsSettings={});var b=sc.autoEventsSettings;b.hasOwnProperty(a)||(b[a]={});return b[a]},</td>
+      </tr>
+      <tr>
+        <td id="L82" class="blob-num js-line-number" data-line-number="82"></td>
+        <td id="LC82" class="blob-code blob-code-inner js-file-line">yf=function(a,b,c){xf(a)[b]=c},zf=function(a,b,c,d){var e=xf(a),g=wa(e,b,d);e[b]=c(g)},Af=function(a,b,c){var d=xf(a);return wa(d,b,c)};var Bf=function(){for(var a=Ga.userAgent+(u.cookie||&quot;&quot;)+(u.referrer||&quot;&quot;),b=a.length,c=f.history.length;0&lt;c;)a+=c--^b++;var d=1,e,g,h;if(a)for(d=0,g=a.length-1;0&lt;=g;g--)h=a.charCodeAt(g),d=(d&lt;&lt;6&amp;268435455)+h+(h&lt;&lt;14),e=d&amp;266338304,d=0!=e?d^e&gt;&gt;21:d;return[Math.round(2147483647*Math.random())^d&amp;2147483647,Math.round(ua()/1E3)].join(&quot;.&quot;)},Ef=function(a,b,c,d){var e=Cf(b);return fb(a,e,Df(c),d)},Cf=function(a){if(!a)return 1;a=0===a.indexOf(&quot;.&quot;)?a.substr(1):a;return a.split(&quot;.&quot;).length},Df=function(a){if(!a||</td>
+      </tr>
+      <tr>
+        <td id="L83" class="blob-num js-line-number" data-line-number="83"></td>
+        <td id="LC83" class="blob-code blob-code-inner js-file-line">&quot;/&quot;===a)return 1;&quot;/&quot;!==a[0]&amp;&amp;(a=&quot;/&quot;+a);&quot;/&quot;!==a[a.length-1]&amp;&amp;(a+=&quot;/&quot;);return a.split(&quot;/&quot;).length-1};function Ff(a,b){var c=&quot;&quot;+Cf(a),d=Df(b);1&lt;d&amp;&amp;(c+=&quot;-&quot;+d);return c};var Gf=[&quot;1&quot;],Hf={},Lf=function(a,b,c,d){var e=If(a);Hf[e]||Jf(e,b,c)||(Kf(e,Bf(),b,c,d),Jf(e,b,c))};function Kf(a,b,c,d,e){var g;g=[&quot;1&quot;,Ff(d,c),b].join(&quot;.&quot;);kb(a,g,c,d,0==e?void 0:new Date(ua()+1E3*(void 0==e?7776E3:e)))}function Jf(a,b,c){var d=Ef(a,b,c,Gf);d&amp;&amp;(Hf[a]=d);return d}function If(a){return(a||&quot;_gcl&quot;)+&quot;_au&quot;};var Mf=function(){for(var a=[],b=u.cookie.split(&quot;;&quot;),c=/^\s*_gac_(UA-\d+-\d+)=\s*(.+?)\s*$/,d=0;d&lt;b.length;d++){var e=b[d].match(c);e&amp;&amp;a.push({Mc:e[1],value:e[2]})}var g={};if(!a||!a.length)return g;for(var h=0;h&lt;a.length;h++){var k=a[h].value.split(&quot;.&quot;);&quot;1&quot;==k[0]&amp;&amp;3==k.length&amp;&amp;k[1]&amp;&amp;(g[a[h].Mc]||(g[a[h].Mc]=[]),g[a[h].Mc].push({timestamp:k[1],xf:k[2]}))}return g};function Nf(){for(var a=Of,b={},c=0;c&lt;a.length;++c)b[a[c]]=c;return b}function Pf(){var a=&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;;a+=a.toLowerCase()+&quot;0123456789-_&quot;;return a+&quot;.&quot;}</td>
+      </tr>
+      <tr>
+        <td id="L84" class="blob-num js-line-number" data-line-number="84"></td>
+        <td id="LC84" class="blob-code blob-code-inner js-file-line">var Of,Qf,Rf=function(a){Of=Of||Pf();Qf=Qf||Nf();for(var b=[],c=0;c&lt;a.length;c+=3){var d=c+1&lt;a.length,e=c+2&lt;a.length,g=a.charCodeAt(c),h=d?a.charCodeAt(c+1):0,k=e?a.charCodeAt(c+2):0,l=g&gt;&gt;2,m=(g&amp;3)&lt;&lt;4|h&gt;&gt;4,n=(h&amp;15)&lt;&lt;2|k&gt;&gt;6,p=k&amp;63;e||(p=64,d||(n=64));b.push(Of[l],Of[m],Of[n],Of[p])}return b.join(&quot;&quot;)},Sf=function(a){function b(l){for(;d&lt;a.length;){var m=a.charAt(d++),n=Qf[m];if(null!=n)return n;if(!/^[\s\xa0]*$/.test(m))throw Error(&quot;Unknown base64 encoding at char: &quot;+m);}return l}Of=Of||Pf();Qf=Qf||</td>
+      </tr>
+      <tr>
+        <td id="L85" class="blob-num js-line-number" data-line-number="85"></td>
+        <td id="LC85" class="blob-code blob-code-inner js-file-line">Nf();for(var c=&quot;&quot;,d=0;;){var e=b(-1),g=b(0),h=b(64),k=b(64);if(64===k&amp;&amp;-1===e)return c;c+=String.fromCharCode(e&lt;&lt;2|g&gt;&gt;4);64!=h&amp;&amp;(c+=String.fromCharCode(g&lt;&lt;4&amp;240|h&gt;&gt;2),64!=k&amp;&amp;(c+=String.fromCharCode(h&lt;&lt;6&amp;192|k)))}};var Tf;function Uf(a,b){if(!a||b===u.location.hostname)return!1;for(var c=0;c&lt;a.length;c++)if(a[c]instanceof RegExp){if(a[c].test(b))return!0}else if(0&lt;=b.indexOf(a[c]))return!0;return!1}var Vf=function(){var a=Ia(&quot;google_tag_data&quot;,{}),b=a.gl;b&amp;&amp;b.decorators||(b={decorators:[]},a.gl=b);return b};var Wf=/(.*?)\*(.*?)\*(.*)/,Xf=/^https?:\/\/([^\/]*?)\.?cdn\.ampproject\.org\/?(.*)/,Yf=/^(?:www\.|m\.|amp\.)+/,Zf=/([^?#]+)(\?[^#]*)?(#.*)?/,$f=/(.*?)(^|&amp;)_gl=([^&amp;]*)&amp;?(.*)/,bg=function(a){var b=[],c;for(c in a)if(a.hasOwnProperty(c)){var d=a[c];void 0!==d&amp;&amp;d===d&amp;&amp;null!==d&amp;&amp;&quot;[object Object]&quot;!==d.toString()&amp;&amp;(b.push(c),b.push(Rf(String(d))))}var e=b.join(&quot;*&quot;);return[&quot;1&quot;,ag(e),e].join(&quot;*&quot;)},ag=function(a,b){var c=[window.navigator.userAgent,(new Date).getTimezoneOffset(),window.navigator.userLanguage||</td>
+      </tr>
+      <tr>
+        <td id="L86" class="blob-num js-line-number" data-line-number="86"></td>
+        <td id="LC86" class="blob-code blob-code-inner js-file-line">window.navigator.language,Math.floor((new Date).getTime()/60/1E3)-(void 0===b?0:b),a].join(&quot;*&quot;),d;if(!(d=Tf)){for(var e=Array(256),g=0;256&gt;g;g++){for(var h=g,k=0;8&gt;k;k++)h=h&amp;1?h&gt;&gt;&gt;1^3988292384:h&gt;&gt;&gt;1;e[g]=h}d=e}Tf=d;for(var l=4294967295,m=0;m&lt;c.length;m++)l=l&gt;&gt;&gt;8^Tf[(l^c.charCodeAt(m))&amp;255];return((l^-1)&gt;&gt;&gt;0).toString(36)},dg=function(){return function(a){var b=bb(f.location.href),c=b.search.replace(&quot;?&quot;,&quot;&quot;),d=Ya(c,&quot;_gl&quot;,!0)||&quot;&quot;;a.query=cg(d)||{};var e=ab(b,&quot;fragment&quot;).match($f);a.fragment=cg(e&amp;&amp;e[3]||</td>
+      </tr>
+      <tr>
+        <td id="L87" class="blob-num js-line-number" data-line-number="87"></td>
+        <td id="LC87" class="blob-code blob-code-inner js-file-line">&quot;&quot;)||{}}},cg=function(a){var b;b=void 0===b?3:b;try{if(a){var c;a:{for(var d=a,e=0;3&gt;e;++e){var g=Wf.exec(d);if(g){c=g;break a}d=decodeURIComponent(d)}c=void 0}var h=c;if(h&amp;&amp;&quot;1&quot;===h[1]){var k=h[3],l;a:{for(var m=h[2],n=0;n&lt;b;++n)if(m===ag(k,n)){l=!0;break a}l=!1}if(l){for(var p={},t=k?k.split(&quot;*&quot;):[],q=0;q&lt;t.length;q+=2)p[t[q]]=Sf(t[q+1]);return p}}}}catch(r){}};</td>
+      </tr>
+      <tr>
+        <td id="L88" class="blob-num js-line-number" data-line-number="88"></td>
+        <td id="LC88" class="blob-code blob-code-inner js-file-line">function eg(a,b,c){function d(m){var n=m,p=$f.exec(n),t=n;if(p){var q=p[2],r=p[4];t=p[1];r&amp;&amp;(t=t+q+r)}m=t;var v=m.charAt(m.length-1);m&amp;&amp;&quot;&amp;&quot;!==v&amp;&amp;(m+=&quot;&amp;&quot;);return m+l}c=void 0===c?!1:c;var e=Zf.exec(b);if(!e)return&quot;&quot;;var g=e[1],h=e[2]||&quot;&quot;,k=e[3]||&quot;&quot;,l=&quot;_gl=&quot;+a;c?k=&quot;#&quot;+d(k.substring(1)):h=&quot;?&quot;+d(h.substring(1));return&quot;&quot;+g+h+k}</td>
+      </tr>
+      <tr>
+        <td id="L89" class="blob-num js-line-number" data-line-number="89"></td>
+        <td id="LC89" class="blob-code blob-code-inner js-file-line">function fg(a,b,c){for(var d={},e={},g=Vf().decorators,h=0;h&lt;g.length;++h){var k=g[h];(!c||k.forms)&amp;&amp;Uf(k.domains,b)&amp;&amp;(k.fragment?ya(e,k.callback()):ya(d,k.callback()))}if(za(d)){var l=bg(d);if(c){if(a&amp;&amp;a.action){var m=(a.method||&quot;&quot;).toLowerCase();if(&quot;get&quot;===m){for(var n=a.childNodes||[],p=!1,t=0;t&lt;n.length;t++){var q=n[t];if(&quot;_gl&quot;===q.name){q.setAttribute(&quot;value&quot;,l);p=!0;break}}if(!p){var r=u.createElement(&quot;input&quot;);r.setAttribute(&quot;type&quot;,&quot;hidden&quot;);r.setAttribute(&quot;name&quot;,&quot;_gl&quot;);r.setAttribute(&quot;value&quot;,</td>
+      </tr>
+      <tr>
+        <td id="L90" class="blob-num js-line-number" data-line-number="90"></td>
+        <td id="LC90" class="blob-code blob-code-inner js-file-line">l);a.appendChild(r)}}else if(&quot;post&quot;===m){var v=eg(l,a.action);Va.test(v)&amp;&amp;(a.action=v)}}}else gg(l,a,!1)}if(!c&amp;&amp;za(e)){var x=bg(e);gg(x,a,!0)}}function gg(a,b,c){if(b.href){var d=eg(a,b.href,void 0===c?!1:c);Va.test(d)&amp;&amp;(b.href=d)}}</td>
+      </tr>
+      <tr>
+        <td id="L91" class="blob-num js-line-number" data-line-number="91"></td>
+        <td id="LC91" class="blob-code blob-code-inner js-file-line">var hg=function(a){try{var b;a:{for(var c=a.target||a.srcElement||{},d=100;c&amp;&amp;0&lt;d;){if(c.href&amp;&amp;c.nodeName.match(/^a(?:rea)?$/i)){b=c;break a}c=c.parentNode;d--}b=null}var e=b;if(e){var g=e.protocol;&quot;http:&quot;!==g&amp;&amp;&quot;https:&quot;!==g||fg(e,e.hostname,!1)}}catch(h){}},ig=function(a){try{var b=a.target||a.srcElement||{};if(b.action){var c=ab(bb(b.action),&quot;host&quot;);fg(b,c,!0)}}catch(d){}},jg=function(a,b,c,d){var e=Vf();e.init||(Oa(u,&quot;mousedown&quot;,hg),Oa(u,&quot;keyup&quot;,hg),Oa(u,&quot;submit&quot;,ig),e.init=!0);var g={callback:a,</td>
+      </tr>
+      <tr>
+        <td id="L92" class="blob-num js-line-number" data-line-number="92"></td>
+        <td id="LC92" class="blob-code blob-code-inner js-file-line">domains:b,fragment:&quot;fragment&quot;===c,forms:!!d};Vf().decorators.push(g)},kg=function(){var a=u.location.hostname,b=Xf.exec(u.referrer);if(!b)return!1;var c=b[2],d=b[1],e=&quot;&quot;;if(c){var g=c.split(&quot;/&quot;),h=g[1];e=&quot;s&quot;===h?decodeURIComponent(g[2]):decodeURIComponent(h)}else if(d){if(0===d.indexOf(&quot;xn--&quot;))return!1;e=d.replace(/-/g,&quot;.&quot;).replace(/\.\./g,&quot;-&quot;)}return a.replace(Yf,&quot;&quot;)===e.replace(Yf,&quot;&quot;)},lg=function(a,b){return!1===a?!1:a||b||kg()};var mg=/^\w+$/,ng=/^[\w-]+$/,og=/^~?[\w-]+$/,pg={aw:&quot;_aw&quot;,dc:&quot;_dc&quot;,gf:&quot;_gf&quot;,ha:&quot;_ha&quot;};function qg(a){return a&amp;&amp;&quot;string&quot;==typeof a&amp;&amp;a.match(mg)?a:&quot;_gcl&quot;}var sg=function(){var a=bb(f.location.href),b=ab(a,&quot;query&quot;,!1,void 0,&quot;gclid&quot;),c=ab(a,&quot;query&quot;,!1,void 0,&quot;gclsrc&quot;),d=ab(a,&quot;query&quot;,!1,void 0,&quot;dclid&quot;);if(!b||!c){var e=a.hash.replace(&quot;#&quot;,&quot;&quot;);b=b||Ya(e,&quot;gclid&quot;,void 0);c=c||Ya(e,&quot;gclsrc&quot;,void 0)}return rg(b,c,d)};</td>
+      </tr>
+      <tr>
+        <td id="L93" class="blob-num js-line-number" data-line-number="93"></td>
+        <td id="LC93" class="blob-code blob-code-inner js-file-line">function rg(a,b,c){var d={},e=function(g,h){d[h]||(d[h]=[]);d[h].push(g)};if(void 0!==a&amp;&amp;a.match(ng))switch(b){case void 0:e(a,&quot;aw&quot;);break;case &quot;aw.ds&quot;:e(a,&quot;aw&quot;);e(a,&quot;dc&quot;);break;case &quot;ds&quot;:e(a,&quot;dc&quot;);break;case &quot;gf&quot;:e(a,&quot;gf&quot;);break;case &quot;ha&quot;:e(a,&quot;ha&quot;)}c&amp;&amp;e(c,&quot;dc&quot;);return d}</td>
+      </tr>
+      <tr>
+        <td id="L94" class="blob-num js-line-number" data-line-number="94"></td>
+        <td id="LC94" class="blob-code blob-code-inner js-file-line">function tg(a,b,c){function d(p,t){var q=ug(p,e);q&amp;&amp;kb(q,t,h,g,l,!0)}b=b||{};var e=qg(b.prefix),g=b.domain||&quot;auto&quot;,h=b.path||&quot;/&quot;,k=void 0==b.Jd?7776E3:b.Jd;c=c||ua();var l=0==k?void 0:new Date(c+1E3*k),m=Math.round(c/1E3),n=function(p){return[&quot;GCL&quot;,m,p].join(&quot;.&quot;)};a.aw&amp;&amp;(!0===b.$g?d(&quot;aw&quot;,n(&quot;~&quot;+a.aw[0])):d(&quot;aw&quot;,n(a.aw[0])));a.dc&amp;&amp;d(&quot;dc&quot;,n(a.dc[0]));a.gf&amp;&amp;d(&quot;gf&quot;,n(a.gf[0]));a.ha&amp;&amp;d(&quot;ha&quot;,n(a.ha[0]))}</td>
+      </tr>
+      <tr>
+        <td id="L95" class="blob-num js-line-number" data-line-number="95"></td>
+        <td id="LC95" class="blob-code blob-code-inner js-file-line">var ug=function(a,b){var c=pg[a];if(void 0!==c)return b+c},vg=function(a){var b=a.split(&quot;.&quot;);return 3!==b.length||&quot;GCL&quot;!==b[0]?0:1E3*(Number(b[1])||0)};function wg(a){var b=a.split(&quot;.&quot;);if(3==b.length&amp;&amp;&quot;GCL&quot;==b[0]&amp;&amp;b[1])return b[2]}</td>
+      </tr>
+      <tr>
+        <td id="L96" class="blob-num js-line-number" data-line-number="96"></td>
+        <td id="LC96" class="blob-code blob-code-inner js-file-line">var xg=function(a,b,c,d,e){if(ka(b)){var g=qg(e);jg(function(){for(var h={},k=0;k&lt;a.length;++k){var l=ug(a[k],g);if(l){var m=cb(l,u.cookie);m.length&amp;&amp;(h[l]=m.sort()[m.length-1])}}return h},b,c,d)}},yg=function(a){return a.filter(function(b){return og.test(b)})},zg=function(a){for(var b=[&quot;aw&quot;,&quot;dc&quot;],c=qg(a&amp;&amp;a.prefix),d={},e=0;e&lt;b.length;e++)pg[b[e]]&amp;&amp;(d[b[e]]=pg[b[e]]);pa(d,function(g,h){var k=cb(c+h,u.cookie);if(k.length){var l=k[0],m=vg(l),n={};n[g]=[wg(l)];tg(n,a,m)}})};var Ag=/^\d+\.fls\.doubleclick\.net$/;function Bg(a){var b=bb(f.location.href),c=ab(b,&quot;host&quot;,!1);if(c&amp;&amp;c.match(Ag)){var d=ab(b,&quot;path&quot;).split(a+&quot;=&quot;);if(1&lt;d.length)return d[1].split(&quot;;&quot;)[0].split(&quot;?&quot;)[0]}}</td>
+      </tr>
+      <tr>
+        <td id="L97" class="blob-num js-line-number" data-line-number="97"></td>
+        <td id="LC97" class="blob-code blob-code-inner js-file-line">function Cg(a,b){if(&quot;aw&quot;==a||&quot;dc&quot;==a){var c=Bg(&quot;gcl&quot;+a);if(c)return c.split(&quot;.&quot;)}var d=qg(b);if(&quot;_gcl&quot;==d){var e;e=sg()[a]||[];if(0&lt;e.length)return e}var g=ug(a,d),h;if(g){var k=[];if(u.cookie){var l=cb(g,u.cookie);if(l&amp;&amp;0!=l.length){for(var m=0;m&lt;l.length;m++){var n=wg(l[m]);n&amp;&amp;-1===la(k,n)&amp;&amp;k.push(n)}h=yg(k)}else h=k}else h=k}else h=[];return h}</td>
+      </tr>
+      <tr>
+        <td id="L98" class="blob-num js-line-number" data-line-number="98"></td>
+        <td id="LC98" class="blob-code blob-code-inner js-file-line">var Dg=function(){var a=Bg(&quot;gac&quot;);if(a)return decodeURIComponent(a);var b=Mf(),c=[];pa(b,function(d,e){for(var g=[],h=0;h&lt;e.length;h++)g.push(e[h].xf);g=yg(g);g.length&amp;&amp;c.push(d+&quot;:&quot;+g.join(&quot;,&quot;))});return c.join(&quot;;&quot;)},Eg=function(a,b,c,d,e){Lf(b,c,d,e);var g=Hf[If(b)],h=sg().dc||[],k=!1;if(g&amp;&amp;0&lt;h.length){var l=sc.joined_au=sc.joined_au||{},m=b||&quot;_gcl&quot;;if(!l[m])for(var n=0;n&lt;h.length;n++){var p=&quot;https://adservice.google.com/ddm/regclk&quot;,t=p=p+&quot;?gclid=&quot;+h[n]+&quot;&amp;auiddc=&quot;+g;Ga.sendBeacon&amp;&amp;Ga.sendBeacon(t)||Na(t);k=l[m]=</td>
+      </tr>
+      <tr>
+        <td id="L99" class="blob-num js-line-number" data-line-number="99"></td>
+        <td id="LC99" class="blob-code blob-code-inner js-file-line">!0}}null==a&amp;&amp;(a=k);if(a&amp;&amp;g){var q=If(b),r=Hf[q];r&amp;&amp;Kf(q,r,c,d,e)}};var Fg;if(3===rc.sb.length)Fg=&quot;g&quot;;else{var Gg=&quot;G&quot;;Gg=&quot;g&quot;;Fg=Gg}</td>
+      </tr>
+      <tr>
+        <td id="L100" class="blob-num js-line-number" data-line-number="100"></td>
+        <td id="LC100" class="blob-code blob-code-inner js-file-line">var Hg={&quot;&quot;:&quot;n&quot;,UA:&quot;u&quot;,AW:&quot;a&quot;,DC:&quot;d&quot;,G:&quot;e&quot;,GF:&quot;f&quot;,HA:&quot;h&quot;,GTM:Fg},Ig=function(a){var b=rc.m.split(&quot;-&quot;),c=b[0].toUpperCase(),d=Hg[c]||&quot;i&quot;,e=a&amp;&amp;&quot;GTM&quot;===c?b[1]:&quot;&quot;,g;if(3===rc.sb.length){var h=void 0;h=h||(ye()?&quot;s&quot;:&quot;o&quot;);g=&quot;2&quot;+(h||&quot;w&quot;)}else g=&quot;&quot;;return g+d+rc.sb+e};</td>
+      </tr>
+      <tr>
+        <td id="L101" class="blob-num js-line-number" data-line-number="101"></td>
+        <td id="LC101" class="blob-code blob-code-inner js-file-line">var Jg=function(a){return!(void 0===a||null===a||0===(a+&quot;&quot;).length)},Kg=function(a,b){var c;if(2===b.L)return a(&quot;ord&quot;,oa(1E11,1E13)),!0;if(3===b.L)return a(&quot;ord&quot;,&quot;1&quot;),a(&quot;num&quot;,oa(1E11,1E13)),!0;if(4===b.L)return Jg(b.sessionId)&amp;&amp;a(&quot;ord&quot;,b.sessionId),!0;if(5===b.L)c=&quot;1&quot;;else if(6===b.L)c=b.Gc;else return!1;Jg(c)&amp;&amp;a(&quot;qty&quot;,c);Jg(b.vb)&amp;&amp;a(&quot;cost&quot;,b.vb);Jg(b.transactionId)&amp;&amp;a(&quot;ord&quot;,b.transactionId);return!0},Lg=encodeURIComponent,Mg=function(a,b){function c(n,p,t){g.hasOwnProperty(n)||(p+=&quot;&quot;,e+=&quot;;&quot;+n+&quot;=&quot;+</td>
+      </tr>
+      <tr>
+        <td id="L102" class="blob-num js-line-number" data-line-number="102"></td>
+        <td id="LC102" class="blob-code blob-code-inner js-file-line">(t?p:Lg(p)))}var d=a.jc,e=a.protocol;e+=a.Eb?&quot;//&quot;+d+&quot;.fls.doubleclick.net/activityi&quot;:&quot;//ad.doubleclick.net/activity&quot;;e+=&quot;;src=&quot;+Lg(d)+(&quot;;type=&quot;+Lg(a.mc))+(&quot;;cat=&quot;+Lg(a.Na));var g=a.nf||{};pa(g,function(n,p){e+=&quot;;&quot;+Lg(n)+&quot;=&quot;+Lg(p+&quot;&quot;)});if(Kg(c,a)){Jg(a.Jb)&amp;&amp;c(&quot;u&quot;,a.Jb);Jg(a.Ib)&amp;&amp;c(&quot;tran&quot;,a.Ib);c(&quot;gtm&quot;,Ig());!1===a.Me&amp;&amp;c(&quot;npa&quot;,&quot;1&quot;);if(a.hc){var h=Cg(&quot;dc&quot;,a.wa);h&amp;&amp;h.length&amp;&amp;c(&quot;gcldc&quot;,h.join(&quot;.&quot;));var k=Cg(&quot;aw&quot;,a.wa);k&amp;&amp;k.length&amp;&amp;c(&quot;gclaw&quot;,k.join(&quot;.&quot;));var l=Dg();l&amp;&amp;c(&quot;gac&quot;,l);Lf(a.wa,void 0,a.hf,a.jf);</td>
+      </tr>
+      <tr>
+        <td id="L103" class="blob-num js-line-number" data-line-number="103"></td>
+        <td id="LC103" class="blob-code blob-code-inner js-file-line">var m=Hf[If(a.wa)];m&amp;&amp;c(&quot;auiddc&quot;,m)}Jg(a.Cc)&amp;&amp;c(&quot;prd&quot;,a.Cc,!0);pa(a.Pc,function(n,p){c(n,p)});e+=b||&quot;&quot;;Jg(a.Cb)&amp;&amp;c(&quot;~oref&quot;,a.Cb);a.Eb?Ma(e+&quot;?&quot;,a.I):Na(e+&quot;?&quot;,a.I,a.O)}else z(a.O)};var Og=function(a){var b=&quot;/pagead/conversion/&quot;+Ng(a.conversion_id)+&quot;/?&quot;,c=Ng(JSON.stringify(a.conversion_data)),d=&quot;https://www.googletraveladservices.com/travel/flights/clk&quot;+b+&quot;conversion_data=&quot;+c;if(a.conversionLinkerEnabled){var e=Cg(&quot;gf&quot;,a.cookiePrefix);if(e&amp;&amp;e.length)for(var g=0;g&lt;e.length;g++)d+=&quot;&amp;gclgf=&quot;+Ng(e[g])}Na(d,a.onSuccess,a.onFailure)},Ng=function(a){return null===a||void 0===a||0===String(a).length?&quot;&quot;:encodeURIComponent(String(a))};</td>
+      </tr>
+      <tr>
+        <td id="L104" class="blob-num js-line-number" data-line-number="104"></td>
+        <td id="LC104" class="blob-code blob-code-inner js-file-line">var Pg=!!f.MutationObserver,Qg=void 0,Rg=function(a){if(!Qg){var b=function(){var c=u.body;if(c)if(Pg)(new MutationObserver(function(){for(var e=0;e&lt;Qg.length;e++)z(Qg[e])})).observe(c,{childList:!0,subtree:!0});else{var d=!1;Oa(c,&quot;DOMNodeInserted&quot;,function(){d||(d=!0,z(function(){d=!1;for(var e=0;e&lt;Qg.length;e++)z(Qg[e])}))})}};Qg=[];u.body?b():z(b)}Qg.push(a)};var ih=f.clearTimeout,jh=f.setTimeout,G=function(a,b,c){if(ye()){b&amp;&amp;z(b)}else return Ka(a,b,c)},kh=function(){return new Date},lh=function(){return f.location.href},mh=function(a){return ab(bb(a),&quot;fragment&quot;)},nh=function(a){return $a(bb(a))},oh=function(a,b){return fd(a,b||2)},ph=function(a,b,c){b&amp;&amp;(a.eventCallback=b,c&amp;&amp;(a.eventTimeout=c));return Me(a)},qh=function(a,b){f[a]=b},L=function(a,b,c){b&amp;&amp;(void 0===f[a]||</td>
+      </tr>
+      <tr>
+        <td id="L105" class="blob-num js-line-number" data-line-number="105"></td>
+        <td id="LC105" class="blob-code blob-code-inner js-file-line">c&amp;&amp;!f[a])&amp;&amp;(f[a]=b);return f[a]},rh=function(a,b,c){return cb(a,b,void 0===c?!0:!!c)},sh=function(a,b,c,d){var e={prefix:a,path:b,domain:c,Jd:d},g=sg();tg(g,e);zg(e)},th=function(a,b,c,d,e){var g=dg(),h=Vf();h.data||(h.data={query:{},fragment:{}},g(h.data));var k={},l=h.data;l&amp;&amp;(ya(k,l.query),ya(k,l.fragment));for(var m=qg(b),n=0;n&lt;a.length;++n){var p=a[n];if(void 0!==pg[p]){var t=ug(p,m),q=k[t];if(q){var r=Math.min(vg(q),ua()),v;b:{for(var x=r,y=cb(t,u.cookie),</td>
+      </tr>
+      <tr>
+        <td id="L106" class="blob-num js-line-number" data-line-number="106"></td>
+        <td id="LC106" class="blob-code blob-code-inner js-file-line">w=0;w&lt;y.length;++w)if(vg(y[w])&gt;x){v=!0;break b}v=!1}v||kb(t,q,c,d,0==e?void 0:new Date(r+1E3*(null==e?7776E3:e)),!0)}}}var B={prefix:b,path:c,domain:d};tg(rg(k.gclid,k.gclsrc),B);},uh=function(a,b,c,d,e){xg(a,b,c,d,e);},vh=function(a,b){if(ye()){b&amp;&amp;z(b)}else Ma(a,b)},wh=function(a){return!!Af(a,</td>
+      </tr>
+      <tr>
+        <td id="L107" class="blob-num js-line-number" data-line-number="107"></td>
+        <td id="LC107" class="blob-code blob-code-inner js-file-line">&quot;init&quot;,!1)},xh=function(a){yf(a,&quot;init&quot;,!0)},yh=function(a,b,c){var d=(void 0===c?0:c)?&quot;www.googletagmanager.com/gtag/js&quot;:vc;d+=&quot;?id=&quot;+encodeURIComponent(a)+&quot;&amp;l=dataLayer&quot;;b&amp;&amp;pa(b,function(e,g){g&amp;&amp;(d+=&quot;&amp;&quot;+e+&quot;=&quot;+encodeURIComponent(g))});G(E(&quot;https://&quot;,&quot;http://&quot;,d))};</td>
+      </tr>
+      <tr>
+        <td id="L108" class="blob-num js-line-number" data-line-number="108"></td>
+        <td id="LC108" class="blob-code blob-code-inner js-file-line">var zh=function(a,b,c,d,e,g){var h={config:a,gtm:Ig()};c&amp;&amp;(Lf(d,void 0,e,g),h.auiddc=Hf[If(d)]);b&amp;&amp;(h.loadInsecure=b);L(&quot;__dc_ns_processor&quot;,[]).push(h);G((b?&quot;http&quot;:&quot;https&quot;)+&quot;://www.googletagmanager.com/dclk/ns/v1.js&quot;)};var Ah=tf.Rf;var Bh=new va;function Ch(a,b){function c(h){var k=bb(h),l=ab(k,&quot;protocol&quot;),m=ab(k,&quot;host&quot;,!0),n=ab(k,&quot;port&quot;),p=ab(k,&quot;path&quot;).toLowerCase().replace(/\/$/,&quot;&quot;);if(void 0===l||&quot;http&quot;==l&amp;&amp;&quot;80&quot;==n||&quot;https&quot;==l&amp;&amp;&quot;443&quot;==n)l=&quot;web&quot;,n=&quot;default&quot;;return[l,m,n,p]}for(var d=c(String(a)),e=c(String(b)),g=0;g&lt;d.length;g++)if(d[g]!==e[g])return!1;return!0}</td>
+      </tr>
+      <tr>
+        <td id="L109" class="blob-num js-line-number" data-line-number="109"></td>
+        <td id="LC109" class="blob-code blob-code-inner js-file-line">function Dh(a){var b=a.arg0,c=a.arg1;if(a.any_of&amp;&amp;ka(c)){for(var d=0;d&lt;c.length;d++)if(Dh({&quot;function&quot;:a[&quot;function&quot;],arg0:b,arg1:c[d]}))return!0;return!1}switch(a[&quot;function&quot;]){case &quot;_cn&quot;:return 0&lt;=String(b).indexOf(String(c));case &quot;_css&quot;:var e;a:{if(b){var g=[&quot;matches&quot;,&quot;webkitMatchesSelector&quot;,&quot;mozMatchesSelector&quot;,&quot;msMatchesSelector&quot;,&quot;oMatchesSelector&quot;];try{for(var h=0;h&lt;g.length;h++)if(b[g[h]]){e=b[g[h]](c);break a}}catch(v){}}e=!1}return e;case &quot;_ew&quot;:var k,l;k=String(b);l=String(c);var m=k.length-</td>
+      </tr>
+      <tr>
+        <td id="L110" class="blob-num js-line-number" data-line-number="110"></td>
+        <td id="LC110" class="blob-code blob-code-inner js-file-line">l.length;return 0&lt;=m&amp;&amp;k.indexOf(l,m)==m;case &quot;_eq&quot;:return String(b)==String(c);case &quot;_ge&quot;:return Number(b)&gt;=Number(c);case &quot;_gt&quot;:return Number(b)&gt;Number(c);case &quot;_lc&quot;:var n;n=String(b).split(&quot;,&quot;);return 0&lt;=la(n,String(c));case &quot;_le&quot;:return Number(b)&lt;=Number(c);case &quot;_lt&quot;:return Number(b)&lt;Number(c);case &quot;_re&quot;:var p;var t=a.ignore_case?&quot;i&quot;:void 0;try{var q=String(c)+t,r=Bh.get(q);r||(r=new RegExp(c,t),Bh.set(q,r));p=r.test(b)}catch(v){p=!1}return p;case &quot;_sw&quot;:return 0==String(b).indexOf(String(c));</td>
+      </tr>
+      <tr>
+        <td id="L111" class="blob-num js-line-number" data-line-number="111"></td>
+        <td id="LC111" class="blob-code blob-code-inner js-file-line">case &quot;_um&quot;:return Ch(b,c)}return!1};var Fh=function(a,b){var c=function(){};c.prototype=a.prototype;var d=new c;a.apply(d,Array.prototype.slice.call(arguments,1));return d};var Gh={},Hh=encodeURI,M=encodeURIComponent,Ih=Na;var Jh=function(a,b){if(!a)return!1;var c=ab(bb(a),&quot;host&quot;);if(!c)return!1;for(var d=0;b&amp;&amp;d&lt;b.length;d++){var e=b[d]&amp;&amp;b[d].toLowerCase();if(e){var g=c.length-e.length;0&lt;g&amp;&amp;&quot;.&quot;!=e.charAt(0)&amp;&amp;(g--,e=&quot;.&quot;+e);if(0&lt;=g&amp;&amp;c.indexOf(e,g)==g)return!0}}return!1};</td>
+      </tr>
+      <tr>
+        <td id="L112" class="blob-num js-line-number" data-line-number="112"></td>
+        <td id="LC112" class="blob-code blob-code-inner js-file-line">var Kh=function(a,b,c){for(var d={},e=!1,g=0;a&amp;&amp;g&lt;a.length;g++)a[g]&amp;&amp;a[g].hasOwnProperty(b)&amp;&amp;a[g].hasOwnProperty(c)&amp;&amp;(d[a[g][b]]=a[g][c],e=!0);return e?d:null};Gh.Of=function(){var a=!1;return a};var ti=function(a,b,c,d){this.n=a;this.t=b;this.p=c;this.d=d},ui=function(){this.c=1;this.e=[];this.p=null};function vi(a){var b=sc,c=b.gss=b.gss||{};return c[a]=c[a]||new ui}var wi=function(a,b){vi(a).p=b},xi=function(a){var b=vi(a),c=b.p;if(c){var d=b.e,e=[];b.e=[];var g=function(h){for(var k=0;k&lt;h.length;k++)try{var l=h[k];l.d?(l.d=!1,e.push(l)):c(l.n,l.t,l.p)}catch(m){}};g(d);g(e)}};var zi=function(){var a=f.gaGlobal=f.gaGlobal||{};a.hid=a.hid||oa();return a.hid};var Oi=window,Pi=document,Qi=function(a){var b=Oi._gaUserPrefs;if(b&amp;&amp;b.ioo&amp;&amp;b.ioo()||a&amp;&amp;!0===Oi[&quot;ga-disable-&quot;+a])return!0;try{var c=Oi.external;if(c&amp;&amp;c._gaUserPrefs&amp;&amp;&quot;oo&quot;==c._gaUserPrefs)return!0}catch(g){}for(var d=cb(&quot;AMP_TOKEN&quot;,Pi.cookie,!0),e=0;e&lt;d.length;e++)if(&quot;$OPT_OUT&quot;==d[e])return!0;return Pi.getElementById(&quot;__gaOptOutExtension&quot;)?!0:!1};var Xi=function(a,b,c){Wi(a);var d=Math.floor(ua()/1E3);vi(a).e.push(new ti(b,d,c,void 0));xi(a)},Yi=function(a,b,c){Wi(a);var d=Math.floor(ua()/1E3);vi(a).e.push(new ti(b,d,c,!0))},Wi=function(a){if(1===vi(a).c){vi(a).c=2;var b=encodeURIComponent(a);Ka((&quot;http:&quot;!=f.location.protocol?&quot;https:&quot;:&quot;http:&quot;)+(&quot;//www.googletagmanager.com/gtag/js?id=&quot;+b+&quot;&amp;l=dataLayer&amp;cx=c&quot;))}},$i=function(a,b){},Zi=function(a,b){};var W={a:{}};</td>
+      </tr>
+      <tr>
+        <td id="L113" class="blob-num js-line-number" data-line-number="113"></td>
+        <td id="LC113" class="blob-code blob-code-inner js-file-line">W.a.gtagha=[&quot;google&quot;],function(){function a(h){function k(m,n){void 0!==n&amp;&amp;l.push(m+&quot;=&quot;+n)}if(void 0===h)return&quot;&quot;;var l=[];k(&quot;hct_base_price&quot;,h.Cd);k(&quot;hct_booking_xref&quot;,h.Dd);k(&quot;hct_checkin_date&quot;,h.Df);k(&quot;hct_checkout_date&quot;,h.Ef);k(&quot;hct_currency_code&quot;,h.Ff);k(&quot;hct_partner_hotel_id&quot;,h.Ed);k(&quot;hct_total_price&quot;,h.Fd);return l.join(&quot;;&quot;)}function b(h,k,l,m){var n=M(h),p=M(a(k)),t=&quot;https://www.googletraveladservices.com/travel/clk/pagead/conversion/&quot;+n+&quot;/?data=&quot;+p;l&amp;&amp;(t+=Cg(&quot;ha&quot;,m).map(function(q){return&quot;&amp;gclha=&quot;+</td>
+      </tr>
+      <tr>
+        <td id="L114" class="blob-num js-line-number" data-line-number="114"></td>
+        <td id="LC114" class="blob-code blob-code-inner js-file-line">M(q)}).join(&quot;&quot;));return t}function c(h,k,l,m,n,p){/^\d+$/.test(h)?Ih(b(h,k,l,m),n,p):z(p)}function d(h,k,l,m){var n={};ia(h)?n.Dd=h:&quot;number&quot;===typeof h&amp;&amp;(n.Dd=String(h));ia(l)&amp;&amp;(n.Ff=l);ia(k)?n.Fd=n.Cd=k:&quot;number&quot;===typeof k&amp;&amp;(n.Fd=n.Cd=String(k));if(!ka(m)||0==m.length)return n;var p=m[0];if(!Ea(p))return n;ia(p.id)?n.Ed=p.id:&quot;number&quot;===typeof p.id&amp;&amp;(n.Ed=String(p.id));ia(p.start_date)&amp;&amp;(n.Df=p.start_date);ia(p.end_date)&amp;&amp;(n.Ef=p.end_date);return n}function e(h){var k=yc,l=h.vtp_gtmOnSuccess,m=h.vtp_gtmOnFailure,</td>
+      </tr>
+      <tr>
+        <td id="L115" class="blob-num js-line-number" data-line-number="115"></td>
+        <td id="LC115" class="blob-code blob-code-inner js-file-line">n=h.vtp_conversionId,p=n.containerId,t=function(B){return hd(B,p,n.id)},q=!1!==t(F.Ga),r=t(F.Fa)||t(F.F),v=t(F.N),x=t(F.T);if(k===F.aa){var y=t(F.Ia)||{};q&amp;&amp;(lg(y[F.gb],!!y[F.H])&amp;&amp;th(g,r,void 0,v,x),sh(r,void 0,v,x));y[F.H]&amp;&amp;uh(g,y[F.H],y[F.ib],!!y[F.hb],r);z(l)}else if(&quot;purchase&quot;===k){var w=d(t(F.Ka),t(F.ca),t(F.oa),t(F.S));c(n.da[0],w,q,r,l,m)}else z(m)}var g=[&quot;ha&quot;];W.__gtagha=e;W.__gtagha.g=&quot;gtagha&quot;;W.__gtagha.h=!0;W.__gtagha.b=0;}();</td>
+      </tr>
+      <tr>
+        <td id="L116" class="blob-num js-line-number" data-line-number="116"></td>
+        <td id="LC116" class="blob-code blob-code-inner js-file-line">W.a.e=[&quot;google&quot;],function(){(function(a){W.__e=a;W.__e.g=&quot;e&quot;;W.__e.h=!0;W.__e.b=0})(function(){return yc})}();</td>
+      </tr>
+      <tr>
+        <td id="L117" class="blob-num js-line-number" data-line-number="117"></td>
+        <td id="LC117" class="blob-code blob-code-inner js-file-line">W.a.v=[&quot;google&quot;],function(){(function(a){W.__v=a;W.__v.g=&quot;v&quot;;W.__v.h=!0;W.__v.b=0})(function(a){var b=a.vtp_name;if(!b||!b.replace)return!1;var c=oh(b.replace(/\\\./g,&quot;.&quot;),a.vtp_dataLayerVersion||1);return void 0!==c?c:a.vtp_defaultValue})}();</td>
+      </tr>
+      <tr>
+        <td id="L118" class="blob-num js-line-number" data-line-number="118"></td>
+        <td id="LC118" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L119" class="blob-num js-line-number" data-line-number="119"></td>
+        <td id="LC119" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L120" class="blob-num js-line-number" data-line-number="120"></td>
+        <td id="LC120" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L121" class="blob-num js-line-number" data-line-number="121"></td>
+        <td id="LC121" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L122" class="blob-num js-line-number" data-line-number="122"></td>
+        <td id="LC122" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L123" class="blob-num js-line-number" data-line-number="123"></td>
+        <td id="LC123" class="blob-code blob-code-inner js-file-line">W.a.gtagaw=[&quot;google&quot;],function(){var a=!1,b=[],c=[&quot;aw&quot;,&quot;dc&quot;],d=function(m){var n=L(&quot;google_trackConversion&quot;),p=m.gtm_onFailure;&quot;function&quot;==typeof n?n(m)||p():p()},e=function(){for(;0&lt;b.length;)d(b.shift())},g=function(){a||(a=!0,Bd(),G(E(&quot;https://&quot;,&quot;http://&quot;,&quot;www.googleadservices.com/pagead/conversion_async.js&quot;),function(){e();b={push:d}},function(){e();a=!1}))},h=function(m,n,p,t){if(ye()){}else{ka(n)||(n=[n]);for(var q=</td>
+      </tr>
+      <tr>
+        <td id="L124" class="blob-num js-line-number" data-line-number="124"></td>
+        <td id="LC124" class="blob-code blob-code-inner js-file-line">0;q&lt;n.length;q++)1&gt;q&amp;&amp;Fc(m.da[0],m.da[1],n[q],{Yd:p,wg:t})}},k=function(m){if(m){for(var n=[],p=0;p&lt;m.length;++p){var t=m[p];t&amp;&amp;n.push({item_id:t.id,quantity:t.quantity,value:t.price,start_date:t.start_date,end_date:t.end_date})}return n}},l=function(m){var n=m.vtp_conversionId,p=yc,t=p==F.aa,q=n.da[0],r=n.da[1],v=void 0!==r,x=n.containerId,y=v?n.id:void 0,w=function(Y){return hd(Y,x,y)},B=!1!==w(F.Ga),A=w(F.Fa)||w(F.F),C=w(F.N),D=w(F.T);if(t){var H=w(F.Ia)||{};B&amp;&amp;(lg(H[F.gb],!!H[F.H])&amp;&amp;th(c,A,void 0,</td>
+      </tr>
+      <tr>
+        <td id="L125" class="blob-num js-line-number" data-line-number="125"></td>
+        <td id="LC125" class="blob-code blob-code-inner js-file-line">C,D),sh(A,void 0,C,D));H[F.H]&amp;&amp;uh(c,H[F.H],H[F.ib],!!H[F.hb],A);if(v){var N=w(F.Wb),R=w(F.Ub),V=w(F.Vb),Q=w(F.jd);h(n,N,R||V,Q)}}var S=!1===w(F.Zc)||!1===w(F.Ja);if(!t||!v&amp;&amp;!S)if(!0===w(F.$c)&amp;&amp;(v=!1),!1!==w(F.R)||v){var O={google_conversion_id:q,google_remarketing_only:!v,onload_callback:m.vtp_gtmOnSuccess,gtm_onFailure:m.vtp_gtmOnFailure,google_conversion_format:&quot;3&quot;,google_conversion_color:&quot;ffffff&quot;,google_conversion_domain:&quot;&quot;,google_conversion_label:r,google_conversion_language:w(F.Ha),google_conversion_value:w(F.ca),</td>
+      </tr>
+      <tr>
+        <td id="L126" class="blob-num js-line-number" data-line-number="126"></td>
+        <td id="LC126" class="blob-code blob-code-inner js-file-line">google_conversion_currency:w(F.oa),google_conversion_order_id:w(F.Ka),google_user_id:w(F.ba),google_conversion_page_url:w(F.jb),google_conversion_referrer_url:w(F.kb),google_gtm:Ig()};ye()&amp;&amp;(O.opt_image_generator=function(){return new Image},O.google_enable_display_cookie_match=!1);!1===w(F.R)&amp;&amp;(O.google_allow_ad_personalization_signals=!1);O.google_read_gcl_cookie_opt_out=!B;B&amp;&amp;A&amp;&amp;(O.google_gcl_cookie_prefix=A);var J=function(){var Y=w(F.eb),K={event:p};if(ka(Y)){for(var P=0;P&lt;Y.length;++P){var ba=</td>
+      </tr>
+      <tr>
+        <td id="L127" class="blob-num js-line-number" data-line-number="127"></td>
+        <td id="LC127" class="blob-code blob-code-inner js-file-line">Y[P],na=w(ba);void 0!==na&amp;&amp;(K[ba]=na)}return K}var X=w(&quot;eventModel&quot;);if(!X)return null;Fa(X,K);for(var Z=0;Z&lt;F.Tc.length;++Z)delete K[F.Tc[Z]];return K}();J&amp;&amp;(O.google_custom_params=J);!v&amp;&amp;w(F.S)&amp;&amp;(O.google_gtag_event_data={items:w(F.S),value:w(F.ca)});if(v&amp;&amp;&quot;purchase&quot;==p){w(F.Mb)&amp;&amp;(O.google_conversion_merchant_id=w(F.Mb),O.google_basket_feed_country=w(F.bd),O.google_basket_feed_language=w(F.cd),O.google_basket_discount=w(F.ad),O.google_basket_transaction_type=p,O.google_disable_merchant_reported_conversions=</td>
+      </tr>
+      <tr>
+        <td id="L128" class="blob-num js-line-number" data-line-number="128"></td>
+        <td id="LC128" class="blob-code blob-code-inner js-file-line">!0===w(F.ed),ye()&amp;&amp;(O.google_disable_merchant_reported_conversions=!0));var I=k(w(F.S));I&amp;&amp;(O.google_conversion_items=I)}var T=function(Y,K){void 0!=K&amp;&amp;&quot;&quot;!==K&amp;&amp;(O.google_additional_conversion_params=O.google_additional_conversion_params||{},O.google_additional_conversion_params[Y]=K)};v&amp;&amp;(&quot;boolean&quot;==typeof w(F.Tb)&amp;&amp;T(&quot;vdnc&quot;,w(F.Tb)),T(&quot;vdltv&quot;,w(F.dd)));var U=!0;</td>
+      </tr>
+      <tr>
+        <td id="L129" class="blob-num js-line-number" data-line-number="129"></td>
+        <td id="LC129" class="blob-code blob-code-inner js-file-line">U&amp;&amp;b.push(O)}g()};W.__gtagaw=l;W.__gtagaw.g=&quot;gtagaw&quot;;W.__gtagaw.h=!0;W.__gtagaw.b=0}();</td>
+      </tr>
+      <tr>
+        <td id="L130" class="blob-num js-line-number" data-line-number="130"></td>
+        <td id="LC130" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L131" class="blob-num js-line-number" data-line-number="131"></td>
+        <td id="LC131" class="blob-code blob-code-inner js-file-line">W.a.get=[&quot;google&quot;],function(){function a(b,c){pa(c,function(e){&quot;_&quot;===e.charAt(0)&amp;&amp;delete c[e]});var d=c[F.nb]||{};pa(d,function(e){&quot;_&quot;===e.charAt(0)&amp;&amp;delete d[e]})}(function(b){W.__get=b;W.__get.g=&quot;get&quot;;W.__get.h=!0;W.__get.b=0})(function(b){if(b.vtp_isAutoTag){for(var c=String(b.vtp_trackingId),d=yc||&quot;&quot;,e={},g=F.kd,h=0;h&lt;g.length;h++){var k=kd(g[h],c);void 0!==k&amp;&amp;(e[g[h]]=k)}var l=kd(F.eb,c);if(ka(l))for(var m=0;m&lt;l.length;m++){var n=l[m],p=kd(n,c);void 0!==p&amp;&amp;(e[n]=p)}else{var t=oh(&quot;eventModel&quot;);</td>
+      </tr>
+      <tr>
+        <td id="L132" class="blob-num js-line-number" data-line-number="132"></td>
+        <td id="LC132" class="blob-code blob-code-inner js-file-line">Fa(t,e)}if(&quot;_&quot;===d.charAt(0))return;a(d,e);Xi(c,d,Fa(e))}else{var q=b.vtp_settings,r=q.eventParameters,v=q.userProperties;Fa(Kh(b.vtp_eventParameters,&quot;name&quot;,&quot;value&quot;),r);Fa(Kh(b.vtp_userProperties,&quot;name&quot;,&quot;value&quot;),v);r[F.nb]=v;var x=String(b.vtp_eventName),y=b.vtp_allowSystemNames;if(!y&amp;&amp;&quot;_&quot;===x.charAt(0))return;y||a(x,r);(b.vtp_deferrable?Yi:Xi)(String(q.streamId),x,r)}b.vtp_gtmOnSuccess()})}();</td>
+      </tr>
+      <tr>
+        <td id="L133" class="blob-num js-line-number" data-line-number="133"></td>
+        <td id="LC133" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L134" class="blob-num js-line-number" data-line-number="134"></td>
+        <td id="LC134" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L135" class="blob-num js-line-number" data-line-number="135"></td>
+        <td id="LC135" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L136" class="blob-num js-line-number" data-line-number="136"></td>
+        <td id="LC136" class="blob-code blob-code-inner js-file-line">W.a.gtagfl=[],function(){function a(e){var g=/^DC-(\d+)(\/([\w-]+)\/([\w-]+)\+(\w+))?$/.exec(e);if(g){var h={standard:2,unique:3,per_session:4,transactions:5,items_sold:6,&quot;&quot;:1}[(g[5]||&quot;&quot;).toLowerCase()];if(h)return{containerId:&quot;DC-&quot;+g[1],Xd:g[3]?e:&quot;&quot;,Ge:g[1],Fe:g[3]||&quot;&quot;,Na:g[4]||&quot;&quot;,L:h}}}function b(e,g){function h(t,q,r){void 0!==r&amp;&amp;0!==(r+&quot;&quot;).length&amp;&amp;k.push(t+q+&quot;:&quot;+e(r+&quot;&quot;))}var k=[],l=g(F.S)||[];if(ka(l))for(var m=0;m&lt;l.length;m++){var n=l[m],p=m+1;h(&quot;i&quot;,p,n.id);h(&quot;p&quot;,p,n.price);h(&quot;q&quot;,p,n.quantity);</td>
+      </tr>
+      <tr>
+        <td id="L137" class="blob-num js-line-number" data-line-number="137"></td>
+        <td id="LC137" class="blob-code blob-code-inner js-file-line">h(&quot;c&quot;,p,g(F.ee));h(&quot;l&quot;,p,g(F.Ha))}return k.join(&quot;|&quot;)}function c(e,g,h){var k=/^u([1-9]\d?|100)$/,l=e(F.fe)||{},m=ld(g,h),n={},p={};if(Ea(l))for(var t in l)if(l.hasOwnProperty(t)&amp;&amp;k.test(t)){var q=l[t];ia(q)&amp;&amp;(n[t]=q)}for(var r=0;r&lt;m.length;r++){var v=m[r];k.test(v)&amp;&amp;(n[v]=v)}for(var x in n)n.hasOwnProperty(x)&amp;&amp;(p[x]=e(n[x]));return p}var d=[&quot;aw&quot;,&quot;dc&quot;];(function(e){W.__gtagfl=e;W.__gtagfl.g=&quot;gtagfl&quot;;W.__gtagfl.h=!0;W.__gtagfl.b=0})(function(e){var g=e.vtp_gtmOnSuccess,h=e.vtp_gtmOnFailure,k=a(e.vtp_targetId);</td>
+      </tr>
+      <tr>
+        <td id="L138" class="blob-num js-line-number" data-line-number="138"></td>
+        <td id="LC138" class="blob-code blob-code-inner js-file-line">if(k){var l=function(V){return hd(V,k.containerId,k.Xd||void 0)},m=!1!==l(F.Ga),n=l(F.Fa)||l(F.F),p=l(F.N),t=l(F.T),q=l(F.ie),r=3===Dc();if(yc===F.aa){var v=l(F.Ia)||{},x=l(F.de),y=void 0===x?!0:!!x;m&amp;&amp;(lg(v[F.gb],!!v[F.H])&amp;&amp;th(d,n,void 0,p,t),sh(n,void 0,p,t),Eg(y,n,void 0,p,t));v[F.H]&amp;&amp;uh(d,v[F.H],v[F.ib],!!v[F.hb],n);if(q&amp;&amp;q.exclusion_parameters&amp;&amp;q.engines){}z(g)}else{var w={},B=l(F.he);</td>
+      </tr>
+      <tr>
+        <td id="L139" class="blob-num js-line-number" data-line-number="139"></td>
+        <td id="LC139" class="blob-code blob-code-inner js-file-line">if(Ea(B))for(var A in B)if(B.hasOwnProperty(A)){var C=B[A];void 0!==C&amp;&amp;null!==C&amp;&amp;(w[A]=C)}var D=&quot;&quot;;if(5===k.L||6===k.L)D=b(M,l);var H=c(l,k.containerId,k.Xd),N=!0===l(F.$d);if(ye()&amp;&amp;N){N=!1}var R={Na:k.Na,hc:m,hf:p,jf:t,wa:n,vb:l(F.ca),L:k.L,nf:w,jc:k.Ge,mc:k.Fe,O:h,I:g,Cb:nh(lh()),Cc:D,protocol:r?&quot;http:&quot;:&quot;https:&quot;,Gc:l(F.ue),Eb:N,sessionId:l(F.mb),Ib:void 0,transactionId:l(F.Ka),Jb:void 0,Pc:H,Me:!1!==l(F.R)};Mg(R)}}else z(h)})}();</td>
+      </tr>
+      <tr>
+        <td id="L140" class="blob-num js-line-number" data-line-number="140"></td>
+        <td id="LC140" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L141" class="blob-num js-line-number" data-line-number="141"></td>
+        <td id="LC141" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L142" class="blob-num js-line-number" data-line-number="142"></td>
+        <td id="LC142" class="blob-code blob-code-inner js-file-line">W.a.gtaggf=[&quot;google&quot;],function(){var a=/.*\.google\.com(:\d+)?\/booking\/flights.*/,b=function(c){if(c){for(var d=[],e=0,g=0;g&lt;c.length;++g){var h=c[g];!h||void 0!==h.category&amp;&amp;&quot;&quot;!==h.category&amp;&amp;&quot;FlightSegment&quot;!==h.category||(d[e]={cabin:h.travel_class,fare_product:h.fare_product,booking_code:h.booking_code,flight_number:h.flight_number,origin:h.origin,destination:h.destination,departure_date:h.start_date},e++)}return d}};(function(c){W.__gtaggf=c;W.__gtaggf.g=&quot;gtaggf&quot;;W.__gtaggf.h=!0;W.__gtaggf.b=</td>
+      </tr>
+      <tr>
+        <td id="L143" class="blob-num js-line-number" data-line-number="143"></td>
+        <td id="LC143" class="blob-code blob-code-inner js-file-line">0})(function(c){var d=yc,e=c.vtp_gtmOnSuccess,g=c.vtp_gtmOnFailure,h=c.vtp_conversionId,k=h.da[0],l=h.containerId,m=function(w){return hd(w,l,h.id)},n=!1!==m(F.Ga),p=m(F.Fa)||m(F.F),t=m(F.N),q=m(F.T);if(d===F.aa)n&amp;&amp;sh(p,void 0,t,q),z(e);else{var r={conversion_id:k,onFailure:g,onSuccess:e,conversionLinkerEnabled:n,cookiePrefix:p};if(&quot;purchase&quot;===d){var v=a.test(lh()),x={partner_id:k,trip_type:m(F.xe),total_price:m(F.ca),currency:m(F.oa),is_direct_booking:v,flight_segment:b(m(F.S))},y=m(F.te);y&amp;&amp;&quot;object&quot;===</td>
+      </tr>
+      <tr>
+        <td id="L144" class="blob-num js-line-number" data-line-number="144"></td>
+        <td id="LC144" class="blob-code blob-code-inner js-file-line">typeof y&amp;&amp;(x.passengers_total=y.total,x.passengers_adult=y.adult,x.passengers_child=y.child,x.passengers_infant_in_seat=y.infant_in_seat,x.passengers_infant_in_lap=y.infant_in_lap);r.conversion_data=x}Og(r)}})}();</td>
+      </tr>
+      <tr>
+        <td id="L145" class="blob-num js-line-number" data-line-number="145"></td>
+        <td id="LC145" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L146" class="blob-num js-line-number" data-line-number="146"></td>
+        <td id="LC146" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L147" class="blob-num js-line-number" data-line-number="147"></td>
+        <td id="LC147" class="blob-code blob-code-inner js-file-line">W.a.gtagua=[&quot;google&quot;],function(){var a,b={client_id:1,client_storage:&quot;storage&quot;,cookie_name:1,cookie_domain:1,cookie_expires:1,cookie_path:1,cookie_update:1,sample_rate:1,site_speed_sample_rate:1,use_amp_client_id:1,store_gac:1,conversion_linker:&quot;storeGac&quot;},c={anonymize_ip:1,app_id:1,app_installer_id:1,app_name:1,app_version:1,campaign:{name:&quot;campaignName&quot;,source:&quot;campaignSource&quot;,medium:&quot;campaignMedium&quot;,term:&quot;campaignTerm&quot;,content:&quot;campaignContent&quot;,id:&quot;campaignId&quot;},currency:&quot;currencyCode&quot;,description:&quot;exDescription&quot;,</td>
+      </tr>
+      <tr>
+        <td id="L148" class="blob-num js-line-number" data-line-number="148"></td>
+        <td id="LC148" class="blob-code blob-code-inner js-file-line">fatal:&quot;exFatal&quot;,language:1,non_interaction:1,page_hostname:&quot;hostname&quot;,page_referrer:&quot;referrer&quot;,page_path:&quot;page&quot;,page_location:&quot;location&quot;,page_title:&quot;title&quot;,screen_name:1,transport_type:&quot;transport&quot;,user_id:1},d={content_id:1,event_category:1,event_action:1,event_label:1,link_attribution:1,linker:1,method:1,name:1,send_page_view:1,value:1},e={cookie_name:1,cookie_expires:&quot;duration&quot;,levels:1},g={anonymize_ip:1,fatal:1,non_interaction:1,use_amp_client_id:1,send_page_view:1,store_gac:1,conversion_linker:1},</td>
+      </tr>
+      <tr>
+        <td id="L149" class="blob-num js-line-number" data-line-number="149"></td>
+        <td id="LC149" class="blob-code blob-code-inner js-file-line">h=function(r,v,x,y){if(void 0!==x)if(g[v]&amp;&amp;(x=ra(x)),&quot;anonymize_ip&quot;!=v||x||(x=void 0),1===r)y[k(v)]=x;else if(ia(r))y[r]=x;else for(var w in r)r.hasOwnProperty(w)&amp;&amp;void 0!==x[w]&amp;&amp;(y[r[w]]=x[w])},k=function(r){return r&amp;&amp;ia(r)?r.replace(/(_[a-z])/g,function(v){return v[1].toUpperCase()}):r},l=function(r,v,x){r.hasOwnProperty(v)||(r[v]=x)},m=function(r,v,x){var y={},w={},B={},A;var C=kd(F.pe,r);if(ka(C)){for(var D=[],H=0;H&lt;C.length;H++){var N=C[H];if(void 0!=N){var R=N.id,V=N.variant;void 0!=R&amp;&amp;void 0!=</td>
+      </tr>
+      <tr>
+        <td id="L150" class="blob-num js-line-number" data-line-number="150"></td>
+        <td id="LC150" class="blob-code blob-code-inner js-file-line">V&amp;&amp;D.push(String(R)+&quot;.&quot;+String(V))}}A=0&lt;D.length?D.join(&quot;!&quot;):void 0}else A=void 0;var Q=A;Q&amp;&amp;l(w,&quot;exp&quot;,Q);var S=kd(&quot;custom_map&quot;,r);if(Ea(S))for(var O in S)if(S.hasOwnProperty(O)&amp;&amp;/^(dimension|metric)\d+$/.test(O)&amp;&amp;void 0!=S[O]){var J=kd(String(S[O]),r);void 0!==J&amp;&amp;l(w,O,J)}for(var I=ld(r),T=0;T&lt;I.length;++T){var U=I[T],Y=kd(U,r);d.hasOwnProperty(U)?h(d[U],U,Y,y):c.hasOwnProperty(U)?h(c[U],U,Y,w):b.hasOwnProperty(U)?h(b[U],U,Y,B):/^(dimension|metric|content_group)\d+$/.test(U)?h(1,U,Y,w):U===F.F&amp;&amp;</td>
+      </tr>
+      <tr>
+        <td id="L151" class="blob-num js-line-number" data-line-number="151"></td>
+        <td id="LC151" class="blob-code blob-code-inner js-file-line">0&gt;la(I,F.cb)&amp;&amp;(B.cookieName=Y+&quot;_ga&quot;)}var K=String(yc);l(B,&quot;cookieDomain&quot;,&quot;auto&quot;);l(w,&quot;forceSSL&quot;,!0);var P=&quot;general&quot;;0&lt;=la(&quot;add_payment_info add_to_cart add_to_wishlist begin_checkout checkout_progress purchase refund remove_from_cart set_checkout_option&quot;.split(&quot; &quot;),K)?P=&quot;ecommerce&quot;:0&lt;=la(&quot;generate_lead login search select_content share sign_up view_item view_item_list view_promotion view_search_results&quot;.split(&quot; &quot;),K)?P=&quot;engagement&quot;:&quot;exception&quot;==K&amp;&amp;(P=&quot;error&quot;);l(y,&quot;eventCategory&quot;,P);0&lt;=la([&quot;view_item&quot;,</td>
+      </tr>
+      <tr>
+        <td id="L152" class="blob-num js-line-number" data-line-number="152"></td>
+        <td id="LC152" class="blob-code blob-code-inner js-file-line">&quot;view_item_list&quot;,&quot;view_promotion&quot;,&quot;view_search_results&quot;],K)&amp;&amp;l(w,&quot;nonInteraction&quot;,!0);&quot;login&quot;==K||&quot;sign_up&quot;==K||&quot;share&quot;==K?l(y,&quot;eventLabel&quot;,kd(F.qe,r)):&quot;search&quot;==K||&quot;view_search_results&quot;==K?l(y,&quot;eventLabel&quot;,kd(F.ve,r)):&quot;select_content&quot;==K&amp;&amp;l(y,&quot;eventLabel&quot;,kd(F.ce,r));var ba=y[F.Ia]||{},na=ba[F.gb];na||0!=na&amp;&amp;ba[F.H]?B.allowLinker=!0:!1===na&amp;&amp;l(B,&quot;useAmpClientId&quot;,!1);if(!1===kd(F.ae,r)||!1===kd(F.R,r))w.allowAdFeatures=!1;B.name=v;w[&quot;&amp;gtm&quot;]=Ig(!0);w.hitCallback=x;y.W=w;y.ud=B;return y},n=function(r){function v(J){var I=</td>
+      </tr>
+      <tr>
+        <td id="L153" class="blob-num js-line-number" data-line-number="153"></td>
+        <td id="LC153" class="blob-code blob-code-inner js-file-line">Fa(J);I.list=J.list_name;I.listPosition=J.list_position;I.position=J.list_position||J.creative_slot;I.creative=J.creative_name;return I}function x(J){for(var I=[],T=0;J&amp;&amp;T&lt;J.length;T++)J[T]&amp;&amp;I.push(v(J[T]));return I.length?I:void 0}function y(J){return{id:B(w.Ka),affiliation:B(w.je),revenue:B(w.ca),tax:B(w.oe),shipping:B(w.ne),coupon:B(w.ke),list:B(w.Nb)||J}}for(var w=F,B=function(J){return hd(J,r,void 0)},A=B(w.S),C,D=0;A&amp;&amp;D&lt;A.length&amp;&amp;!(C=A[D][w.Nb]);D++);var H=B(&quot;custom_map&quot;);if(Ea(H))for(var N=</td>
+      </tr>
+      <tr>
+        <td id="L154" class="blob-num js-line-number" data-line-number="154"></td>
+        <td id="LC154" class="blob-code blob-code-inner js-file-line">0;A&amp;&amp;N&lt;A.length;++N){var R=A[N],V;for(V in H)H.hasOwnProperty(V)&amp;&amp;/^(dimension|metric)\d+$/.test(V)&amp;&amp;void 0!=H[V]&amp;&amp;l(R,V,R[H[V]])}var Q=null,S=yc,O=B(w.me);&quot;purchase&quot;==S||&quot;refund&quot;==S?Q={action:S,Ma:y(),Ba:x(A)}:&quot;add_to_cart&quot;==S?Q={action:&quot;add&quot;,Ba:x(A)}:&quot;remove_from_cart&quot;==S?Q={action:&quot;remove&quot;,Ba:x(A)}:&quot;view_item&quot;==S?Q={action:&quot;detail&quot;,Ma:y(C),Ba:x(A)}:&quot;view_item_list&quot;==S?Q={action:&quot;impressions&quot;,If:x(A)}:&quot;view_promotion&quot;==S?Q={action:&quot;promo_view&quot;,Dc:x(O)}:&quot;select_content&quot;==S&amp;&amp;O&amp;&amp;0&lt;O.length?Q={action:&quot;promo_click&quot;,</td>
+      </tr>
+      <tr>
+        <td id="L155" class="blob-num js-line-number" data-line-number="155"></td>
+        <td id="LC155" class="blob-code blob-code-inner js-file-line">Dc:x(O)}:&quot;select_content&quot;==S?Q={action:&quot;click&quot;,Ma:{list:B(w.Nb)||C},Ba:x(A)}:&quot;begin_checkout&quot;==S||&quot;checkout_progress&quot;==S?Q={action:&quot;checkout&quot;,Ba:x(A),Ma:{step:&quot;begin_checkout&quot;==S?1:B(w.gd),option:B(w.fd)}}:&quot;set_checkout_option&quot;==S&amp;&amp;(Q={action:&quot;checkout_option&quot;,Ma:{step:B(w.gd),option:B(w.fd)}});Q&amp;&amp;(Q.Hg=B(w.oa));return Q},p={},t=function(r,v){var x=p[r];p[r]=Fa(v);if(!x)return!1;for(var y in v)if(v.hasOwnProperty(y)&amp;&amp;v[y]!==x[y])return!0;for(var w in x)if(x.hasOwnProperty(w)&amp;&amp;x[w]!==v[w])return!0;</td>
+      </tr>
+      <tr>
+        <td id="L156" class="blob-num js-line-number" data-line-number="156"></td>
+        <td id="LC156" class="blob-code blob-code-inner js-file-line">return!1},q=function(r){var v=r.vtp_trackingId,x=Id();if(ha(x)){var y=&quot;gtag_&quot;+v.split(&quot;-&quot;).join(&quot;_&quot;),w=function(Q){var S=[].slice.call(arguments,0);S[0]=y+&quot;.&quot;+S[0];x.apply(window,S)},B=function(){var Q=function(I,T){for(var U=0;T&amp;&amp;U&lt;T.length;U++)w(I,T[U])},S=n(v);if(S){var O=S.action;if(&quot;impressions&quot;==O)Q(&quot;ec:addImpression&quot;,S.If);else if(&quot;promo_click&quot;==O||&quot;promo_view&quot;==O){var J=S.Dc;Q(&quot;ec:addPromo&quot;,S.Dc);J&amp;&amp;0&lt;J.length&amp;&amp;&quot;promo_click&quot;==O&amp;&amp;w(&quot;ec:setAction&quot;,O)}else Q(&quot;ec:addProduct&quot;,S.Ba),w(&quot;ec:setAction&quot;,</td>
+      </tr>
+      <tr>
+        <td id="L157" class="blob-num js-line-number" data-line-number="157"></td>
+        <td id="LC157" class="blob-code blob-code-inner js-file-line">O,S.Ma)}},A=function(){if(ye()){}else{var Q=kd(F.se,v);Q&amp;&amp;(w(&quot;require&quot;,Q,{dataLayer:&quot;dataLayer&quot;}),w(&quot;require&quot;,&quot;render&quot;))}},C=function(){if(ye()){}else{var Q=kd(F.Wb,v),S=kd(F.Vb,v),O=kd(F.Ub,v),J;J=ka(Q)?Q:[Q];for(var I=0;I&lt;J.length;I++)5&gt;I&amp;&amp;Nd(v,J[I],{zd:O||S});}},</td>
+      </tr>
+      <tr>
+        <td id="L158" class="blob-num js-line-number" data-line-number="158"></td>
+        <td id="LC158" class="blob-code blob-code-inner js-file-line">D=m(v,y,r.vtp_gtmOnSuccess);t(y,D.ud)&amp;&amp;x(function(){Gd()&amp;&amp;Gd().remove(y)});x(&quot;create&quot;,v,D.ud);(function(){var Q=kd(&quot;custom_map&quot;,v);x(function(){if(Ea(Q)){var S=D.W,O=Gd().getByName(y),J;for(J in Q)if(Q.hasOwnProperty(J)&amp;&amp;/^(dimension|metric)\d+$/.test(J)&amp;&amp;void 0!=Q[J]){var I=O.get(k(Q[J]));l(S,J,I)}}})})();(function(Q){if(Q){var S={};if(Ea(Q))for(var O in e)e.hasOwnProperty(O)&amp;&amp;h(e[O],O,Q[O],S);w(&quot;require&quot;,&quot;linkid&quot;,S)}})(D.linkAttribution);var H=D[F.Ia];if(H&amp;&amp;H[F.H]){var N=H[F.ib];Jd(y+&quot;.&quot;,H[F.H],</td>
+      </tr>
+      <tr>
+        <td id="L159" class="blob-num js-line-number" data-line-number="159"></td>
+        <td id="LC159" class="blob-code blob-code-inner js-file-line">void 0===N?!!H.use_anchor:&quot;fragment&quot;===N,!!H[F.hb])}var R=function(Q,S,O){O&amp;&amp;(S=&quot;&quot;+S);D.W[Q]=S},V=yc;V==F.Lb?(A(),w(&quot;send&quot;,&quot;pageview&quot;,D.W)):V==F.aa?(A(),C(),0!=D.sendPageView&amp;&amp;w(&quot;send&quot;,&quot;pageview&quot;,D.W)):&quot;screen_view&quot;==V?w(&quot;send&quot;,&quot;screenview&quot;,D.W):&quot;timing_complete&quot;==V?(R(&quot;timingCategory&quot;,D.eventCategory,!0),R(&quot;timingVar&quot;,D.name,!0),R(&quot;timingValue&quot;,qa(D.value)),void 0!==D.eventLabel&amp;&amp;R(&quot;timingLabel&quot;,D.eventLabel,!0),w(&quot;send&quot;,&quot;timing&quot;,D.W)):&quot;exception&quot;==V?w(&quot;send&quot;,&quot;exception&quot;,D.W):&quot;optimize.callback&quot;!=</td>
+      </tr>
+      <tr>
+        <td id="L160" class="blob-num js-line-number" data-line-number="160"></td>
+        <td id="LC160" class="blob-code blob-code-inner js-file-line">V&amp;&amp;(0&lt;=la(&quot;view_item_list select_content view_item add_to_cart remove_from_cart begin_checkout set_checkout_option purchase refund view_promotion checkout_progress&quot;.split(&quot; &quot;),V)&amp;&amp;(w(&quot;require&quot;,&quot;ec&quot;,&quot;ec.js&quot;),B()),R(&quot;eventCategory&quot;,D.eventCategory,!0),R(&quot;eventAction&quot;,D.eventAction||V,!0),void 0!==D.eventLabel&amp;&amp;R(&quot;eventLabel&quot;,D.eventLabel,!0),void 0!==D.value&amp;&amp;R(&quot;eventValue&quot;,qa(D.value)),w(&quot;send&quot;,&quot;event&quot;,D.W));a||(a=!0,Bd(),G(&quot;https://www.google-analytics.com/analytics.js&quot;,function(){Gd().loaded||r.vtp_gtmOnFailure()},</td>
+      </tr>
+      <tr>
+        <td id="L161" class="blob-num js-line-number" data-line-number="161"></td>
+        <td id="LC161" class="blob-code blob-code-inner js-file-line">r.vtp_gtmOnFailure))}else z(r.vtp_gtmOnFailure)};W.__gtagua=q;W.__gtagua.g=&quot;gtagua&quot;;W.__gtagua.h=!0;W.__gtagua.b=0}();</td>
+      </tr>
+      <tr>
+        <td id="L162" class="blob-num js-line-number" data-line-number="162"></td>
+        <td id="LC162" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L163" class="blob-num js-line-number" data-line-number="163"></td>
+        <td id="LC163" class="blob-code blob-code-inner js-file-line">var aj={};aj.macro=function(a){if(tf.$b.hasOwnProperty(a))return tf.$b[a]},aj.onHtmlSuccess=tf.td(!0),aj.onHtmlFailure=tf.td(!1);aj.dataLayer=gd;aj.callback=function(a){Ac.hasOwnProperty(a)&amp;&amp;ha(Ac[a])&amp;&amp;Ac[a]();delete Ac[a]};aj.Ve=function(){sc[rc.m]=aj;Bc=W.a;Rb=Rb||tf;Sb=sd};</td>
+      </tr>
+      <tr>
+        <td id="L164" class="blob-num js-line-number" data-line-number="164"></td>
+        <td id="LC164" class="blob-code blob-code-inner js-file-line">aj.Jf=function(){sc=f.google_tag_manager=f.google_tag_manager||{};if(sc[rc.m]){var a=sc.zones;a&amp;&amp;a.unregisterChild(rc.m)}else{for(var b=data.resource||{},c=b.macros||[],d=0;d&lt;c.length;d++)Kb.push(c[d]);for(var e=b.tags||[],g=0;g&lt;e.length;g++)Nb.push(e[g]);for(var h=b.predicates||[],k=0;k&lt;h.length;k++)Mb.push(h[k]);for(var l=b.rules||[],m=0;m&lt;l.length;m++){for(var n=l[m],p={},t=0;t&lt;</td>
+      </tr>
+      <tr>
+        <td id="L165" class="blob-num js-line-number" data-line-number="165"></td>
+        <td id="LC165" class="blob-code blob-code-inner js-file-line">n.length;t++)p[n[t][0]]=Array.prototype.slice.call(n[t],1);Lb.push(p)}Pb=W;Qb=Dh;aj.Ve();Re();vd=!1;wd=0;if(&quot;interactive&quot;==u.readyState&amp;&amp;!u.createEventObject||&quot;complete&quot;==u.readyState)yd();else{Oa(u,&quot;DOMContentLoaded&quot;,yd);Oa(u,&quot;readystatechange&quot;,yd);if(u.createEventObject&amp;&amp;u.documentElement.doScroll){var q=!0;try{q=!f.frameElement}catch(y){}q&amp;&amp;zd()}Oa(f,&quot;load&quot;,yd)}Fe=!1;&quot;complete&quot;===u.readyState?He():Oa(f,&quot;load&quot;,He);a:{if(!Xc)break a;f.setInterval(Yc,864E5);}xc=(new Date).getTime();}};(0,aj.Jf)();</td>
+      </tr>
+      <tr>
+        <td id="L166" class="blob-num js-line-number" data-line-number="166"></td>
+        <td id="LC166" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L167" class="blob-num js-line-number" data-line-number="167"></td>
+        <td id="LC167" class="blob-code blob-code-inner js-file-line">})()</td>
+      </tr>
+</table>
+
+  <details class="details-reset details-overlay BlobToolbar position-absolute js-file-line-actions dropdown d-none" aria-hidden="true">
+    <summary class="btn-octicon ml-0 px-2 p-0 bg-white border border-gray-dark rounded-1" aria-label="Inline file action toolbar">
+      <svg class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+    </summary>
+    <details-menu>
+      <ul class="BlobToolbar-dropdown dropdown-menu dropdown-menu-se mt-2" style="width:185px">
+        <li>
+          <clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-lines" style="cursor:pointer;">
+            Copy lines
+          </clipboard-copy>
+        </li>
+        <li>
+          <clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-permalink" style="cursor:pointer;">
+            Copy permalink
+          </clipboard-copy>
+        </li>
+        <li><a class="dropdown-item js-update-url-with-hash" id="js-view-git-blame" role="menuitem" href="/torokoid/home/blame/c994d2df9761192e9b65d08f810944e83be6ce2a/js">View git blame</a></li>
+          <li><a class="dropdown-item" id="js-new-issue" role="menuitem" href="/torokoid/home/issues/new">Reference in new issue</a></li>
+      </ul>
+    </details-menu>
+  </details>
+
+  </div>
+
+    </div>
+
+  
+
+  <details class="details-reset details-overlay details-overlay-dark">
+    <summary data-hotkey="l" aria-label="Jump to line"></summary>
+    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast linejump" aria-label="Jump to line">
+      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-jump-to-line-form Box-body d-flex" action="" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+        <input class="form-control flex-auto mr-3 linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
+        <button type="submit" class="btn" data-close-dialog>Go</button>
+</form>    </details-dialog>
+  </details>
+
+
+
+  </div>
+</div>
+
+    </main>
+  </div>
+  
+
+  </div>
+
+        
+<div class="footer container-lg width-full p-responsive" role="contentinfo">
+  <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      <li class="mr-3 mr-lg-0">&copy; 2019 <span title="0.36502s from unicorn-78649448b9-6vs5n">GitHub</span>, Inc.</li>
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to security, text:security" href="https://github.com/security">Security</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://githubstatus.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com">Help</a></li>
+    </ul>
+
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mx-lg-4" href="https://github.com">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+   <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://github.com/pricing" data-ga-click="Footer, go to Pricing, text:Pricing">Pricing</a></li>
+      <li class="mr-3 mr-lg-0"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3 mr-lg-0"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://github.blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+
+    
+    <script crossorigin="anonymous" integrity="sha512-4JsuiTlMAprr6vF8YB0G8g7Ss7s5+irdU7eFQpEMW60R1NDb61bo6shomBSAcepi26csEdoMpSTXRPyLTLwJpw==" type="application/javascript" src="https://github.githubassets.com/assets/frameworks-452b2867.js"></script>
+    
+    <script crossorigin="anonymous" async="async" integrity="sha512-q850LlHrJbHiWzYuzYR6/LJaJb8QZK4z3Ac5SPmI/wVFq24YIw2RopksyDaqSJAOMLGer0yPm+BOeBzFOWtI6Q==" type="application/javascript" src="https://github.githubassets.com/assets/github-bootstrap-45a6c992.js"></script>
+    
+    
+    
+  <div class="js-stale-session-flash flash flash-warn flash-banner" hidden
+    >
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <span class="js-stale-session-flash-signed-in" hidden>You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="js-stale-session-flash-signed-out" hidden>You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <template id="site-details-dialog">
+  <details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark hx_rsm" open>
+    <summary role="button" aria-label="Close dialog"></summary>
+    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast hx_rsm-dialog hx_rsm-modal">
+      <button class="Box-btn-octicon m-0 btn-octicon position-absolute right-0 top-0" type="button" aria-label="Close dialog" data-close-dialog>
+        <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+      </button>
+      <div class="octocat-spinner my-6 js-details-dialog-spinner"></div>
+    </details-dialog>
+  </details>
+</template>
+
+  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+  <div aria-live="polite" class="js-global-screen-reader-notice sr-only"></div>
+
+  </body>
+</html>
+

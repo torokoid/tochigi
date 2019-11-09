@@ -1,0 +1,1176 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://github.githubassets.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-/YEVWs7BzxfKyUd6zVxjEQcXRWsLbcEjv045Rq8DSoipySmQblhVKxlXLva2GtNd5DhwCxHwW1RM0N9I7S2Vew==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-481a47a96965f6706fb41bae0d14b09a.css" />
+  
+    <link crossorigin="anonymous" media="all" integrity="sha512-UuDKgNf/5qyjHC2IFg8kEkn3j2n+D4ShuvNV5eohEqUPfuPzqAxcd98IqomrgGo/g36tB35YvxoA1CbXgE0iFg==" rel="stylesheet" href="https://github.githubassets.com/assets/github-5362384f9e2512870c388a187eaf4868.css" />
+    
+    
+    
+    
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>home/osd.js at master · torokoid/home</title>
+    <meta name="description" content="Contribute to torokoid/home development by creating an account on GitHub.">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    <meta name="twitter:image:src" content="https://avatars2.githubusercontent.com/u/39209977?s=400&amp;v=4" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary" /><meta name="twitter:title" content="torokoid/home" /><meta name="twitter:description" content="Contribute to torokoid/home development by creating an account on GitHub." />
+    <meta property="og:image" content="https://avatars2.githubusercontent.com/u/39209977?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="torokoid/home" /><meta property="og:url" content="https://github.com/torokoid/home" /><meta property="og:description" content="Contribute to torokoid/home development by creating an account on GitHub." />
+
+  <link rel="assets" href="https://github.githubassets.com/">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6NDUwNzAyMjMxOjRhNTIzY2VhY2VhNjBkMTdkMzUzMTQ0ZjBhYWZhYTFkNDdhOThlNjNiNDFjNzgxODYxYzEzZDNlODcxYWNkMjk=--8f273989a83cd8636ef539020ae89c968d1d1cb7">
+  <link rel="sudo-modal" href="/sessions/sudo_modal">
+  <meta name="request-id" content="D271:4E55:115126:1A0638:5DC6A4E2" data-pjax-transient>
+
+
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+      <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+    <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+
+  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="D271:4E55:115126:1A0638:5DC6A4E2" /><meta name="octolytics-dimension-region_edge" content="ap-northeast-1" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-dimension-ga_id" content="" class="js-octo-ga-id" /><meta name="octolytics-dimension-visitor_id" content="8590349045002296683" /><meta name="octolytics-actor-id" content="39209977" /><meta name="octolytics-actor-login" content="torokoid" /><meta name="octolytics-actor-hash" content="747a9608887e7db6472481ebb93796225cf3b256ea29d341e2e4f476cd833652" />
+<meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
+
+
+
+    <meta name="google-analytics" content="UA-3769691-2">
+
+  <meta class="js-ga-set" name="userId" content="cd94b7149ed15bd7244ddf076fbb5847">
+
+<meta class="js-ga-set" name="dimension1" content="Logged In">
+
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="torokoid">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="YTJkYTlkZGM2MTZmYzRmMjg1Y2ZmMjMyNmQ2OTdkOWQzMTVmZWVlODk5NTcwMDU5YjhjZTc1OTRjOWU2MjUzNXx7InJlbW90ZV9hZGRyZXNzIjoiMTA2LjE3NC4xMDEuMTYyIiwicmVxdWVzdF9pZCI6IkQyNzE6NEU1NToxMTUxMjY6MUEwNjM4OjVEQzZBNEUyIiwidGltZXN0YW1wIjoxNTczMjk5NDI3LCJob3N0IjoiZ2l0aHViLmNvbSJ9">
+
+    <meta name="enabled-features" content="ACTIONS_V2_ON_MARKETPLACE,MARKETPLACE_FEATURED_BLOG_POSTS,MARKETPLACE_INVOICED_BILLING,MARKETPLACE_SOCIAL_PROOF_CUSTOMERS,MARKETPLACE_TRENDING_SOCIAL_PROOF,MARKETPLACE_RECOMMENDATIONS,MARKETPLACE_PENDING_INSTALLATIONS,NOTIFY_ON_BLOCK,RELATED_ISSUES,GHE_CLOUD_TRIAL">
+
+  <meta name="html-safe-nonce" content="f1a3ff236da34cccb417e97c65aafed5e7e1a438">
+
+  <meta http-equiv="x-pjax-version" content="fa69a6766b45881d74d00fb909806b32">
+  
+
+      <link href="https://github.com/torokoid/home/commits/master.atom" rel="alternate" title="Recent Commits to home:master" type="application/atom+xml">
+
+  <meta name="go-import" content="github.com/torokoid/home git https://github.com/torokoid/home.git">
+
+  <meta name="octolytics-dimension-user_id" content="39209977" /><meta name="octolytics-dimension-user_login" content="torokoid" /><meta name="octolytics-dimension-repository_id" content="184358981" /><meta name="octolytics-dimension-repository_nwo" content="torokoid/home" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="184358981" /><meta name="octolytics-dimension-repository_network_root_nwo" content="torokoid/home" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
+
+
+    <link rel="canonical" href="https://github.com/torokoid/home/blob/master/osd.js" data-pjax-transient>
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://github.githubassets.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+  <link rel="apple-touch-icon" href="https://github.githubassets.com/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://github.githubassets.com/apple-touch-icon-180x180.png">
+  <meta name="apple-mobile-web-app-title" content="GitHub">
+
+
+  <meta name="webauthn-auth-enabled" content="true">
+
+  <meta name="webauthn-registration-enabled" content="true">
+
+  <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
+
+  </head>
+
+  <body class="logged-in env-production page-responsive page-blob">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="p-3 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
+    <span class="Progress progress-pjax-loader position-fixed width-full js-pjax-loader-bar">
+      <span class="progress-pjax-loader-bar top-0 left-0" style="width: 0%;"></span>
+    </span>
+
+    
+    
+    
+
+
+          <header class="Header js-details-container Details flex-wrap flex-lg-nowrap p-responsive" role="banner">
+
+    <div class="Header-item d-none d-lg-flex">
+      <a class="Header-link" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+  <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+
+    </div>
+
+    <div class="Header-item d-lg-none">
+      <button class="Header-link btn-link js-details-target" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 12 16" version="1.1" width="18" aria-hidden="true"><path fill-rule="evenodd" d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"/></svg>
+      </button>
+    </div>
+
+    <div class="Header-item Header-item--full flex-column flex-lg-row width-full flex-order-2 flex-lg-order-none mr-0 mr-lg-3 mt-3 mt-lg-0 Details-content--hidden">
+        <div class="header-search flex-self-stretch flex-lg-self-auto mr-0 mr-lg-3 mb-3 mb-lg-0 scoped-search site-scoped-search js-site-search position-relative js-jump-to"
+  role="combobox"
+  aria-owns="jump-to-results"
+  aria-label="Search or jump to"
+  aria-haspopup="listbox"
+  aria-expanded="false"
+>
+  <div class="position-relative">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" role="search" aria-label="Site" data-scope-type="Repository" data-scope-id="184358981" data-scoped-search-url="/torokoid/home/search" data-unscoped-search-url="/search" action="/torokoid/home/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+      <label class="form-control input-sm header-search-wrapper p-0 header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center js-chromeless-input-container">
+        <input type="text"
+          class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+          data-hotkey="s,/"
+          name="q"
+          value=""
+          placeholder="Search or jump to…"
+          data-unscoped-placeholder="Search or jump to…"
+          data-scoped-placeholder="Search or jump to…"
+          autocapitalize="off"
+          aria-autocomplete="list"
+          aria-controls="jump-to-results"
+          aria-label="Search or jump to…"
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=O260ajnnaomh4gQkHkfFtDlkM/VejRnlEQR8Wswl1K8RT/JywsGodFAVHWMqxI7ydT6asgS4HbRJb+vo3KPjtw=="
+          spellcheck="false"
+          autocomplete="off"
+          >
+          <input type="hidden" class="js-site-search-type-field" name="type" >
+            <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
+
+            <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
+              
+<ul class="d-none js-jump-to-suggestions-template-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-suggestion" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+</ul>
+
+<ul class="d-none js-jump-to-no-results-template-container">
+  <li class="d-flex flex-justify-center flex-items-center f5 d-none js-jump-to-suggestion p-2">
+    <span class="text-gray">No suggested jump to results</span>
+  </li>
+</ul>
+
+<ul id="jump-to-results" role="listbox" class="p-0 m-0 js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-global-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+
+    <li class="d-flex flex-justify-center flex-items-center p-0 f5 js-jump-to-suggestion">
+      <img src="https://github.githubassets.com/images/spinners/octocat-spinner-128.gif" alt="Octocat Spinner Icon" class="m-2" width="28">
+    </li>
+</ul>
+
+            </div>
+      </label>
+</form>  </div>
+</div>
+
+
+      <nav class="d-flex flex-column flex-lg-row flex-self-stretch flex-lg-self-auto" aria-label="Global">
+    <a class="Header-link d-block d-lg-none py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15" data-ga-click="Header, click, Nav menu - item:dashboard:user" aria-label="Dashboard" href="/dashboard">
+      Dashboard
+</a>
+  <a class="js-selected-navigation-item Header-link  mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15" data-hotkey="g p" data-ga-click="Header, click, Nav menu - item:pulls context:user" aria-label="Pull requests you created" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls" href="/pulls">
+    Pull requests
+</a>
+  <a class="js-selected-navigation-item Header-link  mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15" data-hotkey="g i" data-ga-click="Header, click, Nav menu - item:issues context:user" aria-label="Issues you created" data-selected-links="/issues /issues/assigned /issues/mentioned /issues" href="/issues">
+    Issues
+</a>
+    <div class="mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15">
+      <a class="js-selected-navigation-item Header-link" data-ga-click="Header, click, Nav menu - item:marketplace context:user" data-octo-click="marketplace_click" data-octo-dimensions="location:nav_bar" data-selected-links=" /marketplace" href="/marketplace">
+        Marketplace
+</a>      
+
+    </div>
+
+  <a class="js-selected-navigation-item Header-link  mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore" href="/explore">
+    Explore
+</a>
+
+
+    <a class="Header-link d-block d-lg-none mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15" href="https://github.com/torokoid">
+      <img class="avatar" height="20" width="20" alt="@torokoid" src="https://avatars2.githubusercontent.com/u/39209977?s=60&amp;v=4" />
+      torokoid
+</a>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="WXNlqxFMCUAutt1IedWejJltWyWcxfgo8X72xP3XXQnOYKFt9JCfcsX89khd+H5cd2YYhv01RH4J4bbD1mMVPw==" />
+      <button type="submit" class="Header-link mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15 d-lg-none btn-link d-block width-full text-left" data-ga-click="Header, sign out, icon:logout" style="padding-left: 2px;">
+        <svg class="octicon octicon-sign-out v-align-middle" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9V7H8V5h4V3l4 3-4 3zm-2 3H6V3L2 1h8v3h1V1c0-.55-.45-1-1-1H1C.45 0 0 .45 0 1v11.38c0 .39.22.73.55.91L6 16.01V13h4c.55 0 1-.45 1-1V8h-1v4z"/></svg>
+        Sign out
+      </button>
+</form></nav>
+
+    </div>
+
+    <div class="Header-item Header-item--full flex-justify-center d-lg-none position-relative">
+      <div class="css-truncate css-truncate-target width-fit position-absolute left-0 right-0 text-center">
+              <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+    <a class="Header-link" href="/torokoid">torokoid</a>
+    /
+    <a class="Header-link" href="/torokoid/home">home</a>
+
+</div>
+    </div>
+
+
+    <div class="Header-item mr-0 mr-lg-3 flex-order-1 flex-lg-order-none">
+      
+
+    <a aria-label="You have no unread notifications" class="Header-link notification-indicator position-relative tooltipped tooltipped-sw js-socket-channel js-notification-indicator" data-hotkey="g n" data-ga-click="Header, go to notifications, icon:read" data-channel="notification-changed:39209977" href="/notifications">
+        <span class="mail-status "></span>
+        <svg class="octicon octicon-bell" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 12v1H0v-1l.73-.58c.77-.77.81-2.55 1.19-4.42C2.69 3.23 6 2 6 2c0-.55.45-1 1-1s1 .45 1 1c0 0 3.39 1.23 4.16 5 .38 1.88.42 3.66 1.19 4.42l.66.58H14zm-7 4c1.11 0 2-.89 2-2H5c0 1.11.89 2 2 2z"/></svg>
+</a>
+    </div>
+
+
+    <div class="Header-item position-relative d-none d-lg-flex">
+      <details class="details-overlay details-reset">
+  <summary class="Header-link"
+      aria-label="Create new…"
+      data-ga-click="Header, create new, icon:add">
+    <svg class="octicon octicon-plus" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"/></svg> <span class="dropdown-caret"></span>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw">
+    
+<a role="menuitem" class="dropdown-item" href="/new" data-ga-click="Header, create new repository">
+  New repository
+</a>
+
+  <a role="menuitem" class="dropdown-item" href="/new/import" data-ga-click="Header, import a repository">
+    Import repository
+  </a>
+
+<a role="menuitem" class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, create new gist">
+  New gist
+</a>
+
+  <a role="menuitem" class="dropdown-item" href="/organizations/new" data-ga-click="Header, create new organization">
+    New organization
+  </a>
+
+
+  <div role="none" class="dropdown-divider"></div>
+  <div class="dropdown-header">
+    <span title="torokoid/home">This repository</span>
+  </div>
+    <a role="menuitem" class="dropdown-item" href="/torokoid/home/issues/new" data-ga-click="Header, create new issue" data-skip-pjax>
+      New issue
+    </a>
+
+
+  </details-menu>
+</details>
+
+    </div>
+
+    <div class="Header-item position-relative mr-0 d-none d-lg-flex">
+      
+  <details class="details-overlay details-reset js-feature-preview-indicator-container" data-feature-preview-indicator-src="/users/torokoid/feature_preview/indicator_check.json">
+
+  <summary class="Header-link"
+    aria-label="View profile and more"
+    data-ga-click="Header, show menu, icon:avatar">
+    <img alt="@torokoid" class="avatar" src="https://avatars1.githubusercontent.com/u/39209977?s=40&amp;v=4" height="20" width="20">
+      <span class="feature-preview-indicator js-feature-preview-indicator" hidden></span>
+    <span class="dropdown-caret"></span>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw mt-2" style="width: 180px">
+    <div class="header-nav-current-user css-truncate"><a role="menuitem" class="no-underline user-profile-link px-3 pt-2 pb-2 mb-n2 mt-n1 d-block" href="/torokoid" data-ga-click="Header, go to profile, text:Signed in as">Signed in as <strong class="css-truncate-target">torokoid</strong></a></div>
+    <div role="none" class="dropdown-divider"></div>
+
+      <div class="pl-3 pr-3 f6 user-status-container js-user-status-context pb-1" data-url="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1">
+        
+<div class="js-user-status-container
+    user-status-compact rounded-1 px-2 py-1 mt-2
+    border
+  " data-team-hovercards-enabled>
+  <details class="js-user-status-details details-reset details-overlay details-overlay-dark">
+    <summary class="btn-link btn-block link-gray no-underline js-toggle-user-status-edit toggle-user-status-edit "
+      role="menuitem" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:39209977,&quot;target&quot;:&quot;EDIT_USER_STATUS&quot;,&quot;user_id&quot;:39209977,&quot;client_id&quot;:&quot;2000096497.1543134571&quot;,&quot;originating_request_id&quot;:&quot;D271:4E55:115126:1A0638:5DC6A4E2&quot;,&quot;originating_url&quot;:&quot;https://github.com/torokoid/home/blob/master/osd.js&quot;,&quot;referrer&quot;:null}}" data-hydro-click-hmac="4fd2e001093f2dfc0c628bd01678590f9e8e98653470a733a3e983a570b7a0a5">
+      <div class="d-flex">
+        <div class="f6 lh-condensed user-status-header
+          d-inline-block v-align-middle
+            user-status-emoji-only-header circle
+            pr-2
+"
+            style="max-width: 29px"
+          >
+          <div class="user-status-emoji-container flex-shrink-0 mr-1 mt-1 lh-condensed-ultra v-align-bottom" style="">
+            <svg class="octicon octicon-smiley" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.81 12.81a6.72 6.72 0 01-2.17 1.45c-.83.36-1.72.53-2.64.53-.92 0-1.81-.17-2.64-.53-.81-.34-1.55-.83-2.17-1.45a6.773 6.773 0 01-1.45-2.17A6.59 6.59 0 011.21 8c0-.92.17-1.81.53-2.64.34-.81.83-1.55 1.45-2.17.62-.62 1.36-1.11 2.17-1.45A6.59 6.59 0 018 1.21c.92 0 1.81.17 2.64.53.81.34 1.55.83 2.17 1.45.62.62 1.11 1.36 1.45 2.17.36.83.53 1.72.53 2.64 0 .92-.17 1.81-.53 2.64-.34.81-.83 1.55-1.45 2.17zM4 6.8v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2H5.2C4.53 8 4 7.47 4 6.8zm5 0v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2h-.59C9.53 8 9 7.47 9 6.8zm4 3.2c-.72 1.88-2.91 3-5 3s-4.28-1.13-5-3c-.14-.39.23-1 .66-1h8.59c.41 0 .89.61.75 1z"/></svg>
+          </div>
+        </div>
+        <div class="
+          d-inline-block v-align-middle
+          
+          
+           css-truncate css-truncate-target 
+           user-status-message-wrapper f6"
+           style="line-height: 20px;" >
+          <div class="d-inline-block text-gray-dark v-align-text-top text-left">
+              <span class="text-gray ml-2">Set status</span>
+          </div>
+        </div>
+      </div>
+    </summary>
+    <details-dialog class="details-dialog rounded-1 anim-fade-in fast Box Box--overlay" role="dialog" tabindex="-1">
+      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="position-relative flex-auto js-user-status-form" action="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="OYbVPr57HGOBWYtep9WWQ8HnIfeLNt/ObUh7JBbfod7edO5KUzMsAKsSQrvyERMtTPZirwSdCl2pp3Cu2LC1Gg==" />
+        <div class="Box-header bg-gray border-bottom p-3">
+          <button class="Box-btn-octicon js-toggle-user-status-edit btn-octicon float-right" type="reset" aria-label="Close dialog" data-close-dialog>
+            <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+          </button>
+          <h3 class="Box-title f5 text-bold text-gray-dark">Edit status</h3>
+        </div>
+        <input type="hidden" name="emoji" class="js-user-status-emoji-field" value="">
+        <input type="hidden" name="organization_id" class="js-user-status-org-id-field" value="">
+        <div class="px-3 py-2 text-gray-dark">
+          <div class="js-characters-remaining-container position-relative mt-2">
+            <div class="input-group d-table form-group my-0 js-user-status-form-group">
+              <span class="input-group-button d-table-cell v-align-middle" style="width: 1%">
+                <button type="button" aria-label="Choose an emoji" class="btn-outline btn js-toggle-user-status-emoji-picker btn-open-emoji-picker p-0">
+                  <span class="js-user-status-original-emoji" hidden></span>
+                  <span class="js-user-status-custom-emoji"></span>
+                  <span class="js-user-status-no-emoji-icon" >
+                    <svg class="octicon octicon-smiley" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.81 12.81a6.72 6.72 0 01-2.17 1.45c-.83.36-1.72.53-2.64.53-.92 0-1.81-.17-2.64-.53-.81-.34-1.55-.83-2.17-1.45a6.773 6.773 0 01-1.45-2.17A6.59 6.59 0 011.21 8c0-.92.17-1.81.53-2.64.34-.81.83-1.55 1.45-2.17.62-.62 1.36-1.11 2.17-1.45A6.59 6.59 0 018 1.21c.92 0 1.81.17 2.64.53.81.34 1.55.83 2.17 1.45.62.62 1.11 1.36 1.45 2.17.36.83.53 1.72.53 2.64 0 .92-.17 1.81-.53 2.64-.34.81-.83 1.55-1.45 2.17zM4 6.8v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2H5.2C4.53 8 4 7.47 4 6.8zm5 0v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2h-.59C9.53 8 9 7.47 9 6.8zm4 3.2c-.72 1.88-2.91 3-5 3s-4.28-1.13-5-3c-.14-.39.23-1 .66-1h8.59c.41 0 .89.61.75 1z"/></svg>
+                  </span>
+                </button>
+              </span>
+              <text-expander keys=": @" data-mention-url="/autocomplete/user-suggestions" data-emoji-url="/autocomplete/emoji">
+                <input
+                  type="text"
+                  autocomplete="off"
+                  data-no-org-url="/autocomplete/user-suggestions"
+                  data-org-url="/suggestions?mention_suggester=1"
+                  data-maxlength="80"
+                  class="d-table-cell width-full form-control js-user-status-message-field js-characters-remaining-field"
+                  placeholder="What's happening?"
+                  name="message"
+                  value=""
+                  aria-label="What is your current status?">
+              </text-expander>
+              <div class="error">Could not update your status, please try again.</div>
+            </div>
+            <div style="margin-left: 53px" class="my-1 text-small label-characters-remaining js-characters-remaining" data-suffix="remaining" hidden>
+              80 remaining
+            </div>
+          </div>
+          <include-fragment class="js-user-status-emoji-picker" data-url="/users/status/emoji"></include-fragment>
+          <div class="overflow-auto ml-n3 mr-n3 px-3 border-bottom" style="max-height: 33vh">
+            <div class="user-status-suggestions js-user-status-suggestions collapsed overflow-hidden">
+              <h4 class="f6 text-normal my-3">Suggestions:</h4>
+              <div class="mx-3 mt-2 clearfix">
+                  <div class="float-left col-6">
+                      <button type="button" value=":palm_tree:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
+                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
+                          <g-emoji alias="palm_tree" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f334.png">🌴</g-emoji>
+                        </div>
+                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
+                          On vacation
+                        </div>
+                      </button>
+                      <button type="button" value=":face_with_thermometer:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
+                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
+                          <g-emoji alias="face_with_thermometer" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f912.png">🤒</g-emoji>
+                        </div>
+                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
+                          Out sick
+                        </div>
+                      </button>
+                  </div>
+                  <div class="float-left col-6">
+                      <button type="button" value=":house:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
+                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
+                          <g-emoji alias="house" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3e0.png">🏠</g-emoji>
+                        </div>
+                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
+                          Working from home
+                        </div>
+                      </button>
+                      <button type="button" value=":dart:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
+                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
+                          <g-emoji alias="dart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3af.png">🎯</g-emoji>
+                        </div>
+                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
+                          Focusing
+                        </div>
+                      </button>
+                  </div>
+              </div>
+            </div>
+            <div class="user-status-limited-availability-container">
+              <div class="form-checkbox my-0">
+                <input type="checkbox" name="limited_availability" value="1" class="js-user-status-limited-availability-checkbox" data-default-message="I may be slow to respond." aria-describedby="limited-availability-help-text-truncate-true-compact-true" id="limited-availability-truncate-true-compact-true">
+                <label class="d-block f5 text-gray-dark mb-1" for="limited-availability-truncate-true-compact-true">
+                  Busy
+                </label>
+                <p class="note" id="limited-availability-help-text-truncate-true-compact-true">
+                  When others mention you, assign you, or request your review,
+                  GitHub will let them know that you have limited availability.
+                </p>
+              </div>
+            </div>
+          </div>
+            
+
+<div class="d-inline-block f5 mr-2 pt-3 pb-2" >
+  <div class="d-inline-block mr-1">
+    Clear status
+  </div>
+
+  <details class="js-user-status-expire-drop-down f6 dropdown details-reset details-overlay d-inline-block mr-2">
+    <summary class="f5 btn-link link-gray-dark border px-2 py-1 rounded-1" aria-haspopup="true">
+      <div class="js-user-status-expiration-interval-selected d-inline-block v-align-baseline">
+        Never
+      </div>
+      <div class="dropdown-caret"></div>
+    </summary>
+
+    <ul class="dropdown-menu dropdown-menu-se pl-0 overflow-auto" style="width: 220px; max-height: 15.5em">
+      <li>
+        <button type="button" class="btn-link dropdown-item js-user-status-expire-button ws-normal" title="Never">
+          <span class="d-inline-block text-bold mb-1">Never</span>
+          <div class="f6 lh-condensed">Keep this status until you clear your status or edit your status.</div>
+        </button>
+      </li>
+      <li class="dropdown-divider" role="none"></li>
+        <li>
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 30 minutes" value="2019-11-09T21:07:07+09:00">
+            in 30 minutes
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 1 hour" value="2019-11-09T21:37:07+09:00">
+            in 1 hour
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 4 hours" value="2019-11-10T00:37:07+09:00">
+            in 4 hours
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="today" value="2019-11-09T23:59:59+09:00">
+            today
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="this week" value="2019-11-10T23:59:59+09:00">
+            this week
+          </button>
+        </li>
+    </ul>
+  </details>
+  <input class="js-user-status-expiration-date-input" type="hidden" name="expires_at" value="">
+</div>
+
+          <include-fragment class="js-user-status-org-picker" data-url="/users/status/organizations"></include-fragment>
+        </div>
+        <div class="d-flex flex-items-center flex-justify-between p-3 border-top">
+          <button type="submit" disabled class="width-full btn btn-primary mr-2 js-user-status-submit">
+            Set status
+          </button>
+          <button type="button" disabled class="width-full js-clear-user-status-button btn ml-2 ">
+            Clear status
+          </button>
+        </div>
+</form>    </details-dialog>
+  </details>
+</div>
+
+      </div>
+      <div role="none" class="dropdown-divider"></div>
+
+
+    <a role="menuitem" class="dropdown-item" href="/torokoid" data-ga-click="Header, go to profile, text:your profile">Your profile</a>
+
+    <a role="menuitem" class="dropdown-item" href="/torokoid?tab=repositories" data-ga-click="Header, go to repositories, text:your repositories">Your repositories</a>
+
+    <a role="menuitem" class="dropdown-item" href="/torokoid?tab=projects" data-ga-click="Header, go to projects, text:your projects">Your projects</a>
+
+    <a role="menuitem" class="dropdown-item" href="/torokoid?tab=stars" data-ga-click="Header, go to starred repos, text:your stars">Your stars</a>
+      <a role="menuitem" class="dropdown-item" href="https://gist.github.com/mine" data-ga-click="Header, your gists, text:your gists">Your gists</a>
+
+
+
+
+
+    <div role="none" class="dropdown-divider"></div>
+      
+<div id="feature-enrollment-toggle" class="hide-sm hide-md feature-preview-details position-relative">
+  <button
+    type="button"
+    class="dropdown-item btn-link"
+    role="menuitem"
+    data-feature-preview-trigger-url="/users/torokoid/feature_previews"
+    data-feature-preview-close-details="{&quot;event_type&quot;:&quot;feature_preview.clicks.close_modal&quot;,&quot;payload&quot;:{&quot;client_id&quot;:&quot;2000096497.1543134571&quot;,&quot;originating_request_id&quot;:&quot;D271:4E55:115126:1A0638:5DC6A4E2&quot;,&quot;originating_url&quot;:&quot;https://github.com/torokoid/home/blob/master/osd.js&quot;,&quot;referrer&quot;:null,&quot;user_id&quot;:39209977}}"
+    data-feature-preview-close-hmac="e921e0c03e1d7080d5939e8d60b4851bbe715b2ab06c21cf4629f5d59a45f93f"
+    data-hydro-click="{&quot;event_type&quot;:&quot;feature_preview.clicks.open_modal&quot;,&quot;payload&quot;:{&quot;link_location&quot;:&quot;user_dropdown&quot;,&quot;client_id&quot;:&quot;2000096497.1543134571&quot;,&quot;originating_request_id&quot;:&quot;D271:4E55:115126:1A0638:5DC6A4E2&quot;,&quot;originating_url&quot;:&quot;https://github.com/torokoid/home/blob/master/osd.js&quot;,&quot;referrer&quot;:null,&quot;user_id&quot;:39209977}}"
+    data-hydro-click-hmac="976f66b51d9dc3e4ebc7ebc41d36516ddb1ece2a016fc82d0565d6363248311d"
+  >
+    Feature preview
+  </button>
+    <span class="feature-preview-indicator js-feature-preview-indicator" hidden></span>
+</div>
+
+    <a role="menuitem" class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">Help</a>
+    <a role="menuitem" class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">Settings</a>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="LLVf3Avv2rRATmVGiD44JQPcsSpq9BawCdy4M8usIq+7ppsa7jNMhqsETkasE9j17dfyiQsEqubxQ/g04BhqmQ==" />
+      
+      <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" role="menuitem">
+        Sign out
+      </button>
+</form>  </details-menu>
+</details>
+
+    </div>
+
+  </header>
+
+      
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+
+    <div id="js-flash-container">
+
+</div>
+
+
+
+  <div class="application-main " data-commit-hovercards-enabled>
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <main  >
+      
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav pt-0 pt-lg-4 ">
+    <div class="repohead-details-container clearfix container-lg p-responsive d-none d-lg-block">
+
+      <ul class="pagehead-actions">
+
+
+
+
+  <li>
+    
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="clearfix js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="JifVCGWNGJqS+YXMhmUC2P0i0+OfoH4gqSoOl7i4sxYCzqCBEv8NRJROP9ACHmKHCHLypitNq/LjR5vXTJsEMQ==" />      <input type="hidden" name="repository_id" value="184358981">
+
+      <details class="details-reset details-overlay select-menu float-left">
+        <summary class="select-menu-button float-left btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;repository_id&quot;:184358981,&quot;client_id&quot;:&quot;2000096497.1543134571&quot;,&quot;originating_request_id&quot;:&quot;D271:4E55:115126:1A0638:5DC6A4E2&quot;,&quot;originating_url&quot;:&quot;https://github.com/torokoid/home/blob/master/osd.js&quot;,&quot;referrer&quot;:null,&quot;user_id&quot;:39209977}}" data-hydro-click-hmac="9cc707e2b51fa52f6d2ddfc20239509bec1e8f906aa55d9b05ed382cd285fb69" data-ga-click="Repository, click Watch settings, action:blob#show">          <span data-menu-button>
+              <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+              Watch
+          </span>
+</summary>        <details-menu
+          class="select-menu-modal position-absolute mt-5"
+          style="z-index: 99;">
+          <div class="select-menu-header">
+            <span class="select-menu-title">Notifications</span>
+          </div>
+          <div class="select-menu-list">
+            <button type="submit" name="do" value="included" class="select-menu-item width-full" aria-checked="true" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Not watching</span>
+                <span class="description">Be notified only when participating or @mentioned.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents>
+                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                  Watch
+                </span>
+              </div>
+            </button>
+
+            <button type="submit" name="do" value="release_only" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Releases only</span>
+                <span class="description">Be notified of new releases, and when participating or @mentioned.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents>
+                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                  Unwatch releases
+                </span>
+              </div>
+            </button>
+
+            <button type="submit" name="do" value="subscribed" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Watching</span>
+                <span class="description">Be notified of all conversations.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents>
+                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                  Unwatch
+                </span>
+              </div>
+            </button>
+
+            <button type="submit" name="do" value="ignore" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Ignoring</span>
+                <span class="description">Never be notified.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents>
+                  <svg class="octicon octicon-mute v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 2.81v10.38c0 .67-.81 1-1.28.53L3 10H1c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h2l3.72-3.72C7.19 1.81 8 2.14 8 2.81zm7.53 3.22l-1.06-1.06-1.97 1.97-1.97-1.97-1.06 1.06L11.44 8 9.47 9.97l1.06 1.06 1.97-1.97 1.97 1.97 1.06-1.06L13.56 8l1.97-1.97z"/></svg>
+                  Stop ignoring
+                </span>
+              </div>
+            </button>
+          </div>
+        </details-menu>
+      </details>
+        <a class="social-count js-social-count"
+          href="/torokoid/home/watchers"
+          aria-label="0 users are watching this repository">
+          0
+        </a>
+</form>
+  </li>
+
+  <li>
+      <div class="js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/torokoid/home/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="8VT1XCwJgzbWzXqjefZSrxJRRGSaPzybPHHcH8WSM1tdhckFYxOxqPl7Z9+M9SieXbx4VXOhthFCfb9laPvoWw==" />
+      <input type="hidden" name="context" value="repository"></input>
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar torokoid/home" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:184358981,&quot;client_id&quot;:&quot;2000096497.1543134571&quot;,&quot;originating_request_id&quot;:&quot;D271:4E55:115126:1A0638:5DC6A4E2&quot;,&quot;originating_url&quot;:&quot;https://github.com/torokoid/home/blob/master/osd.js&quot;,&quot;referrer&quot;:null,&quot;user_id&quot;:39209977}}" data-hydro-click-hmac="7113a5a89c6b55ee1f8ee11283fdcf1030ff182a93a8d4da9707590fa987669d" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+        Unstar
+</button>        <a class="social-count js-social-count" href="/torokoid/home/stargazers"
+           aria-label="0 users starred this repository">
+           0
+        </a>
+</form>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/torokoid/home/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="hSxDME5IdtvdsfODdbEDCh2u6ntiFtJ63d5eOymAWODMt0ZIyci9rRR5Ge3DSdqz/uj2UJmIF1j8ZRyy5p+aQA==" />
+      <input type="hidden" name="context" value="repository"></input>
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Star torokoid/home" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:184358981,&quot;client_id&quot;:&quot;2000096497.1543134571&quot;,&quot;originating_request_id&quot;:&quot;D271:4E55:115126:1A0638:5DC6A4E2&quot;,&quot;originating_url&quot;:&quot;https://github.com/torokoid/home/blob/master/osd.js&quot;,&quot;referrer&quot;:null,&quot;user_id&quot;:39209977}}" data-hydro-click-hmac="9e043753f27d07cebea2358502f7930bf036e2bca5c4e1fbb1a0fe7cb0eee663" data-ga-click="Repository, click star button, action:blob#show; text:Star">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+        Star
+</button>        <a class="social-count js-social-count" href="/torokoid/home/stargazers"
+           aria-label="0 users starred this repository">
+          0
+        </a>
+</form>  </div>
+
+  </li>
+
+  <li>
+        <span class="btn btn-sm btn-with-count disabled tooltipped tooltipped-sw" aria-label="Cannot fork because you own this repository and are not a member of any organizations.">
+          <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          Fork
+</span>
+    <a href="/torokoid/home/network/members" class="social-count"
+       aria-label="0 users forked this repository">
+      0
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+    <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a class="url fn" rel="author" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=39209977" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/torokoid">torokoid</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a data-pjax="#js-repo-pjax-container" href="/torokoid/home">home</a></strong>
+  
+
+</h1>
+
+    </div>
+    
+<nav class="hx_reponav reponav js-repo-nav js-sidenav-container-pjax container-lg p-responsive d-none d-lg-block"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+    aria-label="Repository"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a class="js-selected-navigation-item selected reponav-item" itemprop="url" data-hotkey="g c" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /torokoid/home" href="/torokoid/home">
+      <svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a itemprop="url" data-hotkey="g i" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /torokoid/home/issues" href="/torokoid/home/issues">
+        <svg class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">0</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a data-hotkey="g p" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /torokoid/home/pulls" href="/torokoid/home/pulls">
+      <svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">0</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+
+    <a data-hotkey="g b" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /torokoid/home/projects" href="/torokoid/home/projects">
+      <svg class="octicon octicon-project" viewBox="0 0 15 16" version="1.1" width="15" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      Projects
+      <span class="Counter" >0</span>
+</a>
+
+    <a class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /torokoid/home/wiki" href="/torokoid/home/wiki">
+      <svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
+      Wiki
+</a>
+    <a data-skip-pjax="true" class="js-selected-navigation-item reponav-item" data-selected-links="security alerts policy code_scanning /torokoid/home/network/alerts" href="/torokoid/home/network/alerts">
+      <svg class="octicon octicon-shield" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 2l7-2 7 2v6.02C14 12.69 8.69 16 7 16c-1.69 0-7-3.31-7-7.98V2zm1 .75L7 1l6 1.75v5.268C13 12.104 8.449 15 7 15c-1.449 0-6-2.896-6-6.982V2.75zm1 .75L7 2v12c-1.207 0-5-2.482-5-5.985V3.5z"/></svg>
+      Security
+</a>
+    <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse people /torokoid/home/pulse" href="/torokoid/home/pulse">
+      <svg class="octicon octicon-graph" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+      Insights
+</a>
+    <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_settings repo_branch_settings hooks integration_installations repo_keys_settings issue_template_editor secrets_settings key_links_settings /torokoid/home/settings" href="/torokoid/home/settings">
+      <svg class="octicon octicon-gear" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 8.77v-1.6l-1.94-.64-.45-1.09.88-1.84-1.13-1.13-1.81.91-1.09-.45-.69-1.92h-1.6l-.63 1.94-1.11.45-1.84-.88-1.13 1.13.91 1.81-.45 1.09L0 7.23v1.59l1.94.64.45 1.09-.88 1.84 1.13 1.13 1.81-.91 1.09.45.69 1.92h1.59l.63-1.94 1.11-.45 1.84.88 1.13-1.13-.92-1.81.47-1.09L14 8.75v.02zM7 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/></svg>
+      Settings
+</a>
+</nav>
+
+  <div class="reponav-wrapper reponav-small d-lg-none">
+  <nav class="reponav js-reponav text-center no-wrap"
+       itemscope
+       itemtype="http://schema.org/BreadcrumbList">
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a class="js-selected-navigation-item selected reponav-item" itemprop="url" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /torokoid/home" href="/torokoid/home">
+        <span itemprop="name">Code</span>
+        <meta itemprop="position" content="1">
+</a>    </span>
+
+      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /torokoid/home/issues" href="/torokoid/home/issues">
+          <span itemprop="name">Issues</span>
+          <span class="Counter">0</span>
+          <meta itemprop="position" content="2">
+</a>      </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /torokoid/home/pulls" href="/torokoid/home/pulls">
+        <span itemprop="name">Pull requests</span>
+        <span class="Counter">0</span>
+        <meta itemprop="position" content="3">
+</a>    </span>
+
+      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /torokoid/home/projects" href="/torokoid/home/projects">
+          <span itemprop="name">Projects</span>
+          <span class="Counter">0</span>
+          <meta itemprop="position" content="4">
+</a>      </span>
+
+      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_wiki /torokoid/home/wiki" href="/torokoid/home/wiki">
+          <span itemprop="name">Wiki</span>
+          <meta itemprop="position" content="5">
+</a>      </span>
+
+      <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="security alerts policy code_scanning /torokoid/home/network/alerts" href="/torokoid/home/network/alerts">
+        <span itemprop="name">Security</span>
+        <meta itemprop="position" content="6">
+</a>
+      <a class="js-selected-navigation-item reponav-item" data-selected-links="pulse /torokoid/home/pulse" href="/torokoid/home/pulse">
+        Pulse
+</a>
+      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="community /torokoid/home/community" href="/torokoid/home/community">
+          Community
+</a>      </span>
+
+  </nav>
+</div>
+
+
+  </div>
+<div class="container-lg clearfix new-discussion-timeline experiment-repo-nav  p-responsive">
+  <div class="repository-content ">
+
+    
+    
+
+
+  
+
+
+    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/torokoid/home/blob/c994d2df9761192e9b65d08f810944e83be6ce2a/osd.js">Permalink</a>
+
+    <!-- blob contrib key: blob_contributors:v21:4ba794a93fc70e35bc24dbb5230ed8e9 -->
+      
+
+    <div class="d-flex flex-items-start flex-shrink-0 pb-3 flex-column flex-md-row">
+      <span class="d-flex flex-justify-between width-full width-md-auto">
+        
+<details class="details-reset details-overlay select-menu branch-select-menu  hx_rsm" id="branch-select-menu">
+  <summary class="btn btn-sm select-menu-button css-truncate"
+           data-hotkey="w"
+           title="Switch branches or tags">
+    <i>Branch:</i>
+    <span class="css-truncate-target" data-menu-button>master</span>
+  </summary>
+
+  <details-menu class="select-menu-modal hx_rsm-modal position-absolute" style="z-index: 99;" src="/torokoid/home/ref-list/master/osd.js?source_action=show&amp;source_controller=blob" preload>
+    <include-fragment class="select-menu-loading-overlay anim-pulse">
+      <svg height="32" class="octicon octicon-octoface" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M14.7 5.34c.13-.32.55-1.59-.13-3.31 0 0-1.05-.33-3.44 1.3-1-.28-2.07-.32-3.13-.32s-2.13.04-3.13.32c-2.39-1.64-3.44-1.3-3.44-1.3-.68 1.72-.26 2.99-.13 3.31C.49 6.21 0 7.33 0 8.69 0 13.84 3.33 15 7.98 15S16 13.84 16 8.69c0-1.36-.49-2.48-1.3-3.35zM8 14.02c-3.3 0-5.98-.15-5.98-3.35 0-.76.38-1.48 1.02-2.07 1.07-.98 2.9-.46 4.96-.46 2.07 0 3.88-.52 4.96.46.65.59 1.02 1.3 1.02 2.07 0 3.19-2.68 3.35-5.98 3.35zM5.49 9.01c-.66 0-1.2.8-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.54-1.78-1.2-1.78zm5.02 0c-.66 0-1.2.79-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.53-1.78-1.2-1.78z"/></svg>
+    </include-fragment>
+  </details-menu>
+</details>
+
+        <div class="BtnGroup flex-shrink-0 d-md-none">
+          <a href="/torokoid/home/find/master"
+                class="js-pjax-capture-input btn btn-sm BtnGroup-item"
+                data-pjax
+                data-hotkey="t">
+            Find file
+          </a>
+          <clipboard-copy value="osd.js" class="btn btn-sm BtnGroup-item">
+            Copy path
+          </clipboard-copy>
+        </div>
+      </span>
+      <h2 id="blob-path" class="breadcrumb flex-auto min-width-0 text-normal flex-md-self-center ml-md-2 mr-md-3 my-2 my-md-0">
+        <span class="js-repo-root text-bold"><span class="js-path-segment"><a data-pjax="true" href="/torokoid/home"><span>home</span></a></span></span><span class="separator">/</span><strong class="final-path">osd.js</strong>
+      </h2>
+
+      <div class="BtnGroup flex-shrink-0 d-none d-md-inline-block">
+        <a href="/torokoid/home/find/master"
+              class="js-pjax-capture-input btn btn-sm BtnGroup-item"
+              data-pjax
+              data-hotkey="t">
+          Find file
+        </a>
+        <clipboard-copy value="osd.js" class="btn btn-sm BtnGroup-item">
+          Copy path
+        </clipboard-copy>
+      </div>
+    </div>
+
+
+
+    <include-fragment src="/torokoid/home/contributors/master/osd.js" class="Box Box--condensed commit-loader">
+      <div class="Box-body bg-blue-light f6">
+        Fetching contributors&hellip;
+      </div>
+
+      <div class="Box-body d-flex flex-items-center" >
+          <img alt="" class="loader-loading mr-2" src="https://github.githubassets.com/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" height="16" />
+        <span class="text-red h6 loader-error">Cannot retrieve contributors at this time</span>
+      </div>
+</include-fragment>
+
+
+
+
+    <div class="Box mt-3 position-relative">
+      
+<div class="Box-header py-2 d-flex flex-column flex-shrink-0 flex-md-row flex-md-items-center">
+  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
+
+      2 lines (1 sloc)
+      <span class="file-info-divider"></span>
+    76.1 KB
+  </div>
+
+  <div class="d-flex py-1 py-md-0 flex-auto flex-order-1 flex-md-order-2 flex-sm-grow-0 flex-justify-between">
+
+    <div class="BtnGroup">
+      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/torokoid/home/raw/master/osd.js">Raw</a>
+        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/torokoid/home/blame/master/osd.js">Blame</a>
+      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/torokoid/home/commits/master/osd.js">History</a>
+    </div>
+
+
+    <div>
+            <a class="btn-octicon tooltipped tooltipped-nw"
+               href="x-github-client://openRepo/https://github.com/torokoid/home?branch=master&amp;filepath=osd.js"
+               aria-label="Open this file in GitHub Desktop"
+               data-ga-click="Repository, open with desktop, type:mac">
+                <svg class="octicon octicon-device-desktop" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
+            </a>
+
+            <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/torokoid/home/edit/master/osd.js" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="4XuUcq2YKos4t9TGJWw1bypjIB34jCAdzasi3HgXtakCmPqvJ8MsYhKUFhOx0RvhvdTIxE/KucoHJkmne3VwAw==" />
+              <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
+                aria-label="Edit this file" data-hotkey="e" data-disable-with>
+                <svg class="octicon octicon-pencil" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 011.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
+              </button>
+</form>
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/torokoid/home/delete/master/osd.js" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="Ik5wTflz5PlcFKhNsnIreuiQzxhF4w84RRZf72IdHHNI4akIWYsBts1CkQdgzOGjswMeT8TVEmxOSLiDSfv5Dg==" />
+            <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
+              aria-label="Delete this file" data-disable-with>
+              <svg class="octicon octicon-trashcan" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
+            </button>
+</form>    </div>
+  </div>
+</div>
+
+
+
+
+      
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-javascript ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="LC1" class="blob-code blob-code-inner js-file-line">(function(window,document){var k;function aa(a){var b=0;return function(){return b&lt;a.length?{done:!1,value:a[b++]}:{done:!0}}}function ba(a){var b=&quot;undefined&quot;!=typeof Symbol&amp;&amp;Symbol.iterator&amp;&amp;a[Symbol.iterator];return b?b.call(a):{next:aa(a)}}function p(a){if(!(a instanceof Array)){a=ba(a);for(var b,c=[];!(b=a.next()).done;)c.push(b.value);a=c}return a}var ca=&quot;function&quot;==typeof Object.create?Object.create:function(a){function b(){}b.prototype=a;return new b},da;if(&quot;function&quot;==typeof Object.setPrototypeOf)da=Object.setPrototypeOf;else{var ea;a:{var fa={Mb:!0},ha={};try{ha.__proto__=fa;ea=ha.Mb;break a}catch(a){}ea=!1}da=ea?function(a,b){a.__proto__=b;if(a.__proto__!==b)throw new TypeError(a+&quot; is not extensible&quot;);return a}:null}var ia=da;function t(a,b){a.prototype=ca(b.prototype);a.prototype.constructor=a;if(ia)ia(a,b);else for(var c in b)if(&quot;prototype&quot;!=c)if(Object.defineProperties){var d=Object.getOwnPropertyDescriptor(b,c);d&amp;&amp;Object.defineProperty(a,c,d)}else a[c]=b[c];a.Bb=b.prototype}var ja=&quot;function&quot;==typeof Object.defineProperties?Object.defineProperty:function(a,b,c){a!=Array.prototype&amp;&amp;a!=Object.prototype&amp;&amp;(a[b]=c.value)},ka=&quot;undefined&quot;!=typeof window&amp;&amp;window===this?this:&quot;undefined&quot;!=typeof global&amp;&amp;null!=global?global:this;function la(a,b){if(b){var c=ka;a=a.split(&quot;.&quot;);for(var d=0;d&lt;a.length-1;d++){var e=a[d];e in c||(c[e]={});c=c[e]}a=a[a.length-1];d=c[a];b=b(d);b!=d&amp;&amp;null!=b&amp;&amp;ja(c,a,{configurable:!0,writable:!0,value:b})}}var ma=&quot;function&quot;==typeof Object.assign?Object.assign:function(a,b){for(var c=1;c&lt;arguments.length;c++){var d=arguments[c];if(d)for(var e in d)Object.prototype.hasOwnProperty.call(d,e)&amp;&amp;(a[e]=d[e])}return a};la(&quot;Object.assign&quot;,function(a){return a||ma});la(&quot;Math.trunc&quot;,function(a){return a?a:function(b){b=Number(b);if(isNaN(b)||Infinity===b||-Infinity===b||0===b)return b;var c=Math.floor(Math.abs(b));return 0&gt;b?-c:c}});var u=this||self;function v(a){return&quot;string&quot;==typeof a}function na(a){return&quot;number&quot;==typeof a}function oa(){}function w(a){a.Xa=void 0;a.g=function(){return a.Xa?a.Xa:a.Xa=new a}}function pa(a){var b=typeof a;if(&quot;object&quot;==b)if(a){if(a instanceof Array)return&quot;array&quot;;if(a instanceof Object)return b;var c=Object.prototype.toString.call(a);if(&quot;[object Window]&quot;==c)return&quot;object&quot;;if(&quot;[object Array]&quot;==c||&quot;number&quot;==typeof a.length&amp;&amp;&quot;undefined&quot;!=typeof a.splice&amp;&amp;&quot;undefined&quot;!=typeof a.propertyIsEnumerable&amp;&amp;!a.propertyIsEnumerable(&quot;splice&quot;))return&quot;array&quot;;if(&quot;[object Function]&quot;==c||&quot;undefined&quot;!=typeof a.call&amp;&amp;&quot;undefined&quot;!=typeof a.propertyIsEnumerable&amp;&amp;!a.propertyIsEnumerable(&quot;call&quot;))return&quot;function&quot;}else return&quot;null&quot;;else if(&quot;function&quot;==b&amp;&amp;&quot;undefined&quot;==typeof a.call)return&quot;object&quot;;return b}function qa(a){return&quot;array&quot;==pa(a)}function ra(a){var b=pa(a);return&quot;array&quot;==b||&quot;object&quot;==b&amp;&amp;&quot;number&quot;==typeof a.length}function sa(a){return&quot;function&quot;==pa(a)}function ta(a){var b=typeof a;return&quot;object&quot;==b&amp;&amp;null!=a||&quot;function&quot;==b}function ua(a,b,c){return a.call.apply(a.bind,arguments)}function va(a,b,c){if(!a)throw Error();if(2&lt;arguments.length){var d=Array.prototype.slice.call(arguments,2);return function(){var e=Array.prototype.slice.call(arguments);Array.prototype.unshift.apply(e,d);return a.apply(b,e)}}return function(){return a.apply(b,arguments)}}function wa(a,b,c){Function.prototype.bind&amp;&amp;-1!=Function.prototype.bind.toString().indexOf(&quot;native code&quot;)?wa=ua:wa=va;return wa.apply(null,arguments)}function xa(a,b){var c=Array.prototype.slice.call(arguments,1);return function(){var d=c.slice();d.push.apply(d,arguments);return a.apply(this,d)}}function ya(a,b){a=a.split(&quot;.&quot;);var c=u;a[0]in c||&quot;undefined&quot;==typeof c.execScript||c.execScript(&quot;var &quot;+a[0]);for(var d;a.length&amp;&amp;(d=a.shift());)a.length||void 0===b?c[d]&amp;&amp;c[d]!==Object.prototype[d]?c=c[d]:c=c[d]={}:c[d]=b}function za(a,b){function c(){}c.prototype=b.prototype;a.Bb=b.prototype;a.prototype=new c;a.prototype.constructor=a;a.hc=function(d,e,f){for(var g=Array(arguments.length-2),h=2;h&lt;arguments.length;h++)g[h-2]=arguments[h];return b.prototype[e].apply(d,g)}};var x=document,y=window;var Aa;function Ba(a,b){if(v(a))return v(b)&amp;&amp;1==b.length?a.indexOf(b,0):-1;for(var c=0;c&lt;a.length;c++)if(c in a&amp;&amp;a[c]===b)return c;return-1}function z(a,b,c){for(var d=a.length,e=v(a)?a.split(&quot;&quot;):a,f=0;f&lt;d;f++)f in e&amp;&amp;b.call(c,e[f],f,a)}function Ca(a,b){for(var c=a.length,d=[],e=0,f=v(a)?a.split(&quot;&quot;):a,g=0;g&lt;c;g++)if(g in f){var h=f[g];b.call(void 0,h,g,a)&amp;&amp;(d[e++]=h)}return d}function Da(a,b){for(var c=a.length,d=Array(c),e=v(a)?a.split(&quot;&quot;):a,f=0;f&lt;c;f++)f in e&amp;&amp;(d[f]=b.call(void 0,e[f],f,a));return d}function Ea(a,b,c){var d=c;z(a,function(e,f){d=b.call(void 0,d,e,f,a)});return d}function Fa(a,b){for(var c=a.length,d=v(a)?a.split(&quot;&quot;):a,e=0;e&lt;c;e++)if(e in d&amp;&amp;b.call(void 0,d[e],e,a))return!0;return!1}function Ga(a,b){var c=0;z(a,function(d,e,f){b.call(void 0,d,e,f)&amp;&amp;++c},void 0);return c}function Ha(a,b){b=Ia(a,b,void 0);return 0&gt;b?null:v(a)?a.charAt(b):a[b]}function Ia(a,b,c){for(var d=a.length,e=v(a)?a.split(&quot;&quot;):a,f=0;f&lt;d;f++)if(f in e&amp;&amp;b.call(c,e[f],f,a))return f;return-1}function Ja(a,b){return 0&lt;=Ba(a,b)}function Ka(a){return Array.prototype.concat.apply([],arguments)}function La(a){var b=a.length;if(0&lt;b){for(var c=Array(b),d=0;d&lt;b;d++)c[d]=a[d];return c}return[]}function Ma(a,b){a.sort(b||Na)}function Na(a,b){return a&gt;b?1:a&lt;b?-1:0}function Oa(a){if(!arguments.length)return[];for(var b=[],c=arguments[0].length,d=1;d&lt;arguments.length;d++)arguments[d].length&lt;c&amp;&amp;(c=arguments[d].length);for(d=0;d&lt;c;d++){for(var e=[],f=0;f&lt;arguments.length;f++)e.push(arguments[f][d]);b.push(e)}return b};function Pa(a){var b=!1,c;return function(){b||(c=a(),b=!0);return c}};function Qa(a,b,c){for(var d in a)b.call(c,a[d],d,a)}function Ra(a,b){var c={},d;for(d in a)b.call(void 0,a[d],d,a)&amp;&amp;(c[d]=a[d]);return c}function Sa(a){var b=Ta,c;for(c in b)if(!a.call(void 0,b[c],c,b))return!1;return!0}function Ua(a){var b=[],c=0,d;for(d in a)b[c++]=a[d];return b}var Va=&quot;constructor hasOwnProperty isPrototypeOf propertyIsEnumerable toLocaleString toString valueOf&quot;.split(&quot; &quot;);function Wa(a,b){for(var c,d,e=1;e&lt;arguments.length;e++){d=arguments[e];for(c in d)a[c]=d[c];for(var f=0;f&lt;Va.length;f++)c=Va[f],Object.prototype.hasOwnProperty.call(d,c)&amp;&amp;(a[c]=d[c])}};function Xa(a){return/^[\s\xa0]*([\s\S]*?)[\s\xa0]*$/.exec(a)[1]}var Ya=/&amp;/g,Za=/&lt;/g,$a=/&gt;/g,ab=/&quot;/g,bb=/&#39;/g,cb=/\x00/g,db=/[\x00&amp;&lt;&gt;&quot;&#39;]/;function A(a,b){return-1!=a.toLowerCase().indexOf(b.toLowerCase())}function eb(a,b){return a&lt;b?-1:a&gt;b?1:0};var B;a:{var fb=u.navigator;if(fb){var gb=fb.userAgent;if(gb){B=gb;break a}}B=&quot;&quot;}function C(a){return-1!=B.indexOf(a)};function hb(){return C(&quot;Safari&quot;)&amp;&amp;!(ib()||C(&quot;Coast&quot;)||C(&quot;Opera&quot;)||C(&quot;Edge&quot;)||C(&quot;Firefox&quot;)||C(&quot;FxiOS&quot;)||C(&quot;Silk&quot;)||C(&quot;Android&quot;))}function ib(){return(C(&quot;Chrome&quot;)||C(&quot;CriOS&quot;))&amp;&amp;!C(&quot;Edge&quot;)};function jb(a){db.test(a)&amp;&amp;(-1!=a.indexOf(&quot;&amp;&quot;)&amp;&amp;(a=a.replace(Ya,&quot;&amp;amp;&quot;)),-1!=a.indexOf(&quot;&lt;&quot;)&amp;&amp;(a=a.replace(Za,&quot;&amp;lt;&quot;)),-1!=a.indexOf(&quot;&gt;&quot;)&amp;&amp;(a=a.replace($a,&quot;&amp;gt;&quot;)),-1!=a.indexOf(&#39;&quot;&#39;)&amp;&amp;(a=a.replace(ab,&quot;&amp;quot;&quot;)),-1!=a.indexOf(&quot;&#39;&quot;)&amp;&amp;(a=a.replace(bb,&quot;&amp;#39;&quot;)),-1!=a.indexOf(&quot;\x00&quot;)&amp;&amp;(a=a.replace(cb,&quot;&amp;#0;&quot;)));return a}function kb(a){return String(a).replace(/\-([a-z])/g,function(b,c){return c.toUpperCase()})}function lb(a){return String(a).replace(/([A-Z])/g,&quot;-$1&quot;).toLowerCase()}function mb(a){var b=v(void 0)?&quot;undefined&quot;.replace(/([-()\[\]{}+?*.$\^|,:#&lt;!\\])/g,&quot;\\$1&quot;).replace(/\x08/g,&quot;\\x08&quot;):&quot;\\s&quot;;return a.replace(new RegExp(&quot;(^&quot;+(b?&quot;|[&quot;+b+&quot;]+&quot;:&quot;&quot;)+&quot;)([a-z])&quot;,&quot;g&quot;),function(c,d,e){return d+e.toUpperCase()})};function nb(a){nb[&quot; &quot;](a);return a}nb[&quot; &quot;]=oa;function ob(a,b){try{return nb(a[b]),!0}catch(c){}return!1}function pb(a,b){var c=qb;return Object.prototype.hasOwnProperty.call(c,a)?c[a]:c[a]=b(a)};var rb=C(&quot;Opera&quot;),D=C(&quot;Trident&quot;)||C(&quot;MSIE&quot;),sb=C(&quot;Edge&quot;),tb=C(&quot;Gecko&quot;)&amp;&amp;!(A(B,&quot;WebKit&quot;)&amp;&amp;!C(&quot;Edge&quot;))&amp;&amp;!(C(&quot;Trident&quot;)||C(&quot;MSIE&quot;))&amp;&amp;!C(&quot;Edge&quot;),ub=A(B,&quot;WebKit&quot;)&amp;&amp;!C(&quot;Edge&quot;),vb=ub&amp;&amp;C(&quot;Mobile&quot;);function wb(){var a=u.document;return a?a.documentMode:void 0}var xb;a:{var yb=&quot;&quot;,zb=function(){var a=B;if(tb)return/rv:([^\);]+)(\)|;)/.exec(a);if(sb)return/Edge\/([\d\.]+)/.exec(a);if(D)return/\b(?:MSIE|rv)[: ]([^\);]+)(\)|;)/.exec(a);if(ub)return/WebKit\/(\S+)/.exec(a);if(rb)return/(?:Version)[ \/]?(\S+)/.exec(a)}();zb&amp;&amp;(yb=zb?zb[1]:&quot;&quot;);if(D){var Ab=wb();if(null!=Ab&amp;&amp;Ab&gt;parseFloat(yb)){xb=String(Ab);break a}}xb=yb}var Bb=xb,qb={};function Cb(a){return pb(a,function(){for(var b=0,c=Xa(String(Bb)).split(&quot;.&quot;),d=Xa(String(a)).split(&quot;.&quot;),e=Math.max(c.length,d.length),f=0;0==b&amp;&amp;f&lt;e;f++){var g=c[f]||&quot;&quot;,h=d[f]||&quot;&quot;;do{g=/(\d*)(\D*)(.*)/.exec(g)||[&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;];h=/(\d*)(\D*)(.*)/.exec(h)||[&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;];if(0==g[0].length&amp;&amp;0==h[0].length)break;b=eb(0==g[1].length?0:parseInt(g[1],10),0==h[1].length?0:parseInt(h[1],10))||eb(0==g[2].length,0==h[2].length)||eb(g[2],h[2]);g=g[3];h=h[3]}while(0==b)}return 0&lt;=b})}var Db;var Eb=u.document;Db=Eb&amp;&amp;D?wb()||(&quot;CSS1Compat&quot;==Eb.compatMode?parseInt(Bb,10):5):void 0;var Fb=null;var Gb=0,Hb=0;function Ib(){this.a=[]}Ib.prototype.length=function(){return this.a.length};function Jb(a){var b=a.a;a.a=[];return b}function Kb(a,b){for(;127&lt;b;)a.a.push(b&amp;127|128),b&gt;&gt;&gt;=7;a.a.push(b)}function Lb(a,b){a.a.push(b&gt;&gt;&gt;0&amp;255);a.a.push(b&gt;&gt;&gt;8&amp;255);a.a.push(b&gt;&gt;&gt;16&amp;255);a.a.push(b&gt;&gt;&gt;24&amp;255)};function Mb(){this.b=[];this.c=0;this.a=new Ib}Mb.prototype.reset=function(){this.b=[];Jb(this.a);this.c=0};function Nb(a,b,c){if(null!=c)if(Kb(a.a,8*b),a=a.a,0&lt;=c)Kb(a,c);else{for(b=0;9&gt;b;b++)a.a.push(c&amp;127|128),c&gt;&gt;=7;a.a.push(1)}};function Ob(){}var Pb=&quot;function&quot;==typeof Uint8Array,Qb=[];function Rb(a,b){if(b&lt;a.f){b+=a.c;var c=a.a[b];return c===Qb?a.a[b]=[]:c}if(a.b)return c=a.b[b],c===Qb?a.b[b]=[]:c}function Sb(a,b){a=Rb(a,b);return null==a?0:a}function Tb(a,b,c){if(0!==c)if(b&lt;a.f)a.a[b+a.c]=c;else{var d=a.f+a.c;a.a[d]||(a.b=a.a[d]={});a.b[b]=c}else a.a[b+a.c]=null}function Ub(a){if(a.h)for(var b in a.h){var c=a.h[b];if(qa(c))for(var d=0;d&lt;c.length;d++)c[d]&amp;&amp;Ub(c[d]);else c&amp;&amp;Ub(c)}}Ob.prototype.toString=function(){Ub(this);return this.a.toString()};var Vb=!D||9&lt;=Number(Db),Wb=D||rb||ub;function E(a,b){this.x=void 0!==a?a:0;this.y=void 0!==b?b:0}E.prototype.ceil=function(){this.x=Math.ceil(this.x);this.y=Math.ceil(this.y);return this};E.prototype.floor=function(){this.x=Math.floor(this.x);this.y=Math.floor(this.y);return this};E.prototype.round=function(){this.x=Math.round(this.x);this.y=Math.round(this.y);return this};function G(a,b){this.width=a;this.height=b}G.prototype.aspectRatio=function(){return this.width/this.height};G.prototype.ceil=function(){this.width=Math.ceil(this.width);this.height=Math.ceil(this.height);return this};G.prototype.floor=function(){this.width=Math.floor(this.width);this.height=Math.floor(this.height);return this};G.prototype.round=function(){this.width=Math.round(this.width);this.height=Math.round(this.height);return this};function Xb(a){return a?new Yb(Zb(a)):Aa||(Aa=new Yb)}function $b(){var a=document;a.getElementsByClassName?a=a.getElementsByClassName(&quot;GoogleActiveViewContainer&quot;)[0]:(a=document,a=a.querySelectorAll&amp;&amp;a.querySelector?a.querySelector(&quot;.GoogleActiveViewContainer&quot;):ac(a,&quot;*&quot;,&quot;GoogleActiveViewContainer&quot;,void 0)[0]||null);return a||null}function ac(a,b,c,d){a=d||a;b=b&amp;&amp;&quot;*&quot;!=b?String(b).toUpperCase():&quot;&quot;;if(a.querySelectorAll&amp;&amp;a.querySelector&amp;&amp;(b||c))return a.querySelectorAll(b+(c?&quot;.&quot;+c:&quot;&quot;));if(c&amp;&amp;a.getElementsByClassName){a=a.getElementsByClassName(c);if(b){d={};for(var e=0,f=0,g;g=a[f];f++)b==g.nodeName&amp;&amp;(d[e++]=g);d.length=e;return d}return a}a=a.getElementsByTagName(b||&quot;*&quot;);if(c){d={};for(f=e=0;g=a[f];f++)b=g.className,&quot;function&quot;==typeof b.split&amp;&amp;Ja(b.split(/\s+/),c)&amp;&amp;(d[e++]=g);d.length=e;return d}return a}function bc(a,b){Qa(b,function(c,d){c&amp;&amp;&quot;object&quot;==typeof c&amp;&amp;c.jc&amp;&amp;(c=c.ic());&quot;style&quot;==d?a.style.cssText=c:&quot;class&quot;==d?a.className=c:&quot;for&quot;==d?a.htmlFor=c:cc.hasOwnProperty(d)?a.setAttribute(cc[d],c):0==d.lastIndexOf(&quot;aria-&quot;,0)||0==d.lastIndexOf(&quot;data-&quot;,0)?a.setAttribute(d,c):a[d]=c})}var cc={cellpadding:&quot;cellPadding&quot;,cellspacing:&quot;cellSpacing&quot;,colspan:&quot;colSpan&quot;,frameborder:&quot;frameBorder&quot;,height:&quot;height&quot;,maxlength:&quot;maxLength&quot;,nonce:&quot;nonce&quot;,role:&quot;role&quot;,rowspan:&quot;rowSpan&quot;,type:&quot;type&quot;,usemap:&quot;useMap&quot;,valign:&quot;vAlign&quot;,width:&quot;width&quot;};function dc(a){var b=a.scrollingElement?a.scrollingElement:ub||&quot;CSS1Compat&quot;!=a.compatMode?a.body||a.documentElement:a.documentElement;a=a.parentWindow||a.defaultView;return D&amp;&amp;Cb(&quot;10&quot;)&amp;&amp;a.pageYOffset!=b.scrollTop?new E(b.scrollLeft,b.scrollTop):new E(a.pageXOffset||b.scrollLeft,a.pageYOffset||b.scrollTop)}function ec(a){return a?a.parentWindow||a.defaultView:window}function fc(a,b,c){var d=arguments,e=document,f=String(d[0]),g=d[1];if(!Vb&amp;&amp;g&amp;&amp;(g.name||g.type)){f=[&quot;&lt;&quot;,f];g.name&amp;&amp;f.push(&#39; name=&quot;&#39;,jb(g.name),&#39;&quot;&#39;);if(g.type){f.push(&#39; type=&quot;&#39;,jb(g.type),&#39;&quot;&#39;);var h={};Wa(h,g);delete h.type;g=h}f.push(&quot;&gt;&quot;);f=f.join(&quot;&quot;)}f=e.createElement(f);g&amp;&amp;(v(g)?f.className=g:qa(g)?f.className=g.join(&quot; &quot;):bc(f,g));2&lt;d.length&amp;&amp;gc(e,f,d);return f}function gc(a,b,c){function d(g){g&amp;&amp;b.appendChild(v(g)?a.createTextNode(g):g)}for(var e=2;e&lt;c.length;e++){var f=c[e];!ra(f)||ta(f)&amp;&amp;0&lt;f.nodeType?d(f):z(hc(f)?La(f):f,d)}}function ic(a){var b;if(Wb&amp;&amp;!(D&amp;&amp;Cb(&quot;9&quot;)&amp;&amp;!Cb(&quot;10&quot;)&amp;&amp;u.SVGElement&amp;&amp;a instanceof u.SVGElement)&amp;&amp;(b=a.parentElement))return b;b=a.parentNode;return ta(b)&amp;&amp;1==b.nodeType?b:null}function jc(a){var b,c=arguments.length;if(!c)return null;if(1==c)return arguments[0];var d=[],e=Infinity;for(b=0;b&lt;c;b++){for(var f=[],g=arguments[b];g;)f.unshift(g),g=g.parentNode;d.push(f);e=Math.min(e,f.length)}f=null;for(b=0;b&lt;e;b++){g=d[0][b];for(var h=1;h&lt;c;h++)if(g!=d[h][b])return f;f=g}return f}function Zb(a){return 9==a.nodeType?a:a.ownerDocument||a.document}function kc(a){try{return a.contentWindow||(a.contentDocument?ec(a.contentDocument):null)}catch(b){}return null}function hc(a){if(a&amp;&amp;&quot;number&quot;==typeof a.length){if(ta(a))return&quot;function&quot;==typeof a.item||&quot;string&quot;==typeof a.item;if(sa(a))return&quot;function&quot;==typeof a.item}return!1}function lc(a,b){a&amp;&amp;(a=a.parentNode);for(var c=0;a;){if(b(a))return a;a=a.parentNode;c++}return null}function Yb(a){this.a=a||u.document||document};function mc(){return C(&quot;iPad&quot;)||C(&quot;Android&quot;)&amp;&amp;!C(&quot;Mobile&quot;)||C(&quot;Silk&quot;)};function nc(a){try{return!!a&amp;&amp;null!=a.location.href&amp;&amp;ob(a,&quot;foo&quot;)}catch(b){return!1}}function oc(a,b){if(a)for(var c in a)Object.prototype.hasOwnProperty.call(a,c)&amp;&amp;b.call(void 0,a[c],c,a)}function pc(a){var b=[];oc(a,function(c,d){b.push(d)});return b}function qc(){var a=rc;if(!a)return&quot;&quot;;var b=/.*[&amp;#?]google_debug(=[^&amp;]*)?(&amp;.*)?$/;try{var c=b.exec(decodeURIComponent(a));if(c)return c[1]&amp;&amp;1&lt;c[1].length?c[1].substring(1):&quot;true&quot;}catch(d){}return&quot;&quot;};var sc=Pa(function(){var a=!1;try{var b=Object.defineProperty({},&quot;passive&quot;,{get:function(){a=!0}});u.addEventListener(&quot;test&quot;,null,b)}catch(c){}return a});function tc(a){return a?a.passive&amp;&amp;sc()?a:a.capture||!1:!1}function uc(a,b,c,d){return a.addEventListener?(a.addEventListener(b,c,tc(d)),!0):!1}function vc(a,b,c){a.removeEventListener&amp;&amp;a.removeEventListener(b,c,tc(void 0))};function wc(a,b,c){a.google_image_requests||(a.google_image_requests=[]);var d=a.document.createElement(&quot;img&quot;);c&amp;&amp;(d.referrerPolicy=&quot;no-referrer&quot;);d.src=b;a.google_image_requests.push(d)}var yc=Pa(function(){return&quot;referrerPolicy&quot;in u.document.createElement(&quot;img&quot;)});var zc={dc:1,gc:2,bc:3};var Ac;Ac=/^true$/.test(&quot;&lt;&lt;&lt;IS_DEBUG_IP&gt;&gt;&gt;&quot;);try{JSON.parse(&quot;&lt;&lt;&lt;ADSENSE_EXPERIMENT_STATE_JSPB&gt;&gt;&gt;&quot;)}catch(a){};function H(a,b,c,d){this.top=a;this.right=b;this.bottom=c;this.left=d}k=H.prototype;k.H=function(){return this.right-this.left};k.G=function(){return this.bottom-this.top};function Bc(a){return new H(a.top,a.right,a.bottom,a.left)}function Cc(a,b){return a==b?!0:a&amp;&amp;b?a.top==b.top&amp;&amp;a.right==b.right&amp;&amp;a.bottom==b.bottom&amp;&amp;a.left==b.left:!1}k.ceil=function(){this.top=Math.ceil(this.top);this.right=Math.ceil(this.right);this.bottom=Math.ceil(this.bottom);this.left=Math.ceil(this.left);return this};k.floor=function(){this.top=Math.floor(this.top);this.right=Math.floor(this.right);this.bottom=Math.floor(this.bottom);this.left=Math.floor(this.left);return this};k.round=function(){this.top=Math.round(this.top);this.right=Math.round(this.right);this.bottom=Math.round(this.bottom);this.left=Math.round(this.left);return this};function Dc(a,b,c){b instanceof E?(a.left+=b.x,a.right+=b.x,a.top+=b.y,a.bottom+=b.y):(a.left+=b,a.right+=b,na(c)&amp;&amp;(a.top+=c,a.bottom+=c));return a};var Ec={};function Fc(a,b){var c=a.style[kb(b)];if(&quot;undefined&quot;!==typeof c)a=c;else{c=a.style;var d=Ec[b];if(!d){var e=kb(b);d=e;void 0===a.style[e]&amp;&amp;(e=(ub?&quot;Webkit&quot;:tb?&quot;Moz&quot;:D?&quot;ms&quot;:rb?&quot;O&quot;:null)+mb(e),void 0!==a.style[e]&amp;&amp;(d=e));Ec[b]=d}a=c[d]||&quot;&quot;}return a}function Gc(a){try{var b=a.getBoundingClientRect()}catch(c){return{left:0,top:0,right:0,bottom:0}}D&amp;&amp;a.ownerDocument.body&amp;&amp;(a=a.ownerDocument,b.left-=a.documentElement.clientLeft+a.body.clientLeft,b.top-=a.documentElement.clientTop+a.body.clientTop);return b};function Hc(a){a=void 0===a?u:a;var b=a.context||a.AMP_CONTEXT_DATA;if(!b)try{b=a.parent.context||a.parent.AMP_CONTEXT_DATA}catch(c){}try{if(b&amp;&amp;b.pageViewId&amp;&amp;b.canonicalUrl)return b}catch(c){}return null};function Ic(a){return!(!a||!a.call)&amp;&amp;&quot;function&quot;===typeof a}function Jc(){var a=x.documentElement,b=I();try{if(x.createEvent){var c=x.createEvent(&quot;CustomEvent&quot;);c.initCustomEvent(&quot;osd_load&quot;,!0,!0,&quot;&quot;);a.dispatchEvent(c)}else if(Ic(b.CustomEvent)){var d=new b.CustomEvent(&quot;osd_load&quot;,{bubbles:!0,cancelable:!0,detail:&quot;&quot;});a.dispatchEvent(d)}else if(Ic(b.Event)){var e=new Event(&quot;osd_load&quot;,{bubbles:!0,cancelable:!0});a.dispatchEvent(e)}}catch(f){}}function Kc(){var a=I();return&quot;complete&quot;===a.document.readyState||!!a.google_onload_fired}var Lc=!!window.google_async_iframe_id,Mc=Lc&amp;&amp;window.parent||window;function I(){if(Lc&amp;&amp;!nc(Mc)){var a=&quot;.&quot;+x.domain;try{for(;2&lt;a.split(&quot;.&quot;).length&amp;&amp;!nc(Mc);)x.domain=a=a.substr(a.indexOf(&quot;.&quot;)+1),Mc=window.parent}catch(b){}nc(Mc)||(Mc=window)}return Mc};function Nc(a,b,c){try{a&amp;&amp;(b=b.top);var d=void 0;var e=b;c=void 0===c?!1:c;a&amp;&amp;null!==e&amp;&amp;e!=e.top&amp;&amp;(e=e.top);try{if(void 0===c?0:c)var f=(new G(e.innerWidth,e.innerHeight)).round();else{var g=(e||window).document,h=&quot;CSS1Compat&quot;==g.compatMode?g.documentElement:g.body;f=(new G(h.clientWidth,h.clientHeight)).round()}d=f}catch(r){d=new G(-12245933,-12245933)}a=d;var m=dc(Xb(b.document).a);if(-12245933==a.width){var l=a.width;var n=new H(l,l,l,l)}else n=new H(m.y,m.x+a.width,m.y+a.height,m.x);return n}catch(r){return new H(-12245933,-12245933,-12245933,-12245933)}};var Oc={NONE:0,Ub:1};function Pc(){this.o=0;this.f=!1;this.c=-1;this.a=!1;this.b=0}Pc.prototype.isVisible=function(){return this.a?.3&lt;=this.o:.5&lt;=this.o};var J={eb:0,Vb:1},Qc={eb:0,ec:1,cc:2},Rc={eb:0,NEVER:1,ALWAYS:2},Sc={953563515:0,953563517:1,21062754:0,21062755:1},Tc={370204058:0,370204059:1,370204060:0,370204061:1},Uc={370204018:0,370204019:1,370204052:2,370204026:0,370204027:1,370204053:2},Vc={668123008:0,668123009:1},Wc={668123028:0,668123029:1},Xc={NONE:0,ac:1,Wb:2},Yc={480596784:0,480596785:1,21063355:2},Zc={53887176:0,53887177:1},$c={319331040:0,319331041:1};function ad(a){this.f=a;this.a=null;this.b=!1;this.c=null}function K(a){a.b=!0;return a}function bd(a,b){a.c=void 0===b?null:b}function cd(a,b){var c;if(c=null===a.a)a:{c=a.f;for(var d in c)if(c[d]==b){c=!0;break a}c=!1}c&amp;&amp;(a.a=b)}function dd(a,b){a.c&amp;&amp;z(b,function(c){c=a.c[c];void 0!==c&amp;&amp;cd(a,c)})};function ed(){this.a={};this.c=!0;this.b={}}ed.prototype.reset=function(){this.a={};this.c=!0;this.b={}};function L(a,b,c){a.a[b]||(a.a[b]=new ad(c));return a.a[b]}function fd(a,b,c){(a=a.a[b])&amp;&amp;cd(a,c)}function M(a,b){var c=a.b;if(null!==c&amp;&amp;b in c)return a.b[b];if(a=a.a[b])return a.a}function gd(a){var b={},c=Ra(a.a,function(d){return d.b});Qa(c,function(d,e){d=void 0!==a.b[e]?String(a.b[e]):d.b&amp;&amp;null!==d.a?String(d.a):&quot;&quot;;0&lt;d.length&amp;&amp;(b[e]=d)},a);return b}function hd(a,b){if(!a.c)return b;b=b.split(&quot;&amp;&quot;);for(var c=b.length-1;0&lt;=c;c--){var d=b[c].split(&quot;=&quot;),e=1&lt;d.length?parseInt(d[1],10):1;(d=a.a[d[0]])&amp;&amp;cd(d,e)}return b.join(&quot;&amp;&quot;)}function id(a,b){a.c&amp;&amp;z(Ua(a.a),function(c){return dd(c,b)})}function jd(a,b){a.c&amp;&amp;b&amp;&amp;v(b)&amp;&amp;(b=b.match(/[&amp;;?]eid=([^&amp;;]+)/))&amp;&amp;2===b.length&amp;&amp;(b=decodeURIComponent(b[1]).split(&quot;,&quot;),b=Da(b,function(c){return Number(c)}),id(a,b))};var kd=+new Date,ld=-1,md=-1,nd=!1;function N(){return+new Date-kd}function od(){var a=O.g().l,b=0&lt;=md?N()-md:-1,c=nd?N()-ld:-1;if(947190542==a)return 100;if(79463069==a)return 200;a=[2E3,4E3];var d=[250,500,1E3];var e=b;-1!=c&amp;&amp;c&lt;b&amp;&amp;(e=c);for(b=0;b&lt;a.length;++b)if(e&lt;a[b]){var f=d[b];break}void 0===f&amp;&amp;(f=d[a.length]);return f};function pd(){}pd.prototype.a=function(){return 0};pd.prototype.c=function(){return 0};pd.prototype.f=function(){return 0};pd.prototype.b=function(){return 0};function qd(){if(!rd())throw Error();}t(qd,pd);function rd(){return!(!y||!y.performance)}qd.prototype.a=function(){return rd()&amp;&amp;y.performance.now?y.performance.now():pd.prototype.a.call(this)};qd.prototype.c=function(){return rd()&amp;&amp;y.performance.memory?y.performance.memory.totalJSHeapSize||0:pd.prototype.c.call(this)};qd.prototype.f=function(){return rd()&amp;&amp;y.performance.memory?y.performance.memory.usedJSHeapSize||0:pd.prototype.f.call(this)};qd.prototype.b=function(){return rd()&amp;&amp;y.performance.memory?y.performance.memory.jsHeapSizeLimit||0:pd.prototype.b.call(this)};function sd(){return{visible:1,hidden:2,prerender:3,preview:4,unloaded:5}[x.visibilityState||x.webkitVisibilityState||x.mozVisibilityState||&quot;&quot;]||0};function td(){}td.prototype.isVisible=function(){return 1===sd()};var ud=/^(?:([^:/?#.]+):)?(?:\/\/(?:([^/?#]*)@)?([^/#?]*?)(?::([0-9]+))?(?=[/#?]|$))?([^?#]+)?(?:\?([^#]*))?(?:#([\s\S]*))?$/;var vd=/^https?:\/\/(\w|-)+\.cdn\.ampproject\.(net|org)(\?|\/|$)/;function wd(){var a=u,b=[],c=null;do{var d=a;if(nc(d)){var e=d.location.href;c=d.document&amp;&amp;d.document.referrer||null}else e=c,c=null;b.push(new xd(e||&quot;&quot;,d));try{a=d.parent}catch(f){a=null}}while(a&amp;&amp;d!=a);d=0;for(a=b.length-1;d&lt;=a;++d)b[d].depth=a-d;d=u;if(d.location&amp;&amp;d.location.ancestorOrigins&amp;&amp;d.location.ancestorOrigins.length==b.length-1)for(a=1;a&lt;b.length;++a)e=b[a],e.url||(e.url=d.location.ancestorOrigins[a-1]||&quot;&quot;,e.ob=!0);return b}function yd(a,b){this.a=a;this.b=b}function xd(a,b,c){this.url=a;this.a=b;this.ob=!!c;this.depth=na(void 0)?void 0:null};function zd(){this.c=&quot;&amp;&quot;;this.f=!1;this.b={};this.h=0;this.a=[]}function Ad(a,b){var c={};c[a]=b;return[c]}function Bd(a,b,c,d,e){var f=[];oc(a,function(g,h){(g=Cd(g,b,c,d,e))&amp;&amp;f.push(h+&quot;=&quot;+g)});return f.join(b)}function Cd(a,b,c,d,e){if(null==a)return&quot;&quot;;b=b||&quot;&amp;&quot;;c=c||&quot;,$&quot;;&quot;string&quot;==typeof c&amp;&amp;(c=c.split(&quot;&quot;));if(a instanceof Array){if(d=d||0,d&lt;c.length){for(var f=[],g=0;g&lt;a.length;g++)f.push(Cd(a[g],b,c,d+1,e));return f.join(c[d])}}else if(&quot;object&quot;==typeof a)return e=e||0,2&gt;e?encodeURIComponent(Bd(a,b,c,d,e+1)):&quot;...&quot;;return encodeURIComponent(String(a))}function Dd(a,b,c,d){a.a.push(b);a.b[b]=Ad(c,d)}function Ed(a,b,c){b=b+&quot;//pagead2.googlesyndication.com&quot;+c;var d=Fd(a)-c.length;if(0&gt;d)return&quot;&quot;;a.a.sort(function(n,r){return n-r});c=null;for(var e=&quot;&quot;,f=0;f&lt;a.a.length;f++)for(var g=a.a[f],h=a.b[g],m=0;m&lt;h.length;m++){if(!d){c=null==c?g:c;break}var l=Bd(h[m],a.c,&quot;,$&quot;);if(l){l=e+l;if(d&gt;=l.length){d-=l.length;b+=l;e=a.c;break}else a.f&amp;&amp;(e=d,l[e-1]==a.c&amp;&amp;--e,b+=l.substr(0,e),e=a.c,d=0);c=null==c?g:c}}a=&quot;&quot;;null!=c&amp;&amp;(a=e+&quot;trn=&quot;+c);return b+a}function Fd(a){var b=1,c;for(c in a.b)b=c.length&gt;b?c.length:b;return 3997-b-a.c.length-1};function Gd(){this.b=new td;this.a=rd()?new qd:new pd}Gd.prototype.setInterval=function(a,b){return y.setInterval(a,b)};Gd.prototype.clearInterval=function(a){y.clearInterval(a)};Gd.prototype.setTimeout=function(a,b){return y.setTimeout(a,b)};Gd.prototype.clearTimeout=function(a){y.clearTimeout(a)};function Hd(a){P();var b=I()||y;wc(b,a,!1)}w(Gd);function Id(){}function P(){var a=Id.g();if(!a.a){if(!y)throw Error(&quot;Context has not been set and window is undefined.&quot;);a.a=Gd.g()}return a.a}w(Id);function Jd(a){for(var b=a!==a.top,c=a.top,d=a,e=d,f=0;d&amp;&amp;d!=d.parent;)d=d.parent,f++,nc(d)&amp;&amp;(e=d);c=c===e;if(b&amp;&amp;c&amp;&amp;null!=a.top.mraid)return{La:a.top.mraid,Na:3};a=a.mraid;return null!=a?b?c?{La:a,Na:2}:{La:a,Na:1}:{La:a,Na:0}:null};function Kd(a){a=Hc(a);return!(!a||!a.observeIntersection)}function Ld(a){return(a=a.document)&amp;&amp;sa(a.elementFromPoint)};function Md(a,b){this.b=(void 0===a?0:a)||0;this.a=(void 0===b?&quot;&quot;:b)||&quot;&quot;}Md.prototype.toString=function(){return this.b+(this.a?&quot;-&quot;:&quot;&quot;)+this.a};function Nd(a){this.h=null;a||(a=[]);this.c=-1;this.a=a;a:{if(a=this.a.length){--a;var b=this.a[a];if(!(null===b||&quot;object&quot;!=typeof b||qa(b)||Pb&amp;&amp;b instanceof Uint8Array)){this.f=a- -1;this.b=b;break a}}this.f=Number.MAX_VALUE}}za(Nd,Ob);function Od(a){this.c=a;this.a=-1;this.b=0}function Pd(a,b){return function(c){for(var d=[],e=0;e&lt;arguments.length;++e)d[e]=arguments[e];if(-1&lt;a.a)return b.apply(null,p(d));try{return a.a=a.c.a.a(),b.apply(null,p(d))}finally{a.b+=a.c.a.a()-a.a,a.a=-1}}};function Qd(a,b){this.b=a;this.c=b;this.a=new Od(a)};function O(){this.l=void 0;this.h=this.m=0;this.b=&quot;ns&quot;;this.j=this.i=-1;this.a=new ed;bd(K(L(this.a,&quot;nio_mode&quot;,J)),Sc);bd(K(L(this.a,&quot;geo_mode&quot;,J)),Tc);bd(K(L(this.a,&quot;mv&quot;,Xc)),Yc);L(this.a,&quot;omid&quot;,J);K(L(this.a,&quot;osd&quot;,J));K(L(this.a,&quot;epoh&quot;,J));K(L(this.a,&quot;epph&quot;,J));bd(K(L(this.a,&quot;umt&quot;,J)),Vc);bd(K(L(this.a,&quot;gmpd&quot;,J)),Wc);bd(K(L(this.a,&quot;sel&quot;,J)),Uc);bd(K(L(this.a,&quot;mce&quot;,J)),Zc);bd(K(L(this.a,&quot;buvpe&quot;,J)),$c);K(L(this.a,&quot;phel&quot;,J));K(L(this.a,&quot;phell&quot;,J));K(L(this.a,&quot;oseid&quot;,zc));K(L(this.a,&quot;xdi&quot;,J));K(L(this.a,&quot;amp&quot;,J));K(L(this.a,&quot;uup&quot;,J));this.f=new Qd(P(),this.a);this.c=null}w(O);function Rd(){var a=&quot;https:&quot;;y&amp;&amp;y.location&amp;&amp;&quot;http:&quot;===y.location.protocol&amp;&amp;(a=&quot;http:&quot;);this.b=a;this.a=.01}function Sd(a,b,c,d){if(Math.random()&lt;(d||a.a))try{if(c instanceof zd)var e=c;else e=new zd,oc(c,function(g,h){var m=e,l=m.h++;g=Ad(h,g);m.a.push(l);m.b[l]=g});var f=Ed(e,a.b,&quot;/pagead/gen_204?id=&quot;+b+&quot;&amp;&quot;);f&amp;&amp;Hd(f)}catch(g){}};function Td(a,b,c){c=void 0===c?{}:c;this.error=a;this.context=b.context;this.msg=b.message||&quot;&quot;;this.id=b.id||&quot;jserror&quot;;this.meta=c};var Ud=null;function Vd(){var a=u.performance;return a&amp;&amp;a.now&amp;&amp;a.timing?Math.floor(a.now()+a.timing.navigationStart):+new Date}function Wd(){var a=void 0===a?u:a;return(a=a.performance)&amp;&amp;a.now?a.now():null};function Xd(a,b,c){this.label=a;this.type=b;this.value=c;this.duration=0;this.uniqueId=Math.random();this.slotId=void 0};var Q=u.performance,Yd=!!(Q&amp;&amp;Q.mark&amp;&amp;Q.measure&amp;&amp;Q.clearMarks),Zd=Pa(function(){var a;if(a=Yd){var b;if(null===Ud){Ud=&quot;&quot;;try{a=&quot;&quot;;try{a=u.top.location.hash}catch(c){a=u.location.hash}a&amp;&amp;(Ud=(b=a.match(/\bdeid=([\d,]+)/))?b[1]:&quot;&quot;)}catch(c){}}b=Ud;a=!!b.indexOf&amp;&amp;0&lt;=b.indexOf(&quot;1337&quot;)}return a});function $d(){var a=I();this.b=[];this.c=a||u;var b=null;a&amp;&amp;(a.google_js_reporting_queue=a.google_js_reporting_queue||[],this.b=a.google_js_reporting_queue,b=a.google_measure_js_timing);this.a=Zd()||(null!=b?b:1&gt;Math.random())}function ae(a){a&amp;&amp;Q&amp;&amp;Zd()&amp;&amp;(Q.clearMarks(&quot;goog_&quot;+a.label+&quot;_&quot;+a.uniqueId+&quot;_start&quot;),Q.clearMarks(&quot;goog_&quot;+a.label+&quot;_&quot;+a.uniqueId+&quot;_end&quot;))}$d.prototype.start=function(a,b){if(!this.a)return null;var c=Wd()||Vd();a=new Xd(a,b,c);b=&quot;goog_&quot;+a.label+&quot;_&quot;+a.uniqueId+&quot;_start&quot;;Q&amp;&amp;Zd()&amp;&amp;Q.mark(b);return a};function be(){var a=ce;this.i=de;this.h=&quot;jserror&quot;;this.f=!0;this.b=null;this.j=this.c;this.a=void 0===a?null:a}function ee(a,b,c){return Pd(O.g().f.a,function(){try{if(a.a&amp;&amp;a.a.a){var d=a.a.start(b.toString(),3);var e=c();var f=a.a,g=d;if(f.a&amp;&amp;na(g.value)){var h=Wd()||Vd();g.duration=h-g.value;var m=&quot;goog_&quot;+g.label+&quot;_&quot;+g.uniqueId+&quot;_end&quot;;Q&amp;&amp;Zd()&amp;&amp;Q.mark(m);!f.a||2048&lt;f.b.length||f.b.push(g)}}else e=c()}catch(l){f=a.f;try{ae(d),f=a.j(b,new fe(ge(l)),void 0,void 0)}catch(n){a.c(217,n)}if(!f)throw l;}return e})()}function he(a,b){var c=ie;return Pd(O.g().f.a,function(d){for(var e=[],f=0;f&lt;arguments.length;++f)e[f]=arguments[f];return ee(c,a,function(){return b.apply(void 0,e)})})}be.prototype.c=function(a,b,c,d,e){e=e||this.h;try{var f=new zd;f.f=!0;Dd(f,1,&quot;context&quot;,a);b.error&amp;&amp;b.meta&amp;&amp;b.id||(b=new fe(ge(b)));b.msg&amp;&amp;Dd(f,2,&quot;msg&quot;,b.msg.substring(0,512));var g=b.meta||{};if(this.b)try{this.b(g)}catch(F){}if(d)try{d(g)}catch(F){}b=[g];f.a.push(3);f.b[3]=b;var h=wd(),m=new xd(u.location.href,u,!1);b=null;var l=h.length-1;for(d=l;0&lt;=d;--d){var n=h[d];!b&amp;&amp;vd.test(n.url)&amp;&amp;(b=n);if(n.url&amp;&amp;!n.ob){m=n;break}}n=null;var r=h.length&amp;&amp;h[l].url;0!=m.depth&amp;&amp;r&amp;&amp;(n=h[l]);var q=new yd(m,n);q.b&amp;&amp;Dd(f,4,&quot;top&quot;,q.b.url||&quot;&quot;);Dd(f,5,&quot;url&quot;,q.a.url||&quot;&quot;);Sd(this.i,e,f,c)}catch(F){try{Sd(this.i,e,{context:&quot;ecmserr&quot;,rctx:a,msg:ge(F),url:q&amp;&amp;q.a.url},c)}catch(xc){}}return this.f};function ge(a){var b=a.toString();a.name&amp;&amp;-1==b.indexOf(a.name)&amp;&amp;(b+=&quot;: &quot;+a.name);a.message&amp;&amp;-1==b.indexOf(a.message)&amp;&amp;(b+=&quot;: &quot;+a.message);if(a.stack){a=a.stack;var c=b;try{-1==a.indexOf(c)&amp;&amp;(a=c+&quot;\n&quot;+a);for(var d;a!=d;)d=a,a=a.replace(/((https?:\/..*\/)[^\/:]*:\d+(?:.|\n)*)\2/,&quot;$1&quot;);b=a.replace(/\n */g,&quot;\n&quot;)}catch(e){b=c}}return b}function fe(a){Td.call(this,Error(a),{message:a})}t(fe,Td);var de,ie,ce=new $d;function je(){var a=I();a&amp;&amp;&quot;undefined&quot;!=typeof a.google_measure_js_timing&amp;&amp;!a.google_measure_js_timing&amp;&amp;(a=ce,a.a=!1,a.b!=a.c.google_js_reporting_queue&amp;&amp;(Zd()&amp;&amp;z(a.b,ae),a.b.length=0))}(function(){de=new Rd;ie=new be;var a=I();a&amp;&amp;a.document&amp;&amp;(&quot;complete&quot;==a.document.readyState?je():ce.a&amp;&amp;uc(a,&quot;load&quot;,function(){je()}))})();function ke(a){ie.b=function(b){z(a,function(c){c(b)})}}function le(a,b){return ee(ie,a,b)}function R(a,b){return he(a,b)}function me(a,b,c,d){ie.c(a,b,c,d)};Ac&amp;&amp;(de.a=1);if(x&amp;&amp;x.URL){var ne,rc=x.URL;ne=!!rc&amp;&amp;0&lt;qc().length;ie.f=!ne}function S(a,b,c,d,e){e=void 0===e?!1:e;c=he(d,c);uc(a,b,c,{capture:e});return c}function oe(a){var b=[&quot;IMG&quot;,&quot;FRAME&quot;,&quot;IFRAME&quot;];return Fa(b,function(c){return a.nodeName==String(c)})?[a]:Ea(b,function(c,d){return c.concat(La((a||document).getElementsByTagName(String(d))))},[])}function pe(a,b){if(a){var c=0,d=null;a=oe(a);for(var e=0;e&lt;a.length;e++){var f=!1;d=a[e];switch(d.nodeName){case &quot;IMG&quot;:var g=d;if(g.complete||g.naturalWidth)f=!0;break;case &quot;FRAME&quot;:case &quot;IFRAME&quot;:g=d;try{if(g.readyState)f=&quot;complete&quot;==g.readyState;else{var h=g.contentWindow||g.contentDocument;h.document&amp;&amp;(h=h.document);f=h&amp;&amp;h.readyState?&quot;complete&quot;==h.readyState:!1}}catch(m){f=!1}}f||(c++,S(d,&quot;load&quot;,function(){c--;c||b(null)},130))}a=d=null;!c&amp;&amp;b(null)}}function qe(a,b){function c(d){vc(a,d,c);b(d)}return S(a,&quot;DOMNodeRemoved&quot;,c,156,!1)};function re(a){var b=[];Qa(a,function(c,d){d=encodeURIComponent(d);v(c)&amp;&amp;(c=encodeURIComponent(c));b.push(d+&quot;=&quot;+c)});b.push(&quot;24=&quot;+ +new Date);return b.join(&quot;\n&quot;)};function se(){this.a=null;this.status=0};var te=!D&amp;&amp;!hb();function we(a,b){if(/-[a-z]/.test(b))return null;if(te&amp;&amp;a.dataset){if(!(!C(&quot;Android&quot;)||ib()||C(&quot;Firefox&quot;)||C(&quot;FxiOS&quot;)||C(&quot;Opera&quot;)||C(&quot;Silk&quot;)||b in a.dataset))return null;a=a.dataset[b];return void 0===a?null:a}return a.getAttribute(&quot;data-&quot;+lb(b))}function xe(a,b){return/-[a-z]/.test(b)?!1:te&amp;&amp;a.dataset?b in a.dataset:a.hasAttribute?a.hasAttribute(&quot;data-&quot;+lb(b)):!!a.getAttribute(&quot;data-&quot;+lb(b))};var ye=0;function ze(a,b){try{ye++,b.postMessage(a,&quot;*&quot;)}catch(c){}}function Ae(a,b){b&amp;&amp;(a(b),b.frames&amp;&amp;z(b.frames,function(c){Ae(a,c)}))}function Be(a,b,c,d){if(!a)return{value:d,done:!1};d=b(d,a);var e=c(d,a);return!e&amp;&amp;ob(a,&quot;parentElement&quot;)?Be(ic(a),b,c,d):{done:e,value:d}}function Ce(a,b,c,d){if(!a)return d;d=Be(a,b,c,d);if(!d.done)try{var e=Zb(a),f=e&amp;&amp;ec(e);return Ce(f&amp;&amp;f.frameElement,b,c,d.value)}catch(g){}return d.value}function De(a){var b=!D||Cb(8);return Ce(a,function(c,d){c=ob(d,&quot;style&quot;)&amp;&amp;d.style&amp;&amp;Fc(d,&quot;visibility&quot;);return{hidden:&quot;hidden&quot;===c,visible:b&amp;&amp;&quot;visible&quot;===c}},function(c){return c.hidden||c.visible},{hidden:!1,visible:!1}).hidden}function Ee(a){return Ce(a,function(b,c){return!(!ob(c,&quot;style&quot;)||!c.style||&quot;none&quot;!==Fc(c,&quot;display&quot;))},function(b){return b},!1)?!0:De(a)}function Fe(a,b,c){a=a.exec(b);if(!(b=!a||!a[1])){a=a[1];b=a.length;if(0==b)a=0;else{for(var d=305419896,e=0;e&lt;b;e++)d^=(d&lt;&lt;5)+(d&gt;&gt;2)+a.charCodeAt(e)&amp;4294967295;a=0&lt;d?d:4294967296+d}b=c!=a}return!b}function Ge(a,b){0==a.length?(b.a=null,b.status=1):(a=jc.apply(null,a),!a||a.tagName?b.a=a:b.a=a.parentElement,b.a||(b.status=-2))}function He(a,b,c){var d=new RegExp(&quot;(?:(?:[?&amp;]|%26|&amp;3[f]|%2526|%253[f])&quot;+b+&quot;(?:=|%3[d]|%253[d]))([a-z0-9-_]*)&quot;,&quot;i&quot;),e=new se;if(&quot;&quot;==b||-1==c)return e.status=-1,e;try{b=[];for(var f=ba((a.document||document).getElementsByTagName(&quot;A&quot;)),g=f.next();!g.done;g=f.next()){var h=g.value;Fe(d,h.href,c)&amp;&amp;(e.status=3,b.push(h))}if(0&lt;b.length)return Ge(b,e),e;var m=ba((a.document||document).getElementsByTagName(&quot;EMBED&quot;));for(g=m.next();!g.done;g=m.next()){var l=g.value;Fe(d,l.src,c)&amp;&amp;(0==l.getBoundingClientRect().height&amp;&amp;l.parentElement&amp;&amp;&quot;OBJECT&quot;==l.parentElement.tagName?(e.status=5,b.push(l.parentElement)):(e.status=4,b.push(l)))}if(0&lt;b.length)return Ge(b,e),e}catch(n){return e.status=7,e}e.status=1;return e}function Ie(a){return new H(a.top,a.right,a.bottom,a.left)}function Je(){var a=P().b;return 0===sd()?-1:a.isVisible()?0:1}function Ke(a){return[a.top,a.left,a.bottom,a.right].join(&quot;-&quot;)}function Le(a,b,c){if(b&amp;&amp;a)if(c&amp;&amp;0&lt;c.length)for(c=Ca(c,function(e){var f=e.parent&amp;&amp;e.parent!==e;return e===y.top||f}),a=ba(c),c=a.next();!c.done;c=a.next())ze(b,c.value);else{c=[];var d=kc(a);d&amp;&amp;c.push(d);if(0===c.length)try{c=Da(ac(document,&quot;IFRAME&quot;.toString().toLowerCase(),void 0,a),function(e){return kc(e)})}catch(e){}a=ba(c);for(c=a.next();!c.done;c=a.next()){c=c.value;try{b&amp;&amp;Ae(xa(ze,b),c)}catch(e){}}}}function Me(a,b,c){try{var d=re(b);Le(a,d,c)}catch(e){}};function Ne(){var a=B;return a?Fa(&quot;AppleTV;GoogleTV;HbbTV;NetCast.TV;Opera TV;POV_TV;SMART-TV;SmartTV;TV Store;OMI/&quot;.split(&quot;;&quot;),function(b){return A(a,b)})?!0:A(a,&quot;Presto&quot;)&amp;&amp;A(a,&quot;Linux&quot;)&amp;&amp;!A(a,&quot;X11&quot;)&amp;&amp;!A(a,&quot;Android&quot;)&amp;&amp;!A(a,&quot;Mobi&quot;):!1};function T(){this.b=!nc(y.top);this.w=!this.b||Kd(y);this.i=mc()||!mc()&amp;&amp;(C(&quot;iPod&quot;)||C(&quot;iPhone&quot;)||C(&quot;Android&quot;)||C(&quot;IEMobile&quot;));var a=wd();0&lt;a.length&amp;&amp;null!=a[a.length-1]&amp;&amp;null!=a[a.length-1].url&amp;&amp;(a=a[a.length-1].url.match(ud)[3]||null)&amp;&amp;decodeURI(a);this.a=new H(0,0,0,0);this.l=new G(0,0);this.h=new G(0,0);this.c=new H(0,0,0,0);this.m=new E(0,0);this.s=!1;this.j=null;this.u=!1;this.f=!(!y||!Jd(y));Oe(this)}function Pe(a,b){b&amp;&amp;b.screen&amp;&amp;(a.l=new G(b.screen.width,b.screen.height))}function Qe(a,b){var c=a.a?new G(a.a.H(),a.a.G()):new G(0,0);b=void 0===b?y:b;null!==b&amp;&amp;b!=b.top&amp;&amp;(b=b.top);var d=0,e=0;try{var f=b.document,g=f.body,h=f.documentElement;if(&quot;CSS1Compat&quot;==f.compatMode&amp;&amp;h.scrollHeight)d=h.scrollHeight!=c.height?h.scrollHeight:h.offsetHeight,e=h.scrollWidth!=c.width?h.scrollWidth:h.offsetWidth;else{var m=h.scrollHeight,l=h.scrollWidth,n=h.offsetHeight,r=h.offsetWidth;h.clientHeight!=n&amp;&amp;(m=g.scrollHeight,l=g.scrollWidth,n=g.offsetHeight,r=g.offsetWidth);m&gt;c.height?m&gt;n?(d=m,e=l):(d=n,e=r):m&lt;n?(d=m,e=l):(d=n,e=r)}var q=new G(e,d)}catch(F){q=new G(-12245933,-12245933)}a.h=q}function Oe(a){y&amp;&amp;y.document&amp;&amp;(a.c=Nc(!1,y,a.i),a.a=Nc(!0,y,a.i),a.j=a.a,Qe(a,y),Pe(a,y))}function Re(){if(T.g().u)return!0;var a=P().b.isVisible(),b=0===sd();return a||b}w(T);var Se=new H(0,0,0,0);function Te(a,b){try{try{var c=Ie(a.getBoundingClientRect())}catch(bh){c=new H(0,0,0,0)}var d=c.right-c.left,e=c.bottom-c.top;var f=new E(0,0),g=ec(Zb(a));if(ob(g,&quot;parent&quot;)){do{if(g==b){c=a;var h=Zb(c),m=new E(0,0),l=void 0;l=h?Zb(h):document;var n=!D||9&lt;=Number(Db)||&quot;CSS1Compat&quot;==Xb(l).a.compatMode?l.documentElement:l.body;if(c!=n){var r=Gc(c),q=dc(Xb(h).a);m.x=r.left+q.x;m.y=r.top+q.y}var F=m}else{var xc=Gc(a);F=new E(xc.left,xc.top)}c=F;f.x+=c.x;f.y+=c.y}while(g&amp;&amp;g!=b&amp;&amp;g!=g.parent&amp;&amp;(a=g.frameElement)&amp;&amp;(g=g.parent))}var ue=f.x,ve=f.y;return new H(Math.round(ve),Math.round(ue+d),Math.round(ve+e),Math.round(ue))}catch(bh){return Bc(Se)}}function Ue(a,b){return a.left&lt;=b.right&amp;&amp;b.left&lt;=a.right&amp;&amp;a.top&lt;=b.bottom&amp;&amp;b.top&lt;=a.bottom?new H(Math.max(a.top,b.top),Math.min(a.right,b.right),Math.min(a.bottom,b.bottom),Math.max(a.left,b.left)):new H(0,0,0,0)}function Ve(a,b){b=U(b);return 0===b?0:U(a)/b}function U(a){return Math.max(a.bottom-a.top,0)*Math.max(a.right-a.left,0)}function We(a,b){if(!a||!b)return!1;for(var c=0;null!==a&amp;&amp;100&gt;c++;){if(a===b)return!0;try{if(a=ic(a)||a){var d=Zb(a),e=d&amp;&amp;ec(d),f=e&amp;&amp;e.frameElement;f&amp;&amp;(a=f)}}catch(g){break}}return!1}function Xe(a,b,c){if(!a||!b)return!1;b=Dc(Bc(a),-b.left,-b.top);a=(b.left+b.right)/2;b=(b.top+b.bottom)/2;var d=I();nc(d.top)&amp;&amp;d.top&amp;&amp;d.top.document&amp;&amp;(d=d.top);if(!Ld(d))return!1;a=d.document.elementFromPoint(a,b);if(!a)return!1;b=(b=(b=Zb(c))&amp;&amp;b.defaultView&amp;&amp;b.defaultView.frameElement)&amp;&amp;We(b,a);d=a===c;a=!d&amp;&amp;a&amp;&amp;lc(a,function(e){return e===c});return!(b||d||a)}function Ye(a,b,c,d){return T.g().b?!1:0&gt;=a.H()||0&gt;=a.G()?!0:c&amp;&amp;d?le(208,function(){return Xe(a,b,c)}):!1};function Ze(a,b,c){var d=new H(0,0,0,0);this.time=a;this.volume=null;this.b=b;this.a=d;this.c=c};function $e(a,b,c,d,e,f,g){this.i=a;this.f=b;this.b=c;this.a=d;this.c=e;this.h=g};function af(a){this.c=a;this.b=0;this.a=null}af.prototype.cancel=function(){P().clearTimeout(this.a);this.a=null};function bf(a){var b=P(),c=O.g().f.a;a.a=b.setTimeout(Pd(c,R(143,function(){a.b++;a.c.Ab()})),od())};function cf(a,b,c){this.a=a;this.O=void 0===c?&quot;na&quot;:c;this.h=[];this.w=!1;this.b=new Ze(-1,!0,this);this.f=this;this.u=this.i=b;this.M=this.s=!1;this.J=&quot;uk&quot;;this.K=!1}k=cf.prototype;k.X=function(){return this.C()};k.C=function(){return!1};k.nb=function(){this.w=!0};k.ma=function(){return this.J};function df(a,b){a.M||(a.M=!0,a.J=b,a.u=0,a.f==a&amp;&amp;(a.i=0,ef(a)))}k.F=function(){return this.f==this?this.O:this.f.F()};k.N=function(){return{}};k.R=function(){return this.i};function ff(a,b){Ja(a.h,b)||(a.h.push(b),b.W(a.f),b.S(a.b),b.U()&amp;&amp;(a.s=!0))}k.tb=function(){var a=T.g();a.a=Nc(!0,this.a,a.i)};k.ub=function(){Pe(T.g(),this.a)};k.Va=function(){return this.b.a};function gf(a){a.ub();a.tb();var b=T.g();b.c=Nc(!1,a.a,b.i);Qe(T.g(),a.a);a.b.a=a.Va()}k.Ab=function(){};function hf(a){a.s=a.h.length?Fa(a.h,function(b){return b.U()}):!1}function jf(a){var b=La(a.h);z(b,function(c){c.S(a.b)})}function ef(a){var b=La(a.h);z(b,function(c){c.W(a.f)});a.f!=a||jf(a)}k.W=function(a){var b=this.i,c=a.R();this.f=c&lt;this.u?this:a;this.i=this.f!=this?c:this.u;this.i!=b&amp;&amp;ef(this)};function kf(a,b){var c=a.b,d=a.s;c=!(b&amp;&amp;(void 0===d||!d||c.volume==b.volume)&amp;&amp;c.b==b.b&amp;&amp;Cc(c.a,b.a));a.b=b;c&amp;&amp;jf(a)}k.S=function(a){this.f!=this&amp;&amp;kf(this,a)};k.U=function(){return this.s};k.D=function(){this.K=!0};k.oa=function(){return this.K};function lf(a,b,c,d){this.a=a;this.c=new H(0,0,0,0);this.i=this.b=b;this.w=c;this.u=d;this.s=!1;this.h=new $e(b.b,this.c,new H(0,0,0,0),0,0,N(),0)}k=lf.prototype;k.Ia=function(){return!0};k.T=function(){};k.Qa=function(){this.a&amp;&amp;(this.c=Te(this.a,this.b.a))};k.V=function(){this.Qa();this.h=new $e(this.b.b,this.c,this.h.b,this.h.a,this.h.c,N(),this.h.h)};k.D=function(){if(!this.oa()){var a=this.b,b=a.h,c=Ba(b,this);0&lt;=c&amp;&amp;Array.prototype.splice.call(b,c,1);a.s&amp;&amp;this.U()&amp;&amp;hf(a);this.s=!0}};k.oa=function(){return this.s};k.N=function(){return this.i.N()};k.R=function(){return this.i.R()};k.ma=function(){return this.i.ma()};k.W=function(a){this.i=a;this.u.W(this)};k.S=function(){this.V()};k.U=function(){return this.u.U()};function mf(a){this.h=!1;this.b=a}k=mf.prototype;k.R=function(){return this.b.R()};k.ma=function(){return this.b.ma()};k.create=function(a,b,c){var d=null;this.b&amp;&amp;(d=this.Fa(a,b,c),ff(this.b,d));return d};k.X=function(){return this.C()};k.C=function(){return!1};k.sb=function(){return!0};k.D=function(){this.h=!0};k.oa=function(){return this.h};k.N=function(){return{}};function nf(a,b,c){this.c=void 0===c?0:c;this.b=a;this.a=null==b?&quot;&quot;:b}function of(a){switch(Math.trunc(a.c)){case -16:return-16;case -8:return-8;case 0:return 0;case 8:return 8;case 16:return 16;default:return 16}}function pf(a,b){return a.c&lt;b.c?!0:a.c&gt;b.c?!1:a.b&lt;b.b?!0:a.b&gt;b.b?!1:typeof a.a&lt;typeof b.a?!0:typeof a.a&gt;typeof b.a?!1:a.a&lt;b.a};function qf(){this.c=0;this.a=[];this.b=!1}qf.prototype.add=function(a,b,c){++this.c;a=new nf(a,b,c);this.a.push(new nf(a.b,a.a,a.c+this.c/4096));this.b=!0;return this};function rf(a,b){z(b.a,function(c){a.add(c.b,c.a,of(c))})}function sf(a,b){var c=void 0===c?0:c;var d=void 0===d?!0:d;oc(b,function(e,f){d&amp;&amp;void 0===e||a.add(f,e,c)})}function tf(a){var b=uf;a.b&amp;&amp;(Ma(a.a,function(c,d){return pf(d,c)?1:pf(c,d)?-1:0}),a.b=!1);return Ea(a.a,function(c,d){d=b(d);return&quot;&quot;+c+(&quot;&quot;!=c&amp;&amp;&quot;&quot;!=d?&quot;&amp;&quot;:&quot;&quot;)+d},&quot;&quot;)};var vf;vf=[&quot;av.key&quot;,&quot;js&quot;,&quot;20190424&quot;].slice(-1)[0];function uf(a){var b=a.b;a=a.a;return&quot;&quot;===a?b:&quot;boolean&quot;==typeof a?a?b:&quot;&quot;:qa(a)?0===a.length?b:b+&quot;=&quot;+a.join():b+&quot;=&quot;+(Ja([&quot;mtos&quot;,&quot;tos&quot;,&quot;p&quot;],b)?a:encodeURIComponent(a))};function wf(a){var b=void 0===b?!0:b;this.a=new qf;void 0!==a&amp;&amp;rf(this.a,a);b&amp;&amp;this.a.add(&quot;v&quot;,vf,-16)}wf.prototype.toString=function(){var a=&quot;//pagead2.googlesyndication.com//pagead/gen_204&quot;,b=tf(this.a);0&lt;b.length&amp;&amp;(a+=&quot;?&quot;+b);return a};function xf(a){var b=[],c=[];Qa(a,function(d,e){if(!(e in Object.prototype)&amp;&amp;&quot;undefined&quot;!=typeof d)switch(qa(d)&amp;&amp;(d=d.join(&quot;,&quot;)),d=[e,&quot;=&quot;,d].join(&quot;&quot;),e){case &quot;adk&quot;:case &quot;r&quot;:case &quot;tt&quot;:case &quot;error&quot;:case &quot;mtos&quot;:case &quot;tos&quot;:case &quot;p&quot;:case &quot;bs&quot;:case &quot;aio&quot;:case &quot;nio&quot;:case &quot;iem&quot;:b.unshift(d);break;case &quot;req&quot;:case &quot;url&quot;:case &quot;referrer&quot;:case &quot;iframe_loc&quot;:c.push(d);break;default:b.push(d)}});return b.concat(c)}function yf(){if(/r\d{8}/.test(&quot;&lt;&lt;&lt;CAFE_VERSION_ID&gt;&gt;&gt;&quot;))return&quot;&lt;&lt;&lt;CAFE_VERSION_ID&gt;&gt;&gt;&quot;;if(vf&amp;&amp;&quot;unreleased&quot;!==vf)return vf};function zf(){this.a=0}w(zf);function Af(a){this.m=a;this.l=!1}Af.prototype.i=function(a,b){this.a=a;this.b=b};function Bf(){Af.call(this,&quot;capability&quot;)}t(Bf,Af);Bf.prototype.j=function(){return!0};Bf.prototype.h=function(){var a={};return a.b_name=this.a.Y,a.v_name=this.b.Y,a};function Cf(){Af.call(this,&quot;diff&quot;)}t(Cf,Af);Cf.prototype.j=function(){return!(.02&gt;=Math.abs(this.b.o-this.a.o))};Cf.prototype.h=function(){var a={};return a.b_name=this.a.Y,a.v_name=this.b.Y,a.b_vp_off=JSON.stringify(this.a.I),a.v_vp_off=JSON.stringify(this.b.I),a.b_vp_sz=JSON.stringify(this.a.ab),a.v_vp_sz=JSON.stringify(this.b.ab),a.b_exp=this.a.o,a.v_exp=this.b.o,a.efp_occ=this.a.Fb,a.sbv=this.a.ea,a};function Df(){Af.call(this,&quot;capt&quot;);this.f=[];this.c=[]}t(Df,Af);Df.prototype.i=function(a,b){Af.prototype.i.call(this,a,b);20&lt;=this.c.length||(this.f.push(a.o),this.c.push(b.o))};Df.prototype.j=function(){return 20===this.c.length};Df.prototype.h=function(){var a=Ef(this.f,this.c),b=Ff(this.f,this.c),c={};return c.b_name=this.a.Y,c.v_name=this.b.Y,c.b_exp=this.f.join(&quot;,&quot;),c.v_exp=this.c.join(&quot;,&quot;),c.diff=a,c.diff_buckets=b,c};function Ef(a,b){return Ga(Oa(a,b),function(c){return c[0]!==c[1]})}function Ff(a,b){function c(d){return.25*Math.floor(d/.25)}return Ef(Da(a,c),Da(b,c))};function Gf(){this.ia=this.ia;this.Ca=this.Ca}Gf.prototype.ia=!1;Gf.prototype.oa=function(){return this.ia};Gf.prototype.D=function(){this.ia||(this.ia=!0,this.P())};Gf.prototype.P=function(){if(this.Ca)for(;this.Ca.length;)this.Ca.shift()()};function Hf(a,b,c,d,e){e=void 0===e?[new Bf,new Cf,new Df]:e;Gf.call(this);this.a=a.Fa(b,c,this);this.a.Ia();this.c=e;this.b=d}t(Hf,Gf);Hf.prototype.P=function(){this.a&amp;&amp;(this.a.T(),this.a.D())};function If(a,b,c){z(a.c,function(d){var e=a.b;if(!d.l&amp;&amp;(d.i(b,c),d.j())){d.l=!0;var f=d.h(),g=new qf;g.add(&quot;id&quot;,&quot;av-js&quot;);g.add(&quot;type&quot;,&quot;verif&quot;);g.add(&quot;vtype&quot;,d.m);d=zf.g();g.add(&quot;i&quot;,d.a++);g.add(&quot;adk&quot;,e);sf(g,f);e=new wf(g);var h=void 0===h?4E3:h;e=e.toString();/&amp;v=[^&amp;]+/.test(e)||(e=(f=yf())?e+&quot;&amp;v=&quot;+encodeURIComponent(f):e);e=e.substring(0,h);Hd(e)}})}Hf.prototype.S=function(){};Hf.prototype.W=function(){};Hf.prototype.U=function(){return!1};function Jf(){this.a=this.b=this.c=0}function Kf(a,b,c,d){b&amp;&amp;(a.c+=c,a.b+=c,a.a=Math.max(a.a,a.b));if(void 0===d?!b:d)a.b=0};var Lf=[1,.75,.5,.3,0];function Mf(a){this.a=a=void 0===a?Lf:a;this.b=Da(this.a,function(){return new Jf})}function Nf(a){return Of(a,function(b){return b.c},!1)}function Pf(a){return Of(a,function(b){return b.a},!0)}function Qf(a,b,c,d,e,f){var g=void 0===g?!0:g;c=f?Math.min(b,c):c;for(f=0;f&lt;a.a.length;f++){var h=a.a[f],m=0&lt;c&amp;&amp;c&gt;=h;h=!(0&lt;b&amp;&amp;b&gt;=h)||d;Kf(a.b[f],g&amp;&amp;m,e,!g||h)}}function Of(a,b,c){a=Da(a.b,function(d){return b(d)});return c?a:Rf(a)}function Rf(a){return Da(a,function(b,c,d){return 0&lt;c?d[c]-d[c-1]:d[c]})};function Sf(){this.a=new Mf;this.c=new Jf;this.b=-1;this.f=new Mf([1,.9,.8,.7,.6,.5,.4,.3,.2,.1,0])};var Tf=new H(0,0,0,0);function Uf(a,b,c){Gf.call(this);this.Ba=Bc(Tf);this.u=new Sf;this.ya=-2;this.cb=-1;this.Sa=b;this.ha=-1!=b;this.I=null;this.O=-1;this.Z=c;this.fb=this.Ta=oa;this.j=this.a=a;this.B=!1;this.l={Ka:null,Ja:null};this.w=!0;this.$=null;this.Ra=!1;O.g().m++;this.c=new Pc;this.bb=this.Ea=-1;this.Pa=0;this.ja=-1;this.b=null;this.s=new H(0,0,0,0);this.Db=!1;a=this.f=new ed;L(a,&quot;od&quot;,Oc);K(L(a,&quot;opac&quot;,J));L(a,&quot;ue&quot;,J);L(a,&quot;ud&quot;,J);K(L(a,&quot;mkm&quot;,J));K(L(a,&quot;gcm&quot;,J));K(L(a,&quot;cm&quot;,J));K(L(a,&quot;sela&quot;,J));K(K(L(a,&quot;sbeos&quot;,J)));K(L(a,&quot;hac&quot;,Rc));K(L(a,&quot;rav&quot;,Qc));K(L(a,&quot;mwt&quot;,J));this.a&amp;&amp;this.a.getAttribute&amp;&amp;xe(this.a,&quot;googleAvInapp&quot;)&amp;&amp;(T.g().f=!0);1==this.Z?fd(this.f,&quot;od&quot;,1):fd(this.f,&quot;od&quot;,0)}t(Uf,Gf);k=Uf.prototype;k.P=function(){Vf(this);this.$&amp;&amp;this.$.D();this.b&amp;&amp;this.b.D();delete this.u;delete this.Ta;delete this.fb;delete this.a;delete this.j;delete this.l;delete this.$;delete this.b;delete this.f;Gf.prototype.P.call(this)};function V(a){return a.b?a.b.c:a.Ba}k.Ha=function(a){var b=O.g();v(a)&amp;&amp;0!=a.length&amp;&amp;hd(b.a,a)};k.S=function(){};k.W=function(){};k.U=function(){return!1};k.da=function(){this.ha=!0};k.ba=function(){return this.ha};k.Ya=function(){this.c.o=0};k.Za=function(){this.u=new Sf};k.Eb=function(a,b,c,d,e){c||this.ra(d,e);this.fa(V(this),b,a,c,!1)};function Wf(a,b,c){var d=a.c.b,e=c?a.c.o:0,f=V(a);a.s&amp;&amp;!Cc(a.s,new H(0,0,0,0))&amp;&amp;(e=Dc(Bc(a.s),f.left,f.top));a.fa(f,e,b,c,!1,{},void 0,d)}function Xf(a){return a.b?a.b.F():O.g().b}function Yf(a,b){b=b.create(a.j,a.f,a);if(b=null!=b&amp;&amp;b.Ia()?b:null)a.b=b}function Zf(a,b,c){if(a.b){a.b.V();var d=a.b.h,e=d.i.a;if(null!=d.b){var f=d.f;a.I=new E(f.left-e.left,f.top-e.top);a.s=d.b}e=a.ea()?Math.max(d.a,d.c):d.a;a.fa(V(a),e,b,c,!1,void 0,void 0,d.h)}}function $f(a){if(a.ba()&amp;&amp;a.$){var b=1==M(a.f,&quot;od&quot;),c=T.g().a,d=a.$,e=Xf(a),f=new G(c.H(),c.G());c=a.ea();a={Y:e,I:a.I,ab:f,ea:c,o:a.c.o,Fb:b};if(b=d.a){b.V();e=b.h;f=e.i.a;var g=null,h=null;null!=e.b&amp;&amp;f&amp;&amp;(g=e.f,g=new E(g.left-f.left,g.top-f.top),h=new G(f.right-f.left,f.bottom-f.top));c={Y:b.F(),I:g,ab:h,ea:c,Fb:!1,o:c?Math.max(e.a,e.c):e.a}}else c=null;c&amp;&amp;If(d,a,c)}}k.fa=function(a,b,c,d,e,f,g,h){void 0===g?-1==this.Sa?f=0:(f=c-this.Sa||1,f=1E4&lt;f?1:f):f=g;g=f;h=void 0===h?-1:h;if(!this.B){na(b)||(this.I=new E(a.left-b.left,a.top-b.top));if(this.ba()){f=h;f=void 0===f?-1:f;h=new Pc;h.f=d;h.c=Je();na(b)?(h.o=ag(this,b),h.b=f):(h.o=ag(this,a,b),h.b=0&lt;=f?f:h.o*U(a)/(y.screen.height*y.screen.width));h.a=this.qa();f=this.u;var m=this.c;e=e&amp;&amp;this.c.o&gt;=(this.qa()?.3:.5);f.b=Math.max(f.b,h.o);Qf(f.f,h.b,m.b,h.f,g,e);Qf(f.a,h.o,m.o,h.f,g,e);e=e||m.a!=h.a?m.isVisible()&amp;&amp;h.isVisible():m.isVisible();m=!h.isVisible()||h.f;Kf(f.c,e,g,m);this.Sa=c;0&lt;h.o&amp;&amp;(-1===this.Ea&amp;&amp;(this.Ea=c),this.bb=c);-1==this.cb&amp;&amp;W(this)&amp;&amp;(this.cb=c);if(-2==this.ya)try{a:{var l=na(b)?null:b;if(a&amp;&amp;a!=Tf&amp;&amp;0!=U(V(this))){var n=T.g();if(!l){if(!n.a){var r=-1;break a}l=new H(0,n.a.H(),n.a.G(),0)}r=l.H&amp;&amp;0&lt;l.H()&amp;&amp;l.G&amp;&amp;0&lt;l.G()?ag(this,a,l):-1}else r=-1}this.ya=r}catch(q){me(207,q)}this.c=h;d&amp;&amp;(this.c.o=0)}this.Ta(this)}};function ag(a,b,c){if(0===a.O&amp;&amp;1===M(a.f,&quot;opac&quot;))return 0;if(na(b))return b;b=Ue(b,c);var d=1==M(a.f,&quot;od&quot;);if(0&gt;=U(V(a))||Ye(b,c,a.j,d))return 0;d=U(b)/U(V(a));c=Ve(b,c);return a.ea()?Math.max(d,c):d}k.qa=function(){return!1};k.ea=function(){return this.Db||this.Ra};k.ra=function(a,b,c){if(c)this.Ba=c;else{a=b?a:a.top;this.Ba=Bc(Tf);try{if(this.j){var d=1==this.Z;switch(M(this.f,&quot;hac&quot;)){case 1:var e=!1;break;case 2:e=!0;break;default:e=d}!b&amp;&amp;e&amp;&amp;Ee(this.j)||(this.Ba=Te(this.j,a))}}catch(f){}}};function W(a){return 1E3&lt;=a.u.c.a}function bg(a){var b=Math.pow(10,2);return Math.floor(a*b)/b}function cg(a){a.a&amp;&amp;(a.l.Ka=S(a.a,&quot;mouseover&quot;,function(){var b=N();a.ja=b},149),a.l.Ja=S(a.a,&quot;mouseout&quot;,function(){var b=N();-1==a.ja||b&lt;a.ja||(a.Pa+=b-a.ja);a.ja=-1},150))}function Vf(a){a.a&amp;&amp;(a.l.Ka&amp;&amp;(vc(a.a,&quot;mouseover&quot;,a.l.Ka),a.l.Ka=null),a.l.Ja&amp;&amp;(vc(a.a,&quot;mouseout&quot;,a.l.Ja),a.l.Ja=null))}function dg(a,b,c){c=Ue(b,c);a.s=0&gt;=U(V(a))||c.top&gt;=c.bottom||c.left&gt;=c.right?new H(0,0,0,0):Dc(c,-b.left,-b.top)};function eg(){fg(this)}function fg(a){!a.a&amp;&amp;sa(y.Goog_AdSense_getAdAdapterInstance)&amp;&amp;(a.a=Goog_AdSense_getAdAdapterInstance());!a.b&amp;&amp;sa(y.Goog_Common_getAdAdapterInstance)&amp;&amp;(a.b=Goog_Common_getAdAdapterInstance());!a.c&amp;&amp;$b()&amp;&amp;(a.c=!0)}function gg(a,b,c,d){fg(a);var e=T.g().s;a.a&amp;&amp;a.a.getNewBlocks(b,e);a.b&amp;&amp;a.b.getNewBlocks(b,e);a.c&amp;&amp;!c()&amp;&amp;(d(!0),b($b(),&quot;&quot;,13,!0))}function hg(a){fg(a);return(a.a?a.a.numBlocks():0)+(a.b?a.b.numBlocks():0)+(a.c?1:0)}function ig(a){fg(a);return a.a?a.a.getOseId():a.b?a.b.getOseId():0};function jg(a){return hb()?(a=(a=Zb(a))&amp;&amp;ec(a),!!(a&amp;&amp;a.location&amp;&amp;a.location.ancestorOrigins&amp;&amp;0&lt;a.location.ancestorOrigins.length&amp;&amp;a.location.origin==a.location.ancestorOrigins[0])):!0};var kg=&quot;StopIteration&quot;in u?u.StopIteration:{message:&quot;StopIteration&quot;,stack:&quot;&quot;};function lg(){}lg.prototype.next=function(){throw kg;};lg.prototype.gb=function(){return this};function mg(a){if(a instanceof lg)return a;if(&quot;function&quot;==typeof a.gb)return a.gb(!1);if(ra(a)){var b=0,c=new lg;c.next=function(){for(;;){if(b&gt;=a.length)throw kg;if(b in a)return a[b++];b++}};return c}throw Error(&quot;Not implemented&quot;);}function ng(a,b){if(ra(a))try{z(a,b,void 0)}catch(c){if(c!==kg)throw c;}else{a=mg(a);try{for(;;)b.call(void 0,a.next(),void 0,a)}catch(c){if(c!==kg)throw c;}}}function og(a,b){var c=1;ng(a,function(d){c=b.call(void 0,c,d)});return c}function pg(a,b){var c=mg(a);a=new lg;a.next=function(){var d=c.next();if(b.call(void 0,d,void 0,c))return d;throw kg;};return a}function qg(a){var b=mg(a);a=new lg;var c=100;a.next=function(){if(0&lt;c--)return b.next();throw kg;};return a};function rg(a,b){this.c=b;this.b=null==a;this.a=a}t(rg,lg);rg.prototype.next=function(){if(this.b)throw kg;var a=this.a||null;this.b=null==a;var b;if(b=a){b=this.c;if(ob(a,&quot;parentElement&quot;)&amp;&amp;null!=a.parentElement&amp;&amp;a!=a.parentElement)var c=a.parentElement;else if(b){var d=void 0===d?jg:d;if(d(a))try{var e=Zb(a),f=e&amp;&amp;ec(e),g=f&amp;&amp;f.frameElement;c=null==g?null:g}catch(h){c=null}else c=null}else c=null;b=c}this.a=b;return a};function sg(a){var b=1;a=qg(new rg(a,!0));a=pg(a,function(){return 0&lt;b});return og(a,function(c,d){var e=1;if(ob(d,&quot;style&quot;)&amp;&amp;d.style){var f=parseFloat;a:{var g=Zb(d);if(g.defaultView&amp;&amp;g.defaultView.getComputedStyle&amp;&amp;(g=g.defaultView.getComputedStyle(d,null))){g=g.opacity||g.getPropertyValue(&quot;opacity&quot;)||&quot;&quot;;break a}g=&quot;&quot;}g||(g=Fc(d,&quot;opacity&quot;));d=f(g);na(d)&amp;&amp;!isNaN(d)&amp;&amp;(e=d)}return b=c*e})};function tg(a,b,c,d,e,f,g){f=void 0===f?oa:f;g=void 0===g?[]:g;Uf.call(this,c,d,e);this.J=b;this.ua=this.h=0;this.va=null;this.mb=this.wb=this.vb=this.xb=this.rb=&quot;&quot;;this.Cb=!1;this.i=4;this.Ib=this.Hb=!1;this.M=[];this.ga=&quot;&quot;;this.Gb=this.ta=this.zb=!1;this.Kb=-1;this.qb=&quot;&quot;;this.pb=-1;this.K=0;this.sa=-1;this.xa=0;this.ka=this.yb=Je();this.m=0;this.Lb=f;this.Jb=!1;this.za=this.Ua=this.Wa=this.Da=this.A=-1;this.L={};this.Aa=g;ug(this,c);this.J&amp;&amp;v(this.J)&amp;&amp;(b=this.J.match(/fa=([^&amp;;]+)/))&amp;&amp;2==b.length&amp;&amp;b[1]==(30).toString()&amp;&amp;(this.Ra=!0);jd(O.g().a,this.J);b=T.g();this.ra(a,b.b)}t(tg,Uf);function ug(a,b){if(b){if(0==a.h)if(a.a){var c=a.a._adk_;c||(c=(c=we(a.a,&quot;googleAvAdk&quot;))&amp;&amp;!/[^0-9]/.test(c)?parseInt(c,10):0)}else c=0;else c=a.h;a.h=c;&quot;&quot;==a.rb&amp;&amp;(a.rb=String(b._avi_||&quot;&quot;));&quot;&quot;==a.xb&amp;&amp;(a.xb=b._avihost_?String(b._avihost_):&quot;pagead2.googlesyndication.com&quot;);&quot;&quot;==a.vb&amp;&amp;(a.vb=String(b._avicxn_||we(b,&quot;googleAvCxn&quot;)||&quot;&quot;));&quot;&quot;==a.wb&amp;&amp;(a.wb=String(b._aviextcxn_||we(b,&quot;googleAvExtCxn&quot;)||&quot;&quot;));&quot;&quot;==a.mb&amp;&amp;(a.mb=String(b._cid_||&quot;&quot;));a.Cb||(a.Cb=!!b._imm_||xe(b,&quot;googleAvImmediate&quot;));&quot;&quot;==a.ga&amp;&amp;(a.ga=String(b._cvu_||we(b,&quot;googleAvCpmav&quot;)||&quot;&quot;));a.Ha(String(b._avm_||we(b,&quot;googleAvMetadata&quot;)||&quot;&quot;))}}k=tg.prototype;k.P=function(){vg(this);delete this.M;delete this.Aa;delete this.Oa;delete this.wa;Uf.prototype.P.call(this)};function wg(a,b,c){z(a.Aa,function(d){return d.a(a,c,b)})}k.ba=function(){return this.ha&amp;&amp;1!==this.m};function vg(a){a.Oa&amp;&amp;vc(a.a,&quot;DOMNodeRemoved&quot;,a.Oa);a.wa&amp;&amp;a.wa.disconnect()}function xg(a){a.a&amp;&amp;(vg(a),a.sa=-1,u.MutationObserver?(a.wa=new u.MutationObserver(function(b,c){for(var d=0;d&lt;b.length;d++)if(&quot;childList&quot;==b[d].type&amp;&amp;b[d].removedNodes.length){a.sa=N();c.disconnect();break}}),a.wa.observe(a.a,{childList:!0,subtree:!0})):a.Oa=qe(a.a,function(){a.sa=N()}))}k.Ya=function(){Uf.prototype.Ya.call(this);this.s=new H(0,0,0,0)};k.Za=function(){Uf.prototype.Za.call(this);this.s=new H(0,0,0,0)};k.da=function(){this.ha||(this.Wa=Vd(),this.Kb=N(),yg(this,!1,this.ya));Uf.prototype.da.call(this);zg(this)};function zg(a){if(a.ha&amp;&amp;u==u.top){var b=u.pageYOffset;null!=b&amp;&amp;(a.za=Math.max(b,a.za))}}k.Ha=function(a){if(v(a)&amp;&amp;0!=a.length){var b=new ed,c=O.g();L(b,&quot;omid&quot;,J);hd(b,a);b=M(b,&quot;omid&quot;);null!==b&amp;&amp;(c.a.b.omid=b);a=hd(this.f,a);c=a.split(&quot;&amp;&quot;);for(b=0;b&lt;c.length;b++){var d=c[b];&quot;ts=0&quot;==d?this.w=!1:0==d.lastIndexOf(&quot;la=&quot;,0)?(d=d.split(&quot;=&quot;)[1],&quot;0&quot;==d?this.xa=2:&quot;1&quot;==d&amp;&amp;(this.xa=1)):0==d.lastIndexOf(&quot;cr=&quot;,0)?&quot;1&quot;==d.split(&quot;=&quot;)[1]&amp;&amp;(this.Db=!0):0==d.lastIndexOf(&quot;alp=&quot;,0)?this.qb=d.split(&quot;=&quot;)[1]:0==d.lastIndexOf(&quot;alh=&quot;,0)?(d=parseInt(d.split(&quot;=&quot;)[1],10),isNaN(d)||(this.pb=d)):&quot;adf=1&quot;==d&amp;&amp;(this.Jb=!0)}this.c.a=this.qa();Uf.prototype.Ha.call(this,a)}};k.Eb=function(a,b,c,d,e){this.ba()&amp;&amp;(c||this.ra(d,e),this.fa(V(this),b,a,c,!1))};k.fa=function(a,b,c,d,e,f){f=void 0===f?{}:f;var g=W(this),h=Math.floor(100*this.c.o);this.xa=242500&lt;=(a.right-a.left)*(a.bottom-a.top)?1:2;Uf.prototype.fa.call(this,a,b,c,d,e,f);-1==this.ka&amp;&amp;-1!=this.c.c?this.ka=this.c.c:0==this.ka&amp;&amp;1==this.c.c&amp;&amp;(this.ka=1);na(b)||(0&lt;this.c.o?dg(this,a,b):this.s=new H(0,0,0,0));a=W(this);b=Math.floor(100*this.c.o);(!g&amp;&amp;a||b!=h)&amp;&amp;yg(this,a,b);var m=this;R(157,function(){m.O=sg(m.j)})();zg(this)};k.qa=function(){return vb?!1:1==this.xa};function Ag(a,b,c,d){d=void 0===d?{}:d;var e={},f=Bg(a);d&amp;&amp;Wa(f,d);f.adk=a.h;a.Jb&amp;&amp;a.ua&amp;&amp;(f.adf=a.ua);d=a.B;var g=O.g();!c&amp;&amp;d&amp;&amp;g.c&amp;&amp;(c=g.c);c&amp;&amp;(f.r=c);0===a.O&amp;&amp;(f.invis=1);c=xf(f).join(&quot;&amp;&quot;);e[3]=c;e[11]=d;e[29]=O.g().h;e[0]=b;e[7]=a.c.o;e[9]=Ke(a.s);e[28]=a.Z;e[32]=Xf(a);e[5]=W(a)&amp;&amp;4!=a.i;e[13]=Pf(a.u.a).join(&quot;,&quot;);e[18]=0==U(V(a));null!=a.I&amp;&amp;(e[20]=a.I.y,e[21]=a.I.x);b=T.g();null!=b.c&amp;&amp;(e[22]=b.c.H(),e[23]=b.c.G());null!=b.a&amp;&amp;(e[30]=b.a.H(),e[31]=b.a.G(),e[38]=Ke(b.a));c=b.m;f=V(a);e[37]=Ke(new H(f.top+c.y,f.right+c.x,f.bottom+c.y,f.left+c.x));b.h&amp;&amp;(b=b.h,e[39]=b.width+&quot;-&quot;+b.height);-1!=a.O&amp;&amp;(e[25]=a.O);a=new Md(a.h,a.va);a.b&amp;&amp;(e[4]=a.b);a.a&amp;&amp;(e[12]=a.a);return e}function Cg(a,b,c,d){var e=W(a)&amp;&amp;4!=a.i;0!=a.i&amp;&amp;(1!=a.i||e&amp;&amp;!a.Ib)&amp;&amp;(b=Ag(a,c,d,b),Me(a.a,b,a.M),a.Ib=e)}function Dg(a){var b=T.g(),c=Ag(a,&quot;goog_acknowledge_monitoring&quot;);c[8]=b.b;c[36]=b.w;Me(a.a,c,a.M)}k.ra=function(a,b,c){if(!b&amp;&amp;(-1!=this.Kb||-1!=this.sa)&amp;&amp;2!=this.K&amp;&amp;1!=this.K&amp;&amp;-1!=this.K&amp;&amp;7!=this.K){var d=null;try{d=this.j&amp;&amp;this.j.getBoundingClientRect()}catch(e){}d&amp;&amp;0!=d.width&amp;&amp;0!=d.height||(d=He(a.top,this.qb,this.pb),this.K=d.status,d.a&amp;&amp;(d.a==this.j?this.K=2:Eg(this,d.a)))}Uf.prototype.ra.call(this,a,b,c)};function Bg(a){var b=T.g(),c=gd(a.f),d=b.m,e=V(a);c.p=[e.top+d.y,e.left+d.x,e.bottom+d.y,e.right+d.x];e=a.u;c.tos=Nf(e.a);c.mtos=Pf(e.a);c.mcvt=e.c.a;c.rs=a.Z;(d=5==a.Z)||(c.ht=a.Pa);0&lt;=a.Ea&amp;&amp;(c.tfs=a.Ea,c.tls=a.bb);c.mc=bg(e.b);c.lte=bg(a.ya);c.bas=a.yb;c.bac=a.ka;e=O.g();b.b&amp;&amp;(c[&quot;if&quot;]=a.B?0:1);d&amp;&amp;a.J&amp;&amp;(c.req=encodeURIComponent(a.J).substring(0,100));a.Gb&amp;&amp;(c.ci=&quot;1&quot;);a.qa()&amp;&amp;(c.la=&quot;1&quot;);a.Ra&amp;&amp;(c.pa=&quot;1&quot;);c.avms=Xf(a);a.b&amp;&amp;Wa(c,a.b.N());0!=a.m&amp;&amp;(c.md=a.m);null!=M(e.a,&quot;nio_mode&quot;)&amp;&amp;(c.avms_sel=e.i,c.first_poll=e.j);b=a.A;0&lt;b&amp;&amp;(c.rst=b);b=a.A;b=-1==b||a.Da&lt;b?-1:a.Da-b;0&lt;=b&amp;&amp;(c.dlt=b);b=-1==a.A||a.Wa&lt;a.A?-1:a.Wa-a.A;0&lt;=b&amp;&amp;(c.rpt=b);0&lt;=a.Ua&amp;&amp;(c.isd=a.Ua);0&lt;=a.za&amp;&amp;(c.msd=a.za);c.lm=a.i;(a=Fg(a))&amp;&amp;(c.ext=a);return c}function Eg(a,b){vg(a);Vf(a);a.j=b;cg(a);ug(a,b);xg(a);a.b&amp;&amp;(a=a.b,a.T(),a.a=b,a.Ia(),a.V())}function Fg(a){return a.L&amp;&amp;0&lt;pc(a.L).length?encodeURIComponent(Da(pc(a.L),function(b){return b+&quot;=&quot;+a.L[b]}).join(&quot;&amp;&quot;)):null}function Gg(a,b){b&amp;&amp;oc(b,function(c,d){null==c?delete a.L[d]:a.L[d]=c})}function yg(a,b,c){(b=a.Lb(b,c))&amp;&amp;Gg(a,b)};function Hg(){this.key=&quot;goog_update_data&quot;;this.c=0;this.b=!1}Hg.prototype.a=function(a,b,c){if(c!=this.c||!a.h)return!1;c={};c=(c[0]=this.key,c);Wa(c,b);b=W(a);if(1==a.i)return b&amp;&amp;!this.b?(this.b=b,Ig(a,c)):!1;this.b=b;return Ig(a,c)};function Jg(a){Hg.call(this,a);this.key=&quot;goog_image_request&quot;;this.c=2}t(Jg,Hg);function Kg(a){Hg.call(this,a);this.key=&quot;goog_image_request&quot;;this.c=1}t(Kg,Hg);Kg.prototype.a=function(a,b,c){var d=!a.ta;if(W(a)&amp;&amp;a.w||d){if(b=Hg.prototype.a.call(this,a,b,c))if(W(a)||(a.ta=!0),W(a)||a.w)a.w=!1;return b}return!1};function Lg(){this.b=[];this.a=[]}function Mg(){var a=X;return 0==a.b.length?a.a:0==a.a.length?a.b:Ka(a.a,a.b)}Lg.prototype.reset=function(){this.b=[];this.a=[]};w(Lg);var X=Lg.g();function Ng(){this.a=this.b=null}function Og(a,b){function c(d,e){a.a=null;b(d,e)}if(null==a.b)return!1;a.a=Ha(a.b,function(d){return null!=d&amp;&amp;d.X()&amp;&amp;d.sb(c)});a.a&amp;&amp;gf(a.a.b);return null!=a.a}w(Ng);function Pg(a,b,c,d){lf.call(this,a,b,c,d)}t(Pg,lf);Pg.prototype.V=function(){this.Qa();var a=Ue(this.c,this.b.b.a),b=a.top&gt;=a.bottom||a.left&gt;=a.right?new H(0,0,0,0):a;a=this.b.b;var c=a.a,d=0,e=0,f=0,g=1==M(this.w,&quot;od&quot;);0&lt;(this.c.bottom-this.c.top)*(this.c.right-this.c.left)&amp;&amp;(Ye(b,c,this.a,g)?b=new H(0,0,0,0):(d=T.g().l,f=new H(0,d.height,d.width,0),d=Ve(b,this.c),e=Ve(b,c),f=Ve(b,f)));-1===a.time&amp;&amp;N();b=b.top&gt;=b.bottom||b.left&gt;=b.right?new H(0,0,0,0):Dc(b,-this.c.left,-this.c.top);this.h=new $e(a,this.c,b,d,e,0,f)};Pg.prototype.F=function(){return this.i.F()};Pg.prototype.S=function(a){if(!this.a){var b=T.g().c;this.c=b?b:new H(0,0,0,0)}lf.prototype.S.call(this,a)};function Qg(a){a=Rg(a);mf.call(this,a.length?a[a.length-1]:new cf(y,0));this.c=a;this.f=oa;this.a=null}t(Qg,mf);k=Qg.prototype;k.F=function(){return(this.a?this.a:this.b).F()};k.N=function(){return(this.a?this.a:this.b).N()};k.R=function(){return(this.a?this.a:this.b).R()};k.sb=function(a){this.f=a;z(this.c,function(b){return b.nb()});ff(this.b,this);return!0};k.D=function(){z(this.c,function(a){a.D()});mf.prototype.D.call(this)};k.X=function(){return Fa(this.c,function(a){return a.X()})};k.C=function(){return Fa(this.c,function(a){return a.C()})};k.Fa=function(a,b,c){return new Pg(a,this.b,b,c)};k.W=function(a){0==a.R()&amp;&amp;this.f(a.ma(),this)};k.S=function(a){this.a=a.c};k.U=function(){return!1};function Rg(a){if(!a.length)return[];a=Ca(a,function(c){return null!=c&amp;&amp;c.X()});for(var b=1;b&lt;a.length;b++)ff(a[b-1],a[b]);return a};function Sg(a,b,c,d){lf.call(this,a,b,c,d);this.l=this.j=null}t(Sg,lf);Sg.prototype.Ia=function(){var a=this;this.l||(this.l=N());if(le(298,function(){return a.m()}))return!0;df(this.b,&quot;msf&quot;);return!1};function Tg(a,b){try{if(b.length){a.j||(a.j=N());var c=Ug(b);a.c=Ie(c.boundingClientRect);var d=Dc(Ie(c.intersectionRect),-a.c.left,-a.c.top);N();var e=c.boundingClientRect.width*c.boundingClientRect.height,f=c.intersectionRect.width*c.intersectionRect.height;var g=e?f/e:0;b=0;var h=c.intersectionRect.width*c.intersectionRect.height,m=T.g().a;m&amp;&amp;(b=(m.bottom-m.top)*(m.right-m.left));var l=c.intersectionRect.width*c.intersectionRect.height,n=window.screen.height*window.screen.width;a.h=new $e(a.b.b,a.c,d,g,b?h/b:0,0,l&amp;&amp;n?l/n:0)}}catch(r){a.T(),me(299,r)}}function Ug(a){return Ea(a,function(b,c){return b.time&gt;c.time?b:c},a[0])}Sg.prototype.Qa=function(){};Sg.prototype.N=function(){var a={};return Object.assign(this.b.N(),(a.niot_obs=this.l,a.niot_cbk=this.j,a))};var Vg={threshold:[0,.3,.5,.75,1]};function Wg(a,b,c,d){Sg.call(this,a,b,c,d);this.f=null}t(Wg,Sg);Wg.prototype.F=function(){return&quot;nio&quot;};Wg.prototype.T=function(){if(this.f&amp;&amp;this.a)try{this.f.unobserve(this.a)}catch(a){}};Wg.prototype.m=function(){var a=this;if(!this.a)return!1;var b=this.a,c=this.b.a,d=O.g();this.f=new c.IntersectionObserver(Pd(d.f.a,function(e){return Tg(a,e)}),Vg);this.f.observe(b);1===M(d.a,&quot;nio_mode&quot;)&amp;&amp;Tg(this,this.f&amp;&amp;this.f.takeRecords?this.f.takeRecords():[]);return!0};Wg.prototype.V=function(){if(1===M(O.g().a,&quot;nio_mode&quot;)){var a=this.f&amp;&amp;this.f.takeRecords?this.f.takeRecords():[];if(0&lt;a.length){Tg(this,a);return}}Sg.prototype.V.call(this)};function Xg(a){a=void 0===a?y:a;mf.call(this,new cf(a,2))}t(Xg,mf);Xg.prototype.F=function(){return&quot;nio&quot;};Xg.prototype.X=function(){var a=1===M(O.g().a,&quot;nio_mode&quot;),b=T.g().b;return(a||b)&amp;&amp;this.C()};Xg.prototype.C=function(){return&quot;exc&quot;!==O.g().b&amp;&amp;!T.g().f&amp;&amp;null!=this.b.a.IntersectionObserver};Xg.prototype.Fa=function(a,b,c){return new Wg(a,this.b,b,c)};function Yg(){var a=T.g().b?0:2;cf.call(this,y.top,a,&quot;geo&quot;)}t(Yg,cf);Yg.prototype.Va=function(){return T.g().a};Yg.prototype.C=function(){var a=2==this.i,b=1==M(O.g().a,&quot;geo_mode&quot;);return a&amp;&amp;b};w(Yg);var Zg={},$g=(Zg[1]=function(){return new Xg},Zg[2]=function(){return new Qg([Yg.g()])},Zg);function ah(){this.a=null;this.b=$g}function ch(){var a=ah.g();a:{var b=M(O.g().a,&quot;mv&quot;);if(null!=b&amp;&amp;(b=a.b[b])&amp;&amp;(b=b())&amp;&amp;b.C())break a;b=null}a.a=b}w(ah);function dh(a,b,c){Gf.call(this);this.f=null!=c?wa(a,c):a;this.c=b;this.b=wa(this.Qb,this);this.a=[]}za(dh,Gf);k=dh.prototype;k.Ma=!1;k.aa=null;k.kb=function(a){this.a=arguments;this.aa?this.Ma=!0:eh(this)};k.stop=function(){this.aa&amp;&amp;(u.clearTimeout(this.aa),this.aa=null,this.Ma=!1,this.a=[])};k.P=function(){dh.Bb.P.call(this);this.stop()};k.Qb=function(){this.aa=null;this.Ma&amp;&amp;(this.Ma=!1,eh(this))};function eh(a){var b=a.b;var c=a.c;if(!sa(b))if(b&amp;&amp;&quot;function&quot;==typeof b.handleEvent)b=wa(b.handleEvent,b);else throw Error(&quot;Invalid listener argument&quot;);b=2147483647&lt;Number(c)?-1:u.setTimeout(b,c||0);a.aa=b;a.f.apply(null,a.a)};function fh(){this.done=!1;this.a={ib:0,hb:0,$a:0,jb:0,na:-1};this.w=this.f=this.m=this.h=this.s=null;this.j=this.B=!1;this.u=&quot;&quot;;this.b=null;this.A=0;this.c=new af(this)}function gh(){var a=O.g().b;return&quot;nio&quot;===a||&quot;aio&quot;===a||&quot;omid&quot;===a}function hh(a,b){var c=Y;if(!c.B){c.B=!0;if(!c.s&amp;&amp;!gh()){var d=R(137,function(e){for(var f=[],g=0;g&lt;arguments.length;++g)f[g]=arguments[g];return c.l.apply(c,p(f))});c.h=new dh(d,100);c.s=S(a,&quot;scroll&quot;,function(e){for(var f=[],g=0;g&lt;arguments.length;++g)f[g]=arguments[g];null!==c.h&amp;&amp;c.h.kb.apply(c.h,p(f))},138)}c.m||gh()||(d=R(140,function(e){for(var f=[],g=0;g&lt;arguments.length;++g)f[g]=arguments[g];return c.l.apply(c,p(f))}),c.f=new dh(d,100),c.m=S(a,&quot;resize&quot;,function(e){for(var f=[],g=0;g&lt;arguments.length;++g)f[g]=arguments[g];null!==c.f&amp;&amp;c.f.kb.apply(c.f,p(f))},141));if(b)for(a=Mg(),d=0;d&lt;a.length;++d)b=a[d],b.a&amp;&amp;cg(b);ih(c,function(e){for(var f=[],g=0;g&lt;arguments.length;++g)f[g]=arguments[g];return c.i.apply(c,p(f))});c.i()}}fh.prototype.l=function(){jh(this,Mg(),!1)};fh.prototype.Ab=function(){jh(this,Mg(),!1)};function kh(){var a=ah.g();null!=a.a&amp;&amp;a.a.b&amp;&amp;gf(a.a.b);a=Ng.g();null!=a.a&amp;&amp;a.a.b?gf(a.a.b):Oe(T.g())}function jh(a,b,c){if(!a.done)if(a.c.cancel(),0==b.length)a.j=!1;else{a.b=null;var d=T.g();try{kh();var e=N(),f=O.g();f.j=e;if(null!=Ng.g().a)for(d=0;d&lt;b.length;d++)Zf(b[d],e,c);else switch(f.b){case &quot;exc&quot;:for(d=0;d&lt;b.length;d++)Wf(b[d],e,c);break;case &quot;nis&quot;:for(d=0;d&lt;b.length;d++);break;case &quot;gsv&quot;:for(d=0;d&lt;b.length;d++);break;case &quot;geo&quot;:if(d.j)for(f=0;f&lt;b.length;f++)b[f].Eb(e,d.j,c,y,d.b)}for(d=0;d&lt;b.length;d++)$f(b[d]);a.a.$a+=N()-e;++a.a.jb;lh(a)}finally{c?z(b,function(g){return g.Ya()}):bf(a.c)}}}function ih(a,b){if(!a.w){b=he(142,b);P();var c;x.visibilityState?c=&quot;visibilitychange&quot;:x.mozVisibilityState?c=&quot;mozvisibilitychange&quot;:x.webkitVisibilityState&amp;&amp;(c=&quot;webkitvisibilitychange&quot;);c&amp;&amp;uc(x,c,b,{capture:!1})&amp;&amp;(a.w=b)}}fh.prototype.i=function(){var a=Re(),b=N();a?(nd||(ld=b,z(X.b,function(c){return c.u.i(b,!c.h())})),nd=!0):(this.A=mh(this,b),nd=!1,z(X.b,function(c){c.ba()&amp;&amp;c.u.h(b)}));this.j=!0;jh(this,Mg(),!a)};function nh(a){var b=Y;if(void 0===c){O.g();var c=[]}c=ba(c);for(var d=c.next();!d.done;d=c.next())if(d.value.call(b,a))return!0;return!1}function oh(a){return!!(Date&amp;&amp;a&amp;&amp;a.screen&amp;&amp;a.document&amp;&amp;a.document.body&amp;&amp;a.document.body.getBoundingClientRect)}function ph(a,b,c){if(!a.b||c){c=b.document;var d=0&lt;=md?N()-md:-1,e=N();-1==a.a.na&amp;&amp;(d=e);var f=T.g(),g=gd(O.g().a),h=Mg();try{if(0&lt;h.length){var m=f.a;m&amp;&amp;(g.bs=[m.H(),m.G()]);var l=f.h;l&amp;&amp;(g.ps=[l.width,l.height]);b.screen&amp;&amp;(g.ss=[b.screen.width,b.screen.height])}else g.url=encodeURIComponent(b.location.href.substring(0,512)),c.referrer&amp;&amp;(g.referrer=encodeURIComponent(c.referrer.substring(0,512)));g.tt=d;g.pt=md;switch(O.g().b){case &quot;iem&quot;:g.iem=1;break;case &quot;aio&quot;:g.aio=1;break;case &quot;nio&quot;:g.nio=1}void 0!==b.google_osd_load_pub_page_exp&amp;&amp;(g.olpp=b.google_osd_load_pub_page_exp);g.deb=[1,a.a.ib,a.a.hb,a.a.$a,a.a.jb,a.a.na,ye,a.c.b].join(&quot;-&quot;);g.tvt=mh(a,e);f.f&amp;&amp;(g.inapp=1);if(null!==b&amp;&amp;b!=b.top){0&lt;h.length&amp;&amp;(g.iframe_loc=encodeURIComponent(b.location.href.substring(0,512)));var n=f.c;g.is=[n.H(),n.G()]}}catch(q){g.error=1}a.b=g}b=a.b;a={};for(var r in b)a[r]=b[r];r=O.g().f;if(0==M(r.c,&quot;rav&quot;)){b=new Nd;m=r.a;l=0;-1&lt;m.a&amp;&amp;(l=m.c.a.a()-l);Tb(b,1,m.b+l);Tb(b,2,r.b.a.f());Tb(b,3,r.b.a.c());Tb(b,4,r.b.a.b());r={};m=new Mb;l=Rb(b,1);l=null==l?l:+l;l=null==l?0:l;0!==l&amp;&amp;(n=l,null!=n&amp;&amp;(Kb(m.a,9),l=m.a,d=n,d=(n=0&gt;d?1:0)?-d:d,0===d?(Hb=0&lt;1/d?0:2147483648,Gb=0):isNaN(d)?(Hb=2147483647,Gb=4294967295):1.7976931348623157E308&lt;d?(Hb=(n&lt;&lt;31|2146435072)&gt;&gt;&gt;0,Gb=0):2.2250738585072014E-308&gt;d?(d/=Math.pow(2,-1074),Hb=(n&lt;&lt;31|d/4294967296)&gt;&gt;&gt;0,Gb=d&gt;&gt;&gt;0):(c=Math.floor(Math.log(d)/Math.LN2),1024==c&amp;&amp;(c=1023),d*=Math.pow(2,-c),Hb=(n&lt;&lt;31|c+1023&lt;&lt;20|1048576*d&amp;1048575)&gt;&gt;&gt;0,Gb=4503599627370496*d&gt;&gt;&gt;0),Lb(l,Gb),Lb(l,Hb)));l=Sb(b,2);0!==l&amp;&amp;null!=l&amp;&amp;Nb(m,2,l);l=Sb(b,3);0!==l&amp;&amp;null!=l&amp;&amp;Nb(m,3,l);l=Sb(b,4);0!==l&amp;&amp;null!=l&amp;&amp;Nb(m,4,l);b=new Uint8Array(m.c+m.a.length());n=m.b;c=n.length;for(d=l=0;d&lt;c;d++)e=n[d],b.set(e,l),l+=e.length;n=Jb(m.a);b.set(n,l);m.b=[b];if(!Fb)for(Fb={},m=0;65&gt;m;m++)Fb[m]=&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=&quot;.charAt(m);m=Fb;l=[];for(n=0;n&lt;b.length;n+=3)g=b[n],h=(c=n+1&lt;b.length)?b[n+1]:0,f=(d=n+2&lt;b.length)?b[n+2]:0,e=g&gt;&gt;2,g=(g&amp;3)&lt;&lt;4|h&gt;&gt;4,h=(h&amp;15)&lt;&lt;2|f&gt;&gt;6,f&amp;=63,d||(f=64,c||(h=64)),l.push(m[e],m[g],m[h],m[f]);r=(r.pf=l.join(&quot;&quot;),r)}else r={};Wa(a,r);return a}function qh(){z(Mg(),function(a){if(a.a){var b=a.h||0,c=ah.g();if(b=c.a?new Hf(c.a,a.a,a.f,b):null)a.$=b}})}function rh(){var a=Ng.g();if(null!=a.a){var b=a.a;z(Mg(),function(c){return Yf(c,b)})}}function lh(a){if(&quot;osd&quot;==a.u){var b=X.a,c=ph(a,y),d=1==M(O.g().a,&quot;mce&quot;);z(b,function(e){if(d){var f={};wg(e,0,(f.r=void 0,f))}else Cg(e,c,&quot;goog_update_data&quot;,void 0)})}}function mh(a,b){a=a.A;nd&amp;&amp;(a+=b-ld);return a}function sh(a){return(a=a.match(/[&amp;\?;](?:dc_)?adk=([0-9]+)/))&amp;&amp;2==a.length?parseInt(a[1],10):0}function th(a){return(a=a.match(/[&amp;\?;]adf=([0-9]+)/))&amp;&amp;2==a.length?parseInt(a[1],10):0}function uh(){var a=Y;var b=void 0===b?function(){return{}}:b;ie.h=&quot;av-js&quot;;de.a=.01;ke([function(c){var d=O.g(),e={};Wa(c,(e.bin=d.h,e.type=&quot;error&quot;,e),gd(d.a),ph(a,y),b());if(d=yf())e={},Wa(c,(e.v=encodeURIComponent(d),e))}])}function vh(a){var b=new wh,c=new Hg(b),d=new Kg(b);b=new Jg(b);switch(a){case 0:case 5:return[];default:return[c,d,b]}}w(fh);var Y=fh.g();function wh(){}function Ig(a,b){b=void 0===b?{}:b;var c=b.r,d=b[0],e=ph(Y,I(),!1);Wa(e,Ra(b,function(f,g){return&quot;r&quot;!=g&amp;&amp;0!=g}));b=Ag(a,d,c,e);Me(a.a,b,a.M);return!0};function xh(a,b,c,d){Sg.call(this,a,b,c,d);this.f=function(){return null}}t(xh,Sg);xh.prototype.F=function(){return&quot;aio&quot;};xh.prototype.T=function(){if(this.f)try{this.f()}catch(a){}};xh.prototype.m=function(){var a=this;if(!this.a)return!1;var b=this.b.a,c=O.g().f.a;this.f=Hc(b).observeIntersection(Pd(c,function(d){return Tg(a,d)}));return!0};function yh(a){a=void 0===a?y:a;mf.call(this,new cf(a,2))}t(yh,mf);yh.prototype.F=function(){return&quot;aio&quot;};yh.prototype.X=function(){return T.g().b&amp;&amp;this.C()};yh.prototype.C=function(){return!T.g().f&amp;&amp;Kd(this.b.a)};yh.prototype.Fa=function(a,b,c){return new xh(a,this.b,b,c)};function zh(){cf.call(this,y,2,&quot;iem&quot;)}t(zh,cf);zh.prototype.Va=function(){function a(q,F){return!!b.a.document.elementFromPoint(q,F)}var b=this,c=new H(0,this.a.innerWidth||this.a.width,this.a.innerHeight||this.a.height,0),d=dc(document),e=Math.floor(c.left-d.x),f=Math.floor(c.top-d.y),g=Math.floor(c.right-d.x),h=Math.floor(c.bottom-d.y);c=a(e,f);d=a(g,h);if(c&amp;&amp;d)return new H(f,g,h,e);var m=a(g,f),l=a(e,h);if(c)h=Z(f,h,function(q){return a(e,q)}),g=Z(e,g,function(q){return a(q,f)});else if(m)h=Z(f,h,function(q){return a(g,q)}),e=Z(g,e,function(q){return a(q,f)});else if(l)f=Z(h,f,function(q){return a(e,q)}),g=Z(e,g,function(q){return a(q,h)});else if(d)f=Z(h,f,function(q){return a(g,q)}),e=Z(g,e,function(q){return a(q,h)});else{var n=Math.floor((e+g)/2),r=Math.floor((f+h)/2);if(!a(n,r))return new H(0,0,0,0);f=Z(r,f,function(q){return a(n,q)});h=Z(r,h,function(q){return a(n,q)});e=Z(n,e,function(q){return a(q,r)});g=Z(n,g,function(q){return a(q,r)})}return new H(f,g,h,e)};function Z(a,b,c){if(c(b))return b;for(var d=15;d--;){var e=Math.floor((a+b)/2);if(e==a||e==b)break;c(e)?a=e:b=e}return a}zh.prototype.C=function(){return T.g().b&amp;&amp;D&amp;&amp;Cb(8)&amp;&amp;Ld(this.a)};w(zh);var Ta={Tb:&quot;addEventListener&quot;,Xb:&quot;getMaxSize&quot;,Yb:&quot;getScreenSize&quot;,Zb:&quot;getState&quot;,$b:&quot;getVersion&quot;,fc:&quot;removeEventListener&quot;};function Ah(){cf.call(this,y,2,&quot;mraid&quot;);var a=this;this.L=0;this.B=this.A=!1;this.l=null;this.j=0;this.m=-1;this.c=null;var b=Jd(this.a);b&amp;&amp;(this.c=b.La,this.m=b.Na);this.c&amp;&amp;!Sa(function(c){return sa(a.c[c])})&amp;&amp;(this.c=null,this.m=-1);this.b.a=new H(0,0,0,0)}t(Ah,cf);k=Ah.prototype;k.C=function(){return null!=this.c};k.N=function(){var a={};this.L&amp;&amp;(a.mraid=this.L);this.A&amp;&amp;(a.mlc=1);this.m&amp;&amp;(a.mtop=this.m);this.l&amp;&amp;(a.mse=this.l);return a};k.ca=function(a,b){for(var c=[],d=1;d&lt;arguments.length;++d)c[d-1]=arguments[d];try{return this.c[a].apply(this.c,c)}catch(e){me(538,e,.01,function(f){f.method=a})}};function Bh(a,b,c){a.ca(&quot;removeEventListener&quot;,b,c)}k.nb=function(){var a=this;if(!this.w){this.w=!0;a:switch(this.m){case 0:case 3:var b=!0;break a;default:b=!1}b?(T.g().u=!0,this.a.document.readyState&amp;&amp;&quot;complete&quot;==this.a.document.readyState?Ch(this):S(this.a,&quot;load&quot;,function(){P().setTimeout(R(292,function(){return Ch(a)}),100)},292)):df(this,&quot;i&quot;)}};function Ch(a){&quot;loading&quot;===a.ca(&quot;getState&quot;)?(Dh(a),a.ca(&quot;addEventListener&quot;,&quot;ready&quot;,Eh)):Fh(a)}function Dh(a){0==a.j&amp;&amp;(a.j=P().setTimeout(R(293,function(){a.j=-1;Bh(a,&quot;ready&quot;,Eh);me(539,Error());a.l=&quot;rt&quot;;df(a,&quot;w&quot;)}),500))}function Fh(a){a.j=-1;v(a.c.AFMA_LIDAR)?(a.A=!0,Gh(a)):(a.l=&quot;nc&quot;,df(a,&quot;w&quot;))}function Gh(a){a.B=!1;P().setTimeout(R(524,function(){a.B||(Hh(a),me(540,Error()),a.l=&quot;mt&quot;,df(a,&quot;w&quot;))}),500);void 0!==a.c.AFMA_LIDAR_EXP_1&amp;&amp;(a.c.AFMA_LIDAR_EXP_1=!0);a.ca(&quot;addEventListener&quot;,a.c.AFMA_LIDAR,Ih)}function Hh(a){Bh(a,a.c.AFMA_LIDAR,Ih);a.A=!1}k.tb=function(){var a=T.g(),b=Jh(this,&quot;getMaxSize&quot;);a.a=new H(0,b.width,b.height,0)};k.ub=function(){T.g().l=Jh(this,&quot;getScreenSize&quot;)};function Jh(a,b){if(&quot;loading&quot;===a.ca(&quot;getState&quot;))return new G(-1,-1);b=a.ca(b);if(!b)return new G(-1,-1);a=parseInt(b.width,10);b=parseInt(b.height,10);return isNaN(a)||isNaN(b)?new G(-1,-1):new G(a,b)}k.D=function(){Hh(this);cf.prototype.D.call(this)};function Eh(){try{var a=Ah.g();0&lt;a.j&amp;&amp;P().clearTimeout(a.j);Bh(a,&quot;ready&quot;,Eh);Fh(a)}catch(b){me(541,b)}}function Ih(a,b){try{var c=Ah.g();c.B=!0;var d=a?new H(a.y,a.x+a.width,a.y+a.height,a.x):new H(0,0,0,0);var e=N(),f=Re();var g=new Ze(e,f,c);g.a=d;g.volume=b;kf(c,g)}catch(h){me(542,h)}}w(Ah);function Kh(a){return(a=/[&amp;\?#]exk=([^&amp; ]+)/.exec(a))&amp;&amp;2==a.length?a[1]:null};function Lh(){var a={};this.a=(a[1]={},a[2]={},a[3]={},a[6]={},a)}w(Lh);function Mh(){this.a=function(){return!1}}w(Mh);var Nh=Y.c;function Oh(){this.b=null;this.f=this.i=this.c=this.h=!1;Ph(this);uh()}function Qh(){var a=y.googletag;a=a&amp;&amp;a._vars_&amp;&amp;a._vars_[230]||{};var b=Lh.g().a;for(c in a)b[c]=a[c];var c=O.g();Mh.g().a()&amp;&amp;fd(c.a,&quot;geo_mode&quot;,1)}k=Oh.prototype;k.Rb=function(a){this.h=a};k.lb=function(){Rh(this);P().clearTimeout(this.b);this.b=null;md=N();Sh(this)};function Rh(a){O.g().h=1;if(!(0&lt;md)){try{if(!Th(a))return;kh();Uh(a)}catch(b){}a.b=P().setTimeout(R(129,function(){return Rh(a)}),250)}}k.Sb=function(a,b,c,d,e,f,g,h,m){var l=this;f=void 0===f?!1:f;h=void 0===h?-1:h;m=void 0===m?-1:m;if(oh(y)){var n=new tg(y,b,a,-1,c,g);n.Aa=vh(n.i);e=O.g();-1==e.i&amp;&amp;(e.b=&quot;ns&quot;);xg(n);0&lt;h&amp;&amp;-1==n.A&amp;&amp;(n.A=h);0&lt;=m&amp;&amp;(n.Ua=m);n.Ta=function(r){for(var q=[],F=0;F&lt;arguments.length;++F)q[F]=arguments[F];return l.Nb.apply(l,p(q))};n.fb=function(r){for(var q=[],F=0;F&lt;arguments.length;++F)q[F]=arguments[F];return l.Ga.apply(l,p(q))};13!=c&amp;&amp;(n.h=sh(b),n.va=Kh(b),n.ua=th(b));f&amp;&amp;(n.Gb=!0);fd(e.a,&quot;oseid&quot;,ig(this.a));X.a.push(n);++Y.a.hb;e.c?this.Ga(n,e.c):((b=Ng.g().a)&amp;&amp;Yf(n,b),Sh(this),e.c||(b=M(e.a,&quot;sel&quot;),1==b?fd(n.f,&quot;sela&quot;,d?1:0):(2==b&amp;&amp;(d=xe(a,&quot;loadComplete&quot;)),d?(Vh(n),n.da()):a&amp;&amp;pe(a,function(){n.oa()||(Vh(n),n.da())}),Y.j||Y.i())))}};function Uh(a){Wh(a);gg(a.a,function(b){for(var c=[],d=0;d&lt;arguments.length;++d)c[d]=arguments[d];return a.Sb.apply(a,p(c))},function(){return a.h},function(b){for(var c=[],d=0;d&lt;arguments.length;++d)c[d]=arguments[d];return a.Rb.apply(a,p(c))})}function Xh(a){O.g();var b=[zh.g(),Ah.g()],c=[Yg.g()];return[new Qg(b),new Xg(a),new yh(a),new Qg(c)]}function Sh(a){if(!a.f){a.f=!0;try{var b=I(),c=T.g(),d=O.g();d.l=947190542;if(Th(a)){Y.a.ib=hg(a.a);c.s=!0;Uh(a);var e;(e=T.g().f||A(B,&quot;CrKey&quot;)||A(B,&quot;PlayStation&quot;)||A(B,&quot;Roku&quot;)||Ne()||A(B,&quot;Xbox&quot;))||(P(),e=0!==sd());if(e){d.i=N();var f=Ng.g();if(null==f.b){var g=Xh(b);f.b=g}if(Og(f,function(h){return Yh(a,h)})){if(Y.done)return;rh()}else{if(c.b&amp;&amp;!nh(b)){Yh(a,&quot;i&quot;);return}&quot;ns&quot;==d.b&amp;&amp;(d.b=&quot;geo&quot;)}ch();qh();Zh(a);Jc()}else Yh(a,&quot;pv&quot;)}else $h(a,&quot;c&quot;)}catch(h){throw Yh(a,&quot;x&quot;),X.reset(),h;}}}function Zh(a){if(-1==Y.a.na){var b=I(),c=2==ig(a.a);hh(b,c);P().setTimeout(R(131,function(){$h(a,&quot;t&quot;)}),36E5);Y.a.na=N()-md}}function Yh(a,b){O.g().c=b;for(var c=ba(X.a),d=c.next();!d.done;d=c.next())a.Ga(d.value,b);$h(a,b,!1)}function $h(a,b,c){c=void 0===c?!0:c;if(!Y.done){Nh.cancel();a.a||(a.a=new eg);if(2==ig(a.a)||a.c)if(-1==Y.a.na)X.reset();else{a=X.a;c&amp;&amp;0&lt;a.length&amp;&amp;jh(Y,a,!0);c=1==M(O.g().a,&quot;mce&quot;);a=ba(a);for(var d=a.next();!d.done;d=a.next())if(d=d.value,c){var e={};wg(d,1,(e.r=b,e))}else ai(d,b)}Y.done=!0}}function Th(a){if(!oh(I()))return!1;var b=new eg;if(!(b.a||b.b||b.c))return!1;a.a=b;return!0}k.Ga=function(a,b){var c=1==M(O.g().a,&quot;mce&quot;);a.B=!0;c?(c={},wg(a,2,(c.r=b,c))):ai(a,b,!0);a.b&amp;&amp;a.b.T()};k.Nb=function(a){if(a&amp;&amp;W(a)&amp;&amp;(0&gt;=U(V(a))?0:null!=a.ga&amp;&amp;null!=a.ga.match(/\/pagead\/adview\?.*ai=.*&amp;vt=\d+/i)&amp;&amp;!a.zb)){var b=a.ga;if(yc())wc(window,b,!0);else{var c=u.document;if(c.body){var d=c.getElementById(&quot;goog-srcless-iframe&quot;);d||(d=(new Yb(c)).a.createElement(&quot;IFRAME&quot;),d.style.display=&quot;none&quot;,d.id=&quot;goog-srcless-iframe&quot;,c.body.appendChild(d));c=d}else c=null;c&amp;&amp;c.contentWindow&amp;&amp;wc(c.contentWindow,b,!0)}a.zb=!0}};function bi(a,b){if(b&amp;&amp;b.data&amp;&amp;b.source){var c=b.data;if(v(c)){var d={};c=c.split(&quot;\n&quot;);for(var e=0;e!=c.length;++e){var f=c[e],g=f.indexOf(&quot;=&quot;);if(!(0&gt;=g)){var h=Number(f.substr(0,g));f=f.substr(g+1);switch(h){case 36:case 26:case 15:case 8:case 11:case 16:case 5:case 18:f=&quot;true&quot;==f;break;case 4:case 33:case 6:case 25:case 28:case 29:case 24:case 31:case 30:case 23:case 22:case 7:case 21:case 20:f=Number(f);break;case 19:case 3:if(sa(decodeURIComponent))try{f=decodeURIComponent(f)}catch(m){throw Error(&quot;Error: URI malformed: &quot;+f);}}d[h]=f}}d=d[0]?d:null}else d=null;if(c=d)if(e=c[0],Ja(&quot;goog_creative_loaded goog_dom_content_loaded goog_listener_status goog_av_measurement_hold_update goog_provide_mode goog_request_monitoring goog_stop_monitoring&quot;.split(&quot; &quot;),e)&amp;&amp;(d=ci(new Md(c[4],c[12]))))if(0&lt;c[33]&amp;&amp;-1==d.Da&amp;&amp;(d.Da=c[33]),&quot;goog_stop_monitoring&quot;===e)di(d);else if(h=c[26],void 0===h||(h=!!h,h&amp;&amp;1==d.m)||!h&amp;&amp;1!=d.m||(h?1!=d.m&amp;&amp;(d.m=1,d.Za()):d.ba()||1!==d.m||(d.m=2)),(c[35]||&quot;goog_creative_loaded&quot;===e)&amp;&amp;d.da(),Ja(d.M,b.source)||d.M.push(b.source),&quot;goog_request_monitoring&quot;===e||!d.Hb)if(d.Hb=!0,void 0!==c[16]&amp;&amp;(d.w=!!c[16]),c[19]&amp;&amp;d.Ha(c[19]),void 0!==c[6]){b=c[6];c=ei(b,d.i);if(c!=d.i){if(5==c){d.B=!0;di(d);return}d.i=c;d.Aa=vh(c)}4!=b||T.g().w?(4==b&amp;&amp;d.da(),Dg(d),b=O.g(),d.B&amp;&amp;b.c?a.Ga(d,b.c):a.c=!0):(Dg(d),di(d))}}}function Vh(a){var b;if(b=a)b=new Md(a.h,a.va),b=!!b.b||!!b.a;b&amp;&amp;(b=Ag(a,&quot;goog_get_mode&quot;),Me(a.a,b))}function Wh(a){if(!a.i){S(y,&quot;message&quot;,function(c){return bi(a,c)},132);var b=fi().contentWindow;b&amp;&amp;S(b,&quot;message&quot;,function(c){return bi(a,c)},132);a.i=!0}}function gi(a){S(I(),&quot;unload&quot;,function(){$h(a,&quot;u&quot;)},133)}function ei(a,b){return Ha([5,2,4,3,1,0],function(c){return c===a||c===b})||0}function ai(a,b,c){switch(a.i){case 2:case 4:break;default:return}var d=!c&amp;&amp;W(a),e=d&amp;&amp;a.w,f=!a.ta;a&amp;&amp;a.h&amp;&amp;(c||f||e)&amp;&amp;(e=ph(Y,I(),!1),Cg(a,e,&quot;goog_image_request&quot;,b),c||d||(a.ta=!0),d||!c&amp;&amp;a.w)&amp;&amp;(a.w=!1)}k.Ob=function(a,b){b=void 0===b?!1:b;if(a=hi(a)){var c=I();a.b&amp;&amp;a.b.T();try{var d=a.a;if(null!=d.contentWindow&amp;&amp;3==a.Z){switch(a.i){case 2:case 4:break;default:return}var e=Bg(a);e.adk=a.h;e.adf=a.ua;0===a.O&amp;&amp;(e.invis=1);e.r=&quot;ac&quot;;var f=ph(Y,c,!1);Wa(e,f);if(b)1==M(O.g().a,&quot;mce&quot;)?(b={},wg(a,1,(b.r=&quot;ac&quot;,b))):ai(a,&quot;ac&quot;);else try{c.google_image_requests||(c.google_image_requests=[]),d.contentWindow.osdsir(c,e,a.B||0&gt;=U(V(a))?2:W(a)?4:3)}catch(g){}}}finally{di(a)}}};k.Pb=function(a,b){if(a&amp;&amp;b&amp;&amp;ta(a)&amp;&amp;1==a.nodeType&amp;&amp;ta(b)&amp;&amp;1==b.nodeType){var c=Ha(X.a,function(d){return d.a==a});c&amp;&amp;Eg(c,b,I())}};function ci(a){return Ha(X.a,function(b){b=new Md(b.h,b.va);return a.a||b.a?a.a==b.a:a.b||b.b?a.b==b.b:!1})}function di(a){var b=Ia(X.a,function(c){return c==a});-1!=b&amp;&amp;(X.a.splice(b,1),a.b&amp;&amp;a.b.T(),a.D())}function hi(a){if(!a)return null;var b=Ia(X.a,function(c){return c.a==a});return-1===b?null:X.a[b]}function fi(){var a=fc(&quot;IFRAME&quot;,{id:&quot;google_osd_static_frame_&quot;+Math.floor(1E13*Math.random()),name:&quot;google_osd_static_frame&quot;});a.style.display=&quot;none&quot;;a.style.width=&quot;0px&quot;;a.style.height=&quot;0px&quot;;y.document.body.appendChild(a);return a}function Ph(a){ya(&quot;Goog_Osd_UnloadAdBlock&quot;,R(134,function(b){for(var c=[],d=0;d&lt;arguments.length;++d)c[d]=arguments[d];return a.Ob.apply(a,p(c))}));ya(&quot;Goog_Osd_UpdateElementToMeasure&quot;,R(135,function(b){for(var c=[],d=0;d&lt;arguments.length;++d)c[d]=arguments[d];return a.Pb.apply(a,p(c))}))};le(155,function(){Qh();var a=new Oh;Y.u=&quot;osd&quot;;gi(a);Kc()?a.lb():(Rh(a),S(I(),&quot;load&quot;,function(){P().setTimeout(R(153,function(b){for(var c=[],d=0;d&lt;arguments.length;++d)c[d]=arguments[d];return a.lb.apply(a,p(c))}),100)},154))});}).call(this,this,this.document);</td>
+      </tr>
+</table>
+
+  <details class="details-reset details-overlay BlobToolbar position-absolute js-file-line-actions dropdown d-none" aria-hidden="true">
+    <summary class="btn-octicon ml-0 px-2 p-0 bg-white border border-gray-dark rounded-1" aria-label="Inline file action toolbar">
+      <svg class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+    </summary>
+    <details-menu>
+      <ul class="BlobToolbar-dropdown dropdown-menu dropdown-menu-se mt-2" style="width:185px">
+        <li>
+          <clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-lines" style="cursor:pointer;">
+            Copy lines
+          </clipboard-copy>
+        </li>
+        <li>
+          <clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-permalink" style="cursor:pointer;">
+            Copy permalink
+          </clipboard-copy>
+        </li>
+        <li><a class="dropdown-item js-update-url-with-hash" id="js-view-git-blame" role="menuitem" href="/torokoid/home/blame/c994d2df9761192e9b65d08f810944e83be6ce2a/osd.js">View git blame</a></li>
+          <li><a class="dropdown-item" id="js-new-issue" role="menuitem" href="/torokoid/home/issues/new">Reference in new issue</a></li>
+      </ul>
+    </details-menu>
+  </details>
+
+  </div>
+
+    </div>
+
+  
+
+  <details class="details-reset details-overlay details-overlay-dark">
+    <summary data-hotkey="l" aria-label="Jump to line"></summary>
+    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast linejump" aria-label="Jump to line">
+      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-jump-to-line-form Box-body d-flex" action="" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+        <input class="form-control flex-auto mr-3 linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
+        <button type="submit" class="btn" data-close-dialog>Go</button>
+</form>    </details-dialog>
+  </details>
+
+
+
+  </div>
+</div>
+
+    </main>
+  </div>
+  
+
+  </div>
+
+        
+<div class="footer container-lg width-full p-responsive" role="contentinfo">
+  <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      <li class="mr-3 mr-lg-0">&copy; 2019 <span title="0.57102s from unicorn-67b56754dd-lwhfq">GitHub</span>, Inc.</li>
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to security, text:security" href="https://github.com/security">Security</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://githubstatus.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com">Help</a></li>
+    </ul>
+
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mx-lg-4" href="https://github.com">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+   <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://github.com/pricing" data-ga-click="Footer, go to Pricing, text:Pricing">Pricing</a></li>
+      <li class="mr-3 mr-lg-0"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3 mr-lg-0"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://github.blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+
+    
+    <script crossorigin="anonymous" integrity="sha512-4JsuiTlMAprr6vF8YB0G8g7Ss7s5+irdU7eFQpEMW60R1NDb61bo6shomBSAcepi26csEdoMpSTXRPyLTLwJpw==" type="application/javascript" src="https://github.githubassets.com/assets/frameworks-452b2867.js"></script>
+    
+    <script crossorigin="anonymous" async="async" integrity="sha512-q850LlHrJbHiWzYuzYR6/LJaJb8QZK4z3Ac5SPmI/wVFq24YIw2RopksyDaqSJAOMLGer0yPm+BOeBzFOWtI6Q==" type="application/javascript" src="https://github.githubassets.com/assets/github-bootstrap-45a6c992.js"></script>
+    
+    
+    
+  <div class="js-stale-session-flash flash flash-warn flash-banner" hidden
+    >
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <span class="js-stale-session-flash-signed-in" hidden>You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="js-stale-session-flash-signed-out" hidden>You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <template id="site-details-dialog">
+  <details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark hx_rsm" open>
+    <summary role="button" aria-label="Close dialog"></summary>
+    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast hx_rsm-dialog hx_rsm-modal">
+      <button class="Box-btn-octicon m-0 btn-octicon position-absolute right-0 top-0" type="button" aria-label="Close dialog" data-close-dialog>
+        <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+      </button>
+      <div class="octocat-spinner my-6 js-details-dialog-spinner"></div>
+    </details-dialog>
+  </details>
+</template>
+
+  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+  <div aria-live="polite" class="js-global-screen-reader-notice sr-only"></div>
+
+  </body>
+</html>
+
