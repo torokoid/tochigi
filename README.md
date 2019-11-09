@@ -66,9 +66,9 @@ font-size: 1.5em;
 #content07_bg {background-image: url(https://torokoid.github.io/1978/20190607_039.JPG);}
   */
 
+/*
 #content01 .wrap { background-color: rgba(255,0,0,0.2);}
 #content02 .wrap { background-color: rgba(0,255,0,0.2);}
-/*
 #content03 .wrap { background-color: rgba(0,0,255,0.2);}
 #content04 .wrap { background-color: rgba(255,0,0,0.2);}
 #content05 .wrap { background-color: rgba(0,255,0,0.2);}
