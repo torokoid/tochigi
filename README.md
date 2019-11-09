@@ -56,7 +56,7 @@ font-size: 1.5em;
 　　　　　　padding: 10px;}
  -->
 /* design*/
-#content01_bg {background-image: url(https://torokoid.github.io/shiobara/20191109_15.JPG);}
+#content01_bg {background-image: url(https://torokoid.github.io/shiobara/20191109_015.JPG);}
 #content02_bg {background-image: url(https://torokoid.github.io/greenpark/20190928_015.JPG);}
   /*
 #content03_bg {background-image: url(https://torokoid.github.io/oizumi2010/20100828_031.JPG);}
@@ -128,6 +128,7 @@ a{color: #fff;}
             </div>
         </div>
     </div><!-- content02 -->
+    <!--
     <div id="content03" class="contents">
         <div id="content03_bg" class="background"></div>
         <div class="wrap">
@@ -194,7 +195,7 @@ a{color: #fff;}
  <footer>
  <span class="white">Copyright 2019/05/01 Pe-Young(S.Hada)</span>
  </footer>
-            </div>
+ <!--           </div>
         </div>
     </div><!-- content03 -->
 </section>
