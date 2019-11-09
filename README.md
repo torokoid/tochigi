@@ -56,7 +56,7 @@ font-size: 1.5em;
 　　　　　　padding: 10px;}
  -->
 /* design*/
-#content01_bg {background-image: url(https://torokoid.github.io/oizumi/sample.jpg);}
+#content01_bg {background-image: url(https://torokoid.github.io/shiobara/20191109_15.JPG);}
 #content02_bg {background-image: url(https://torokoid.github.io/hannari/20190417_010.jpg);}
   /*
 #content03_bg {background-image: url(https://torokoid.github.io/oizumi2010/20100828_031.JPG);}
@@ -114,8 +114,8 @@ a{color: #fff;}
         <div id="content01_bg" class="background"></div>
         <div class="wrap">
             <div class="text-box">
-                <p class="catch">2019年同期会&ensp;&ensp;&ensp;&ensp;<img src="QR_oizumi_home.png" alt="アクセス用QRコード" width="50"></p>
-                <a href="https://torokoid.github.io/oizumi">2019年同期会のHPリンク</a>
+                <p class="catch">shiobara</p>
+                <a href="https://torokoid.github.io/shiobara">2019/11/09リンク</a>
             </div>
         </div>
     </div><!-- content01 -->
@@ -123,12 +123,11 @@ a{color: #fff;}
         <div id="content02_bg" class="background"></div>
         <div class="wrap">
             <div class="text-box">
-                <p class="catch">はんなりの会</p>
-                <a href="https://torokoid.github.io/hannari">はんなりの会のHPリンク</a>
+                <p class="catch">green</p>park
+                <a href="https://torokoid.github.io/greenpark">2019/リンク</a>
             </div>
         </div>
     </div><!-- content02 -->
-  <!--
     <div id="content03" class="contents">
         <div id="content03_bg" class="background"></div>
         <div class="wrap">
