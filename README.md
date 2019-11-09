@@ -57,7 +57,7 @@ font-size: 1.5em;
  -->
 /* design*/
 #content01_bg {background-image: url(https://torokoid.github.io/shiobara/20191109_15.JPG);}
-#content02_bg {background-image: url(https://torokoid.github.io/hannari/20190417_010.jpg);}
+#content02_bg {background-image: url(https://torokoid.github.io/greenpark/20190928_015.JPG);}
   /*
 #content03_bg {background-image: url(https://torokoid.github.io/oizumi2010/20100828_031.JPG);}
 #content04_bg {background-image: url(https://torokoid.github.io/izumikai/20101024_020.JPG);}
@@ -123,8 +123,8 @@ a{color: #fff;}
         <div id="content02_bg" class="background"></div>
         <div class="wrap">
             <div class="text-box">
-                <p class="catch">green</p>park
-                <a href="https://torokoid.github.io/greenpark">2019/リンク</a>
+                <p class="catch">greenpark</p>
+                <a href="https://torokoid.github.io/greenpark">2019/09/28リンク</a>
             </div>
         </div>
     </div><!-- content02 -->
