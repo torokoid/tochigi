@@ -192,12 +192,12 @@ a{color: #fff;}
                 (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
                 </div>
+ </section>               
+                
 <!-- フッタ -->
  <footer>
  <span class="white">Copyright 2019/11/09 S.Hada</span>
  </footer>
-
-</section>
 
 <script>
 $(function(){
