@@ -6,10 +6,8 @@
 <title>Scroll Background Fadein | naoyu.net</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script src="/osd.js"></script>
-    <script src="ca-pub-7408088410773034.js"></script>
-    <script type="text/javascript" async="" src="analytics.js"></script>
-    <script async="" src="js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-10603270-10">
+</script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -17,7 +15,8 @@
 
   gtag('config', 'UA-10603270-10');
 </script>
-<script src="jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+</script>
 <style>
 /* init */
 .background {
@@ -92,6 +91,9 @@ font-size: 1.5em;
 #content06 .text-box {
     margin-left: auto;
 }
+#content08 .text-box {
+    margin-left: auto;
+}
 .text-box .catch {
     margin: 0 0 10px;
     font-size: 40px;
@@ -105,8 +107,8 @@ a{color: #fff;}
 </style>
 <link rel="preload" href="f.txt" as="script">
     <script type="text/javascript" src="f.txt"></script>
-    <link rel="preload" href="f(1).txt" as="script">
-    <script type="text/javascript" src="f(1).txt"></script>
+    <link rel="preload" href="f.txt" as="script">
+    <script type="text/javascript" src="f.txt"></script>
     <link rel="preload" href="https://pagead2.googlesyndication.com/pagead/js/r20190424/r20190131/show_ads_impl.js" as="script">
     </head>
 <body>
